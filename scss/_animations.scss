@@ -1,0 +1,133 @@
+// blink
+// ---------------------------------
+@keyframes blink {
+  from {
+    color: var(--ui-gray-3);
+  }
+  to {
+    color: transparent;
+  }
+}
+
+// == fade-in
+// ---------------------------------
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// == fade-in-top
+// ---------------------------------
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    margin-top: 0;
+  }
+  to {
+    opacity: 1;
+    margin-top: 1em;
+  }
+}
+
+// == fade-in-top
+// == TUNING for the training path tooltips
+// ---------------------------------
+@keyframes fadeInTopPath {
+  from {
+    opacity: 0;
+    margin-top: 1.5em;
+  }
+  to {
+    opacity: 1;
+    margin-top: 2.5em;
+  }
+}
+
+// == simple scale
+// ---------------------------------
+@keyframes scale {
+  from {
+    transform: scale(1.035);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+// == boost simple scale
+// ---------------------------------
+@keyframes boostscale {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+// == lds-ellipsis animations
+// ---------------------------------
+@keyframes lds-ellipsis1 {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate((calc(var(--dot) * 1.5)), 0);
+  }
+}
+
+// == scroll arrows (map direction sign)
+// ---------------------------------
+@keyframes scrolldownArrows {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+}
+
+// == pulsate animation for current dot (map)
+// ---------------------------------
+@keyframes pulsate {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  99.999% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}

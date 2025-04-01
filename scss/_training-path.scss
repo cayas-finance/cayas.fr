@@ -1,0 +1,655 @@
+@use "__setup" as *; // variables & mixins
+
+//
+// == MAP
+// --------------------------------------------------
+// All the training map styles
+.view--training-path {
+  --asideW: 34rem; // the width of the sidebars
+  --base: 2.5vw; // all the map is based on this
+  position: relative;
+  background: var(--ui-white);
+}
+
+.training-canvas {
+  position: relative;
+
+  > * {
+    position: relative;
+  }
+}
+
+// "useful" card surface (used for both maps and decoration)
+// centered area with a max-width matching the aside blocks
+// used as a grid for the maps
+.training-canvas__area {
+  --grid-unit: 14.2857%; // 7 per line
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: calc(100% - (var(--gutter-medium) * 2) - (var(--asideW) * 2));
+  margin: 0 auto;
+}
+
+// this is where all the decoration items of the map go
+.training-canvas__deco {
+  overflow: hidden;
+  position: absolute;
+  @include offset();
+
+  .training-canvas__area {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .training-canvas__deco-item {
+      position: absolute;
+      top: 50%; // plz override
+      left: 50%; // plz override
+      width: 20%; // plz override
+      height: auto;
+
+      &.svg-icon {
+        opacity: 0.5;
+      }
+
+      &.training-canvas__deco-item--violet {
+        color: var(--brand-violet);
+      }
+      &.training-canvas__deco-item--green {
+        color: var(--brand-green);
+      }
+      &.training-canvas__deco-item--aqua {
+        color: var(--brand-aqua);
+      }
+      &.training-canvas__deco-item--yellow {
+        color: var(--brand-yellow);
+      }
+    }
+  }
+}
+
+// this is the zone containing a single lesson (= a list of stations)
+.training-zone {
+  --training-color: var(--brand-yellow);
+  display: grid; // CSS magic for the sticky titles
+
+  // no need for this, these are not fixed elements
+  &::after {
+    display: none;
+  }
+
+  // needed if the last tooltip goes "over" the next training zone
+  &:nth-child(1) {
+    z-index: 9;
+  }
+  &:nth-child(2) {
+    z-index: 8;
+  }
+  &:nth-child(3) {
+    z-index: 7;
+  }
+  &:nth-child(4) {
+    z-index: 6;
+  }
+  &:nth-child(5) {
+    z-index: 5;
+  }
+  &:nth-child(6) {
+    z-index: 4;
+  }
+  &:nth-child(7) {
+    z-index: 3;
+  }
+  &:nth-child(8) {
+    z-index: 2;
+  }
+  &:nth-child(9) {
+    z-index: 1;
+  }
+
+  & + .training-zone {
+    border-top: 0.2rem dashed var(--ui-gray-3);
+  }
+
+  &.training-zone--current {
+    --training-color: var(--a11y-pink);
+  }
+
+  &.training-zone--previously {
+    // this is to mask the end of the dashed line
+    &::after {
+      display: block;
+      z-index: 20;
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: calc(var(--base) * 3.5);
+      background: linear-gradient(
+        180deg,
+        var(--ui-white) 25%,
+        hsla(0, 0%, 100%, 0)
+      );
+    }
+  }
+
+  &.training-zone--soon {
+    // this is to mask the end of the dashed line
+    &::after {
+      display: block;
+      z-index: 21;
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      background: linear-gradient(
+        0deg,
+        var(--ui-white) 25%,
+        hsla(0, 0%, 100%, 0)
+      );
+    }
+  }
+
+  // CSS magic for the sticky titles
+  > * {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+
+  .training-zone__preview-title {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.15em;
+    margin-bottom: 0.5em;
+    color: var(--ui-gray-2);
+
+    .svg-icon {
+      font-size: 2em;
+    }
+  }
+
+  .training-zone__title {
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    height: min-content;
+    max-width: calc(100% - (var(--gutter-medium) * 2) - (var(--asideW) * 2));
+    margin: 0 auto;
+    text-align: center;
+    font-weight: normal;
+    font-size: calc(var(--base) / 2);
+
+    .training-zone__title-core {
+      position: relative;
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.75em;
+      margin: var(--gutter-medium) 0;
+      padding: var(--gutter-xsmall) var(--gutter-medium);
+      background: var(--ui-white);
+      @include box-shadow();
+
+      .training-zone__title-img {
+        --dimension: 2.5em;
+        flex-grow: 0;
+        flex-shrink: 0;
+        position: relative;
+        width: var(--dimension);
+        height: var(--dimension);
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+        }
+
+        &::before {
+          left: calc(var(--dimension) / 14);
+          right: calc(var(--dimension) / 14);
+          top: calc(var(--dimension) / 14);
+          bottom: calc(var(--dimension) / 14);
+          border: calc(var(--dimension) / 6) solid var(--ui-black);
+          border-radius: 50%;
+        }
+
+        &::after {
+          left: 0;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          height: calc(var(--dimension) / 4);
+          background: var(--training-color);
+        }
+      }
+
+      .training-zone__title-text {
+        text-align: left;
+        line-height: 1.15;
+
+        span,
+        strong {
+          display: block;
+        }
+
+        span {
+          color: var(--ui-gray-3);
+          font-size: 0.65em;
+        }
+
+        strong {
+          margin: 0;
+          font-size: 1.25em;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+// this is basically a station (but can also be a "decoration number" or a "direction" sign)
+.training-unit {
+  --unit-color: var(--ui-gray-2);
+  --dot-dimension: var(--base);
+  --dot-border: calc(var(--base) / 5.5);
+  position: relative;
+  width: var(--grid-unit);
+  height: 0;
+  margin: -1px; // cheat code!
+  padding-bottom: var(--grid-unit);
+  border-radius: 50%;
+  font-size: 1em;
+
+  &.training-unit--completed {
+    --unit-color: var(--training-color);
+    --dot-dimension: calc(var(--base) + (var(--dot-border) * 2));
+
+    .training-unit__dot {
+      background: var(--training-color);
+      border-color: var(--ui-white);
+      color: var(--ui-always-white);
+    }
+  }
+
+  &.training-unit--current {
+    --unit-color: var(--training-color);
+
+    // for the "go!"
+    .training-unit__dot {
+      font-size: calc(var(--dot-dimension) / 4);
+    }
+  }
+
+  &.training-unit--pending {
+    --unit-color: var(--ui-gray-2);
+  }
+
+  &.training-unit--boost {
+    .training-unit__dot {
+      transform: scale(1.15);
+    }
+  }
+
+  &.training-unit--top,
+  &.training-unit--bottom {
+    .training-unit__title {
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &.training-unit--left,
+  &.training-unit--right {
+    .training-unit__title {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &.training-unit--top .training-unit__title {
+    bottom: 50%;
+    margin-bottom: calc(var(--base) / 1.75);
+  }
+
+  &.training-unit--bottom .training-unit__title {
+    top: 50%;
+    margin-top: calc(var(--base) / 1.75);
+  }
+
+  &.training-unit--left .training-unit__title {
+    right: 50%;
+    margin-right: calc(var(--base) / 1.25);
+    text-align: right;
+  }
+
+  &.training-unit--right .training-unit__title {
+    left: 50%;
+    margin-left: calc(var(--base) / 1.25);
+    text-align: left;
+  }
+
+  .training-unit__path {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    stroke: var(--ui-gray-4);
+    stroke-width: 3.5em;
+
+    &.training-unit__path--completed {
+      stroke: var(--training-color);
+    }
+
+    // HACKY!
+    // SVG coordinates have to match "big" and negative values: y1="-1000" y2="1000"
+    &.training-unit__path--dashed {
+      stroke-dasharray: 10 10;
+      top: inherit;
+      bottom: 50%;
+      height: calc(
+        200% - (var(--base) / 1.75)
+      ); // ~matches "two grid cells" width
+
+      &.training-unit__path--dashed-last {
+        top: 0;
+        bottom: inherit;
+        height: 200%;
+      }
+    }
+  }
+
+  .training-unit__pulse {
+    opacity: 0.5;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: var(--dot-dimension);
+      width: var(--dot-dimension);
+      margin-top: calc(var(--dot-dimension) * -0.5);
+      margin-left: calc(var(--dot-dimension) * -0.5);
+      background-color: var(--brand-aqua);
+      border-radius: 50%;
+      border: 2px solid var(--brand-blue);
+      transform: scale(1);
+      animation: pulsate 3s infinite;
+    }
+
+    &::after {
+      animation-delay: -0.5s;
+    }
+  }
+
+  .training-unit__capy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: calc(var(--dot-dimension) * 1.65);
+    color: var(--ui-always-black);
+
+    img {
+      position: absolute;
+      top: calc(var(--dot-dimension) / 5);
+      left: calc(var(--dot-dimension) / 5);
+      width: calc(var(--dot-dimension) * 1.5);
+      filter: drop-shadow(0.2rem 0.2rem var(--ui-black));
+    }
+
+    .svg-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &:first-child {
+        color: var(--ui-always-white);
+        filter: drop-shadow(0.2rem 0.2rem var(--ui-black));
+      }
+    }
+  }
+
+  .training-unit__dot {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: calc(var(--dot-dimension) * -0.5);
+    margin-top: calc(var(--dot-dimension) * -0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--dot-dimension);
+    height: var(--dot-dimension);
+    background: var(--ui-white);
+    border: var(--dot-border) solid var(--unit-color);
+    border-radius: 50%;
+    color: var(--unit-color);
+    font-size: calc(var(--dot-dimension) * 0.55);
+    // --
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+
+    span {
+      text-transform: uppercase;
+      font-weight: bold;
+      // --
+      opacity: 0;
+      transition: opacity 200ms ease-in-out;
+    }
+  }
+
+  .training-unit__title {
+    position: absolute;
+    text-align: center;
+    font-size: calc(var(--base) / 2.25);
+    line-height: 1.15;
+  }
+
+  &.tooltip-wrapper {
+    .tooltip-opener {
+      position: absolute;
+      @include offset();
+      border-radius: 50%;
+      cursor: not-allowed;
+
+      &:hover,
+      &:focus {
+        & + [role="tooltip"] {
+          animation: fadeInTopPath 600ms forwards;
+        }
+
+        .training-unit__dot span {
+          opacity: 1;
+          transition-delay: 100ms;
+        }
+      }
+    }
+
+    [role="tooltip"] {
+      left: 50%;
+      top: 50%;
+      width: 16rem;
+    }
+  }
+
+  // this is the "decoration number" of the lesson placed on the area grid
+  &.training-unit--number {
+    strong {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--ui-gray-3);
+      font-size: calc(var(--base) * 2);
+      font-weight: 900;
+      line-height: 1;
+    }
+  }
+
+  // this is the "decoration" sign showing the destination
+  &.training-unit--direction {
+    > div {
+      position: absolute;
+      @include offset();
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      line-height: 1.15;
+
+      strong {
+        font-size: calc(var(--base) / 2.5);
+        //white-space: nowrap;
+      }
+
+      .training-unit__arrows {
+        display: inline-block;
+        color: var(--training-color);
+        font-size: var(--base);
+
+        .svg-icon {
+          animation: scrolldownArrows 2s infinite;
+          display: block;
+          margin: 0 auto -0.75em;
+
+          &:nth-child(2) {
+            animation-delay: -0.2s;
+          }
+        }
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    z-index: 20; // just to be above the following siblings (tooltip!)
+  }
+}
+
+a.training-unit,
+button.training-unit {
+  &:hover,
+  &:focus {
+    .training-unit__dot {
+      transform: scale(1.25);
+      transition-duration: 50ms;
+
+      span {
+        opacity: 1;
+        transition-delay: 100ms;
+      }
+    }
+  }
+
+  &:active {
+    .training-unit__dot {
+      transform: scale(1.5);
+    }
+  }
+}
+
+// == HACKY: 'maximum" body size (200rem, see __layout.css)
+// ---------------------------------
+@media screen and (min-width: em(2000)) {
+  .view--training-path {
+    --base: 5rem;
+  }
+}
+
+// == xlarge
+// ---------------------------------
+@media screen and (max-width: $mq-xlarge) {
+  .view--training-path {
+    --asideW: 32rem;
+  }
+}
+
+// == large
+// ---------------------------------
+@media screen and (max-width: $mq-large) {
+  .view--training-path {
+    --asideW: 24rem;
+  }
+}
+
+// == medium
+// ---------------------------------
+@media screen and (max-width: $mq-medium) {
+  .view--training-path {
+    --base: 4.5rem;
+  }
+  .training-canvas__area {
+    max-width: 73rem;
+  }
+
+  .training-zone {
+    &.training-zone--previously::after {
+      height: calc(var(--base) * 2.5);
+    }
+
+    .training-zone__title {
+      max-width: 50%;
+      font-size: calc(var(--base) / 2.5);
+
+      .training-zone__title-core {
+        margin-top: var(--gutter-small);
+      }
+    }
+  }
+}
+
+// == small
+// ---------------------------------
+@media screen and (max-width: $mq-small) {
+  .view--training-path {
+    --base: 6vw;
+  }
+}
+
+// == xxsmall
+// ---------------------------------
+@media screen and (max-width: $mq-xxsmall) {
+  .view--training-path {
+    --base: 10vw;
+  }
+
+  .training-canvas__area {
+    --grid-unit: 33.3333%;
+    max-width: 38rem;
+  }
+
+  .training-zone {
+    &::before {
+      display: none;
+    }
+
+    &.training-zone--previously::after {
+      height: calc(var(--base) * 3.25);
+    }
+
+    .training-zone__title {
+      z-index: 21;
+      position: relative;
+      width: 100%;
+      max-width: 38rem;
+    }
+  }
+
+  .training-unit.tooltip-wrapper [role="tooltip"] {
+    display: none;
+  }
+}

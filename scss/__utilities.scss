@@ -1,0 +1,271 @@
+//
+// == EM
+// --------------------------------------------------
+// This function translates pixel-based values to relatives ones.
+// '$context: 16' default is the base font size.
+@function em($target, $context: 16) {
+  @if $target == 0 {
+    @return 0;
+  }
+  @return calc((#{$target} / #{$context}) * 1em);
+}
+
+//
+// == CSS TRIANGLE
+// --------------------------------------------------
+// This mixin creates a triangle within a pseudo element and add positioning properties (ie. top, left).
+// $direction can be: up, down, left, right.
+// $ratio controls the shape of the arrow.
+@mixin triangle($direction: top, $size: 6px, $color: #222, $ratio: 1.25) {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+
+  @if ($direction == "top") {
+    top: -$size;
+    border-bottom: $size solid $color;
+    border-left: $ratio * $size solid transparent;
+    border-right: $ratio * $size solid transparent;
+  } @else if ($direction == "bottom") {
+    bottom: -$size;
+    border-top: $size solid $color;
+    border-left: $ratio * $size solid transparent;
+    border-right: $ratio * $size solid transparent;
+  } @else if ($direction == "left") {
+    left: -$size;
+    border-top: $ratio * $size solid transparent;
+    border-bottom: $ratio * $size solid transparent;
+    border-right: $size solid $color;
+  } @else if ($direction == "right") {
+    right: -$size;
+    border-top: $ratio * $size solid transparent;
+    border-bottom: $ratio * $size solid transparent;
+    border-left: $size solid $color;
+  }
+}
+
+//
+// == GRADIENTS
+// --------------------------------------------------
+// This mixin creates a simple CSS linear gradient that works in Safari too (jeez...).
+// The clothoid one creates a "smooth' easing gradient that feels more natural than the linear one.
+// Article here: https://css-tricks.com/easing-linear-gradients/
+// Mixin here: https://css-tricks.com/easing-linear-gradients/#comment-1608477
+@mixin linear-gradient(
+  $direction: to left,
+  $color: #f00,
+  $alpha-from: 1,
+  $alpha-to: 0
+) {
+  background-image: linear-gradient(
+    $direction,
+    rgba($color, $alpha-from) 0%,
+    rgba($color, $alpha-to) 100%
+  );
+}
+
+@mixin clothoid-gradient(
+  $direction: to left,
+  $color: #f00,
+  $alpha-from: 1,
+  $alpha-to: 0
+) {
+  $diff: $alpha-from - $alpha-to;
+  background-image: linear-gradient(
+    $direction,
+    rgba($color, $alpha-from) 0%,
+    rgba($color, $alpha-from - $diff * 0.7) 50%,
+    rgba($color, $alpha-from - $diff * 0.85) 65%,
+    rgba($color, $alpha-from - $diff * 0.925) 75.5%,
+    rgba($color, $alpha-from - $diff * 0.963) 82.85%,
+    rgba($color, $alpha-from - $diff * 0.981) 88%,
+    rgba($color, $alpha-to) 100%
+  );
+}
+
+//
+// == TRUNCATE
+// --------------------------------------------------
+// This mixin creates text-overflow context.
+@mixin truncateText($overflow: ellipsis) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: $overflow; // values are: clip, ellipsis, or a string
+}
+
+//
+// == CLAMP
+// --------------------------------------------------
+// This class builds text-ellipsis overflow without JS and I think it's beautiful.
+// This is media-query compliant.
+// Careful: line-height must be given WITH UNITS.
+// Live example here: https://codepen.io/vincent-valentin/pen/mddzByB
+// Quick example: @include clamp(3, orangered, 2rem);
+@mixin clamp(
+  $clamp-lines: 1,
+  $clamp-fallback-background-color: white,
+  $clamp-fallback-line-height: 1.15rem
+) {
+  $clamp-enable: true;
+
+  $clamp-modern-enable: true; // fx, webkit
+  $clamp-fallback-enable: false; // put TRUE if you want to support (badly) IE <= edge 16
+
+  $clamp-fallback-justify: false;
+  $clamp-fallback-gradient-width: 0.5rem;
+  $clamp-fallback-ellipsis-width: 1rem;
+
+  @if $clamp-fallback-enable {
+    @if $clamp-fallback-justify {
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    overflow: hidden;
+    position: relative;
+    padding-right: $clamp-fallback-ellipsis-width;
+    line-height: $clamp-fallback-line-height;
+    max-height: ($clamp-fallback-line-height * $clamp-lines);
+    background-color: $clamp-fallback-background-color;
+
+    &::before,
+    &::after {
+      font-family: var(--font-1, sans-serif);
+      content: "\2026";
+      width: $clamp-fallback-ellipsis-width;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding-left: $clamp-fallback-gradient-width;
+      background-image: linear-gradient(
+        to right,
+        transparent 0,
+        $clamp-fallback-background-color $clamp-fallback-gradient-width
+      );
+    }
+
+    &::after {
+      color: $clamp-fallback-background-color;
+      background-color: currentColor;
+      bottom: auto;
+    }
+  }
+
+  @if $clamp-modern-enable {
+    @supports (-webkit-line-clamp: $clamp-lines) {
+      @if $clamp-fallback-enable {
+        @if $clamp-fallback-justify {
+          text-align: left;
+          hyphens: none;
+        }
+
+        position: static;
+        max-height: none;
+        background-color: transparent;
+        line-height: inherit;
+        padding-right: 0;
+
+        &::before,
+        &::after {
+          content: none;
+        }
+      }
+
+      overflow: hidden;
+      display: -webkit-box;
+
+      /* autoprefixer: ignore next */
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: $clamp-lines;
+    }
+  }
+}
+
+//
+// == POSITION OFFSET
+// --------------------------------------------------
+// Shorthand mixin for offset positioning (default: 0)
+// @param {Length} $top [0] - Top offset
+// @param {Length} $right [0] - Right offset
+// @param {Length} $bottom [0] - Bottom offset
+// @param {Length} $left [0] - Left offset
+@mixin offset($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+//
+// == ICON EXTEND
+// --------------------------------------------------
+// this is used to extend the '::before' of an icon
+// for example: .bar::before{ @include icon('.icon_arrow-1--right'); }
+// CAUTION: doesn't work with .bar::after
+@mixin icon($icon) {
+  @extend .icon;
+  @extend #{$icon};
+}
+
+// == ACCESSIBLE HIDDEN
+// --------------------------------------------------
+//    Improved screen reader only CSS class
+//    @author Gaël Poupard
+//    @note Based on Yahoo!'s technique
+//    @author Thierry Koblentz
+//    @see https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
+//    * 1.
+//        @note `clip` is deprecated but works everywhere
+//        @see https://developer.mozilla.org/en-US/docs/Web/CSS/clip
+//    * 2.
+//        @note `clip-path` is the future-proof version, but not very well supported yet
+//        @see https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
+//        @see http://caniuse.com/#search=clip-path
+//        @author Yvain Liechti
+//        @see https://twitter.com/ryuran78/status/778943389819604992
+//    * 3.
+//        @note preventing text to be condensed
+//        author J. Renée Beach
+//        @see https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+//        @note Drupal 8 goes with word-wrap: normal instead
+//        @see https://www.drupal.org/node/2045151
+//        @see http://cgit.drupalcode.org/drupal/commit/?id=5b847ea
+//    * 4.
+//        @note !important is important
+//        @note Obviously you wanna hide something
+//        @author Harry Roberts
+//        @see http://csswizardry.com/2016/05/the-importance-of-important/
+@mixin srOnly {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  min-height: 0 !important; /* patch */
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  margin: -1px !important;
+  white-space: nowrap !important; /* 3 */
+}
+
+//    Use in conjunction with .sr-only to only display content when it's focused.
+//    @note Useful for skip links
+//    @see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+//    @note Based on a HTML5 Boilerplate technique, included in Bootstrap
+//1. @note Fixed a bug with position: static on iOS 10.0.2 + VoiceOver
+//        @author Sylvain Pigeard
+//        @see https://github.com/twbs/bootstrap/issues/20732
+@mixin srOnlyFocusable {
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  height: auto !important;
+  overflow: visible !important;
+  /*position: static !important; 1. */
+  width: auto !important;
+  white-space: normal !important;
+}

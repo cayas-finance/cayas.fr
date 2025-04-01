@@ -1,0 +1,164 @@
+@use "__utilities" as *; // needed for the em function
+
+// == RWD STEPS
+// ---------------------------------
+// CSS variables won't work with media queries, so scss variables instead
+$mq-max: #{em(2000)}; // this like var(--body-max) below
+$mq-xlarge: #{em(1620)};
+$mq-large: #{em(1300)};
+$mq-medium: #{em(1010)};
+$mq-small: #{em(730)};
+$mq-xsmall: #{em(580)};
+$mq-xxsmall: #{em(460)};
+
+//
+// == CSS VARIABLES
+// --------------------------------------------------
+:root {
+  // == enable ligh/dark theming
+  // cf. https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark
+  // ---------------------------------
+  color-scheme: light dark;
+
+  // == main colorz
+  // ---------------------------------
+  // == brand
+  // ---------------------------------
+  --brand-pink: #e8006e; // accessible on #fff and #060605   // was #ff0079
+  --brand-blue: #5464fe; // accessible on #fff               // was #4152ff
+  --brand-violet: #6f43e0; // accessible on #fff
+  --brand-pink-light: #fe7aab; // accessible on #060605
+  --brand-yellow: #ffd200; // accessible on #060605
+  --brand-orange: #fe9244; // accessible on #060605
+  --brand-violet-light: #c8b4fd; // accessible on #060605
+  --brand-aqua: #0afefe; // accessible on #060605
+  --brand-green: #32fe5b; // accessible on #060605
+
+  // == same brand colors, but forced to a11y-compliant values when color-scheme is supported (see below)
+  // use it for content that has to be accessible (i.e. texts, button icons)
+  // ---------------------------------
+  --a11y-pink: #e8006e; // accessible on #fff and #060605   // was #ff0079
+  --a11y-blue: #5464fe; // accessible on #fff               // was #4152ff
+  --a11y-violet: #6f43e0; // accessible on #fff
+  --a11y-pink-light: #fe7aab; // accessible on #060605
+  --a11y-yellow: #ffd200; // accessible on #060605
+  --a11y-orange: #fe9244; // accessible on #060605
+  --a11y-violet-light: #c8b4fd; // accessible on #060605
+  --a11y-aqua: #0afefe; // accessible on #060605
+  --a11y-green: #32fe5b; // accessible on #060605
+
+  // == ui
+  // ---------------------------------
+  --ui-white: #fff;
+  --ui-black: #060605;
+  --ui-gray-1: #4a4851;
+  --ui-gray-2: #899ea7;
+  --ui-gray-3: #b0bec5;
+  --ui-gray-4: #cfd8dc;
+  --ui-gray-5: #f5f4fb;
+
+  --ui-game-1: #03433c;
+  --ui-game-2: #08815c;
+
+  // ui forced color when color-scheme is supported
+  // ---------------------------------
+  --ui-always-black: #060605;
+  --ui-always-white: #fff;
+
+  --ui-toolRed-1: #de1a00;
+  --ui-toolRed-2: #ffe3e0;
+  --ui-toolGreen-1: #5a7b00;
+  --ui-toolGreen-2: #e7f1cc;
+  --ui-toolYellow-1: #836f11;
+  --ui-toolYellow-2: #ffffd3;
+  --ui-toolBlue-1: #0079a0;
+  --ui-toolBlue-2: #def7ff;
+
+  --ui-twitter: #1da1f2;
+  --ui-facebook: #3b5998;
+  --ui-youtube: #ff0000;
+  --ui-flickr: #ff0084;
+  --ui-linkedin: #0077b5;
+
+  // == max body size
+  // ---------------------------------
+  --body-max: #{em(2000)};
+
+  // == gutters
+  // ---------------------------------
+  --gutter-xsmall: 0.5rem;
+  --gutter-small: 1rem;
+  --gutter-medium: 2rem;
+  --gutter-large: 4rem;
+  --gutter-xlarge: 8rem;
+
+  // == typography
+  // ---------------------------------
+  --font-1: "outfit", Arial, Helvetica, sans-serif;
+}
+
+// == medium
+// ---------------------------------
+@media screen and (max-width: $mq-medium) {
+  :root {
+    // == gutters
+    // ---------------------------------
+    --gutter-xsmall: 0.25rem;
+    --gutter-small: 0.5rem;
+    --gutter-medium: 1rem;
+    --gutter-large: 2rem;
+    --gutter-xlarge: 4rem;
+  }
+}
+
+// if supported, dark theme features
+@supports (color-scheme: light dark) {
+  :root {
+    --a11y-yellow: light-dark(
+      #8d7400,
+      #ffd200
+    ); // accessible on #fff and #060605
+    --a11y-orange: light-dark(
+      #c65300,
+      #fe9244
+    ); // accessible on #fff and #060605
+    --a11y-violet: light-dark(
+      #6f43e0,
+      #845fe3
+    ); // accessible on #fff and #060605
+    --a11y-violet-light: light-dark(
+      #8354ff,
+      #c8b4fd
+    ); // accessible on #fff and #060605
+    --a11y-blue: light-dark(#5464fe, #5565fe); // accessible on #fff and #060605
+    --a11y-aqua: light-dark(#048484, #0afefe); // accessible on #fff and #060605
+    --a11y-green: light-dark(
+      #1a8930,
+      #32fe5b
+    ); // accessible on #fff and #060605
+
+    --ui-white: light-dark(#fff, #060605);
+    --ui-black: light-dark(#1d1d1b, #fff);
+    --ui-gray-1: light-dark(#4a4851, #f5f4fb);
+    --ui-gray-2: light-dark(#798b93, #cfd8dc);
+    //--ui-gray-3: #b0bec5; // same?
+    --ui-gray-4: light-dark(#cfd8dc, #899ea7);
+    --ui-gray-5: light-dark(#f5f4fb, #4a4851);
+  }
+
+  // special cases tuning
+  .theme--dark {
+    &.view--lesson .wrapper {
+      background: transparent;
+    }
+
+    .grunge-zone::before {
+      filter: invert(100%);
+    }
+
+    img.training-canvas__deco-item {
+      filter: grayscale(50%) saturate(270%) hue-rotate(42deg);
+      opacity: 0.4;
+    }
+  }
+}

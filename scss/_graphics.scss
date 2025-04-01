@@ -1,0 +1,34 @@
+@mixin link--alt {
+  text-decoration-color: transparent;
+
+  &:hover,
+  &:focus {
+    text-decoration-color: currentColor;
+  }
+}
+
+@mixin text-underline($color: inherit) {
+  text-decoration: underline;
+  text-decoration-color: $color;
+  transition: text-decoration-color 400ms ease-out;
+}
+
+@mixin text-underline--hover($color: transparent) {
+  text-decoration-color: $color;
+  transition-duration: 50ms;
+}
+
+@mixin box-shadow($border: 0.2rem, $depth: 0.5rem, $color: var(--ui-black)) {
+  border: $border solid $color;
+  box-shadow: $depth $depth 0 $color;
+}
+
+@mixin stripes($color: red) {
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 1rem,
+    $color 1rem,
+    $color 2rem
+  );
+}

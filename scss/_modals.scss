@@ -1,0 +1,390 @@
+@use "__setup" as *; // variables & mixins
+
+// == modals
+// ---------------------------------
+.modal {
+  z-index: 1000;
+  overflow: hidden;
+
+  &[aria-hidden="true"] {
+    visibility: hidden;
+  }
+
+  &.modal--footnote {
+    overflow: inherit;
+    position: absolute;
+    bottom: calc(100% + 5em);
+    right: 7.5em;
+    display: flex;
+    justify-content: flex-end;
+
+    .modal__overlay {
+      position: fixed;
+      @include offset();
+      // --
+      background-color: rgba(0, 0, 0, 0.25);
+      transition: background-color 400ms ease-in-out;
+    }
+
+    &[aria-hidden="true"] {
+      .modal__overlay {
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      .modal__core.modal__core--footnote {
+        transform: translate(2rem, 2rem);
+        opacity: 0;
+
+        .svg-icon--tic {
+          transform: translate(-1rem, 1rem);
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &.modal--sidebar {
+    position: fixed;
+    @include offset();
+    display: flex;
+    justify-content: flex-end;
+
+    .modal__overlay {
+      position: fixed;
+      @include offset();
+      // --
+      background-color: rgba(0, 0, 0, 0.75);
+      transition: background-color 400ms ease-in-out;
+    }
+
+    &[aria-hidden="true"] {
+      .modal__overlay {
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      .modal__core.modal__core--sidebar {
+        opacity: 0;
+      }
+    }
+  }
+
+  &.modal--default {
+    position: fixed;
+    @include offset();
+    display: flex;
+    padding: 2rem 0;
+    overflow-y: auto;
+
+    .modal__overlay {
+      position: fixed;
+      @include offset();
+      // --
+      background-color: rgba(0, 0, 0, 0.75);
+      transition: background-color 400ms ease-in-out;
+    }
+
+    &[aria-hidden="true"] {
+      .modal__overlay {
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      .modal__core.modal__core--default {
+        transform: translateY(5rem);
+        opacity: 0;
+      }
+    }
+  }
+
+  .modal__core {
+    &.modal__core--footnote {
+      position: relative;
+      display: block;
+      background-color: var(--ui-white);
+      @include box-shadow();
+      // --
+      transform: translate(0, 0);
+      opacity: 0.9999; // Chrome bug
+      transition:
+        transform 400ms ease-in-out,
+        opacity 400ms ease-in-out;
+
+      .svg-icon--tail {
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        margin-left: -1px; // cheat
+        color: var(--ui-white);
+        filter: drop-shadow(0.7rem 0.7rem var(--ui-black));
+      }
+
+      .svg-icon--tic {
+        position: absolute;
+        bottom: 100%;
+        left: 100%;
+        font-size: 2em;
+        // --
+        transform: translate(0, 0);
+        opacity: 0.9999; // Chrome bug
+        transition:
+          transform 400ms ease-in-out 400ms,
+          opacity 400ms ease-in-out 400ms;
+      }
+
+      .modal__closer {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 1rem;
+        text-decoration: none;
+        // --
+        transition: color 400ms ease-in-out;
+
+        &:hover,
+        &:focus {
+          color: var(--a11y-blue);
+          transition-duration: 150ms;
+        }
+
+        &:focus:hover {
+          color: var(--ui-black);
+        }
+      }
+
+      // viewport overflow!
+      .modal__content {
+        overflow: auto;
+        max-height: calc(100vh - 15em); // viewport
+        max-width: 30rem;
+        padding: var(--gutter-medium) 3.5rem var(--gutter-medium)
+          var(--gutter-medium);
+      }
+    }
+
+    &.modal__core--sidebar {
+      overflow-y: auto;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      width: 90%;
+      max-width: 60rem;
+      min-width: 30rem;
+      padding: var(--gutter-large);
+      background-color: var(--ui-always-white);
+      color: var(--ui-always-black);
+      // --
+      opacity: 0.9999; // Chrome bug
+      transition: opacity 400ms ease-in-out;
+
+      .vs_capy {
+        display: inline-block;
+        width: 5em;
+      }
+
+      .modal__header h2 {
+        background: var(--brand-pink);
+        color: var(--ui-always-white);
+      }
+
+      .modal__closer {
+        position: fixed;
+        right: 1rem;
+        top: 0;
+        padding: 1rem;
+        text-decoration: none;
+        font-size: 3rem;
+        // --
+        transform: rotate(0);
+        transition: transform 400ms ease-in-out;
+
+        &:hover,
+        &:focus {
+          transform: rotate(90deg);
+          transition-duration: 150ms;
+        }
+      }
+    }
+
+    &.modal__core--default {
+      position: relative;
+      display: block;
+      width: 90%;
+      max-width: 60rem;
+      min-width: 30rem;
+      margin: auto; // Can't scroll to top of flex item that is overflowing container FIX
+      padding: var(--gutter-large);
+      background-color: var(--ui-white);
+      @include box-shadow();
+      // --
+      transform: translateY(0);
+      opacity: 0.9999; // Chrome bug
+      transition:
+        transform 400ms ease-in-out,
+        opacity 400ms ease-in-out;
+
+      &.modal__core--default-wide {
+        max-width: 100rem;
+      }
+      &.modal__core--default-small {
+        max-width: 40rem;
+      }
+
+      .modal__closer {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 1rem;
+        text-decoration: none;
+        // --
+        transform: rotate(0);
+        transition: transform 400ms ease-in-out;
+
+        &:hover,
+        &:focus {
+          transform: rotate(90deg);
+          transition-duration: 150ms;
+        }
+      }
+
+      .modal__header {
+        p {
+          margin-top: -0.5em;
+          font-weight: 600;
+        }
+      }
+
+      .modal__content .editorial {
+        // reset
+        strong {
+          padding: 0;
+          background: none;
+          color: var(--ui-black);
+        }
+      }
+    }
+  }
+}
+
+.modal-welcome {
+  display: flex;
+  gap: var(--gutter-large);
+
+  .modal-welcome__img {
+    order: 2;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin: calc(var(--gutter-large) * -1);
+    margin-left: 0;
+    padding: var(--gutter-large);
+    background: url(/generic/bg_grid.png);
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .modal-welcome__txt {
+    order: 1;
+    width: 60%;
+
+    .modal__header {
+      margin-bottom: 1em;
+    }
+    .list-inline {
+      margin: 1em 0;
+    }
+
+    .modal-welcome__legals {
+      margin-top: 3em;
+      color: var(--ui-gray-2);
+    }
+  }
+}
+
+.modal-signup {
+  text-align: center;
+
+  .modal-signup__img img {
+    width: 60%;
+    max-width: 14rem;
+    height: auto;
+    margin: 1rem auto 0;
+  }
+
+  ul {
+    margin: 1em 0 0;
+  }
+}
+
+.modal-trophies {
+  .modal__header {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+}
+
+// == large
+// ---------------------------------
+@media screen and (max-width: $mq-large) {
+  .modal .modal__core.modal__core--sidebar .modal__closer {
+    font-size: 2rem;
+  }
+}
+
+// == medium
+// ---------------------------------
+@media screen and (max-width: $mq-medium) {
+  .modal {
+    &.modal--footnote {
+      right: 5.5em;
+      bottom: calc(100% + 3em);
+    }
+
+    .modal__core.modal__core--footnote .modal__closer {
+      padding: 0.5rem;
+    }
+    .modal__core.modal__core--footnote .modal__content {
+      padding-right: 2.5rem;
+    }
+    .modal__core.modal__core--sidebar .modal__closer {
+      right: 1rem;
+    }
+  }
+
+  .modal-welcome {
+    display: block;
+
+    .modal-welcome__img {
+      background: none;
+      float: right;
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .modal-welcome__txt {
+      width: auto;
+    }
+  }
+}
+
+// == small
+// ---------------------------------
+@media screen and (max-width: $mq-small) {
+  .modal-trophies {
+    .list-trophies-wide {
+      margin-left: calc(var(--gutter-large) * -1);
+      margin-right: calc(var(--gutter-large) * -1);
+    }
+  }
+}
+
+// == xxsmall
+// ---------------------------------
+@media screen and (max-width: $mq-xxsmall) {
+  .modal .modal__core.modal__core--footnote {
+    left: 1rem;
+  }
+}

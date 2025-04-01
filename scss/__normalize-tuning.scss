@@ -1,0 +1,104 @@
+//
+// == Normalize fix: use a better box model
+// --------------------------------------------------
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+//
+// == I don't want the default list-style
+// --------------------------------------------------
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+//
+// == Fixin' the margins
+// --------------------------------------------------
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+p:last-child,
+ul:last-child,
+ol:last-child,
+dl:last-child,
+blockquote:last-child,
+pre:last-child,
+table:last-child {
+  margin-bottom: 0;
+}
+
+//
+// == I don't like italic
+// --------------------------------------------------
+address {
+  font-style: normal;
+}
+
+//
+// == Sometimes this is used. Sometimes.
+// --------------------------------------------------
+kbd,
+code {
+  padding: 0 0.5rem;
+  border: 1px solid var(--ui-gray-3);
+  border-radius: 0.3rem;
+  background: var(--ui-gray-5);
+  font-family:
+    Courier New,
+    Courier,
+    Lucida Sans Typewriter,
+    Lucida Typewriter,
+    monospace;
+  font-size: inherit;
+}
+
+//
+// == Quiet, buttons
+// --------------------------------------------------
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+//
+// == Webkit date input picto
+// --------------------------------------------------
+::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+//
+// == Figure, what you doin?
+// --------------------------------------------------
+figure {
+  margin: 0;
+}
+
+//
+// == Images should be block, period.
+// --------------------------------------------------
+img {
+  display: block;
+}
+
+//
+// == No default theming for dialogs
+// --------------------------------------------------
+dialog {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
