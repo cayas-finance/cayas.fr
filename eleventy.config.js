@@ -1,52 +1,30 @@
 import { parse, relative } from "node:path";
-import * as sass from "sass";
 import postcss from "postcss";
 import autoprefixer from "autoprefixer";
 import cssnanoPlugin from "cssnano";
-// import { minify } from "terser";
 
 export default async function (cfg) {
   cfg.setInputDirectory("views");
 
+  // JavaScript
+  cfg.addPassthroughCopy("js");
+
+  // Assets
+  cfg.addPassthroughCopy("assets");
+
   // CSS
-  cfg.addWatchTarget("scss");
-  cfg.addTemplateFormats("scss");
-  cfg.addExtension("scss", {
+  cfg.addTemplateFormats('css');
+  cfg.addExtension("css", {
     outputFileExtension: "css",
-    compile: async function (inputContent, inputPath) {
-      let parsed = parse(inputPath);
-      if (parsed.name.startsWith("_")) {
-        return;
-      }
-
-      let sassResult = sass.compileString(inputContent, {
-        loadPaths: [parsed.dir || ".", this.config.dir.includes],
-        sourceMap: false, // or true, your choice!
-      });
-
-      
+    compile: async (inputContent, inputPath) => {
       return async () => {
-        
-        let dependencies = sassResult.loadedUrls
-          .filter((dep) => dep.protocol === "file:")
-          .map((entry) => {
-            return relative(".", entry.pathname);
-          });
-  
-        this.addDependencies(inputPath, dependencies);
-  
-        const result = await postcss([autoprefixer()]).process(
-          sassResult.css
+        let output = await postcss([autoprefixer, cssnanoPlugin]).process(
+          inputContent,
+          { from: inputPath }
         );
-        
-        return result.css;
+
+        return output.css;
       };
     },
   });
-
-  // JavaScript
-  cfg.addPassthroughCopy("js")
-
-  // Assets
-  cfg.addPassthroughCopy("assets")
 }
