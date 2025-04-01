@@ -24,19 +24,21 @@ export default async function (cfg) {
         sourceMap: false, // or true, your choice!
       });
 
-      let dependencies = sassResult.loadedUrls
-        .filter((dep) => dep.protocol === "file:")
-        .map((entry) => {
-          return relative(".", entry.pathname);
-        });
-
-      this.addDependencies(inputPath, dependencies);
-
-      const result = await postcss([autoprefixer(), cssnanoPlugin()]).process(
-        sassResult.css
-      );
-
+      
       return async () => {
+        
+        let dependencies = sassResult.loadedUrls
+          .filter((dep) => dep.protocol === "file:")
+          .map((entry) => {
+            return relative(".", entry.pathname);
+          });
+  
+        this.addDependencies(inputPath, dependencies);
+  
+        const result = await postcss([autoprefixer()]).process(
+          sassResult.css
+        );
+        
         return result.css;
       };
     },
