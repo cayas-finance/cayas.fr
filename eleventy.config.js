@@ -3,10 +3,13 @@ import * as sass from "sass";
 import postcss from "postcss";
 import autoprefixer from "autoprefixer";
 import cssnanoPlugin from "cssnano";
+// import { minify } from "terser";
 
 export default async function (cfg) {
   cfg.setInputDirectory("views");
 
+  // CSS
+  cfg.addWatchTarget("scss");
   cfg.addTemplateFormats("scss");
   cfg.addExtension("scss", {
     outputFileExtension: "css",
@@ -29,7 +32,9 @@ export default async function (cfg) {
 
       this.addDependencies(inputPath, dependencies);
 
-      const result = await postcss([autoprefixer(), cssnanoPlugin()]).process(sassResult.css);
+      const result = await postcss([autoprefixer(), cssnanoPlugin()]).process(
+        sassResult.css
+      );
 
       return async () => {
         return result.css;
@@ -37,4 +42,9 @@ export default async function (cfg) {
     },
   });
 
+  // JavaScript
+  cfg.addPassthroughCopy("js")
+
+  // Assets
+  cfg.addPassthroughCopy("assets")
 }

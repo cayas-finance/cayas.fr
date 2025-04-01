@@ -19,8 +19,9 @@ for FICHIER in $LINKS; do
     wget -O "./scss/$FICHIER" -q "https://studio.stpo.fr/cayas-app/dev/scss/$FICHIER"
     # Replace "../../static/" or "/img/" with "/" in each SCSS file
     if [[ "$FICHIER" == *.scss ]]; then
-        sed -i.bak 's|../../static/|/|g' "./scss/$FICHIER" && rm "./scss/$FICHIER.bak"
-        sed -i.bak 's|/img/|/|g' "./scss/$FICHIER" && rm "./scss/$FICHIER.bak"
+        sed -i.bak 's|../../static/|/assets/|g' "./scss/$FICHIER" && rm "./scss/$FICHIER.bak"
+        sed -i.bak 's|/img/|/assets/|g' "./scss/$FICHIER" && rm "./scss/$FICHIER.bak"
+        sed -i.bak 's|../../fonts/|/assets/fonts/|g' "./scss/$FICHIER" && rm "./scss/$FICHIER.bak"        
     fi
     echo "$FICHIER"
 done
@@ -30,7 +31,7 @@ PAGE_CONTENT=$(curl -s "https://studio.stpo.fr/cayas-app/static/img/generic/")
 LINKS=$(extract_links "$PAGE_CONTENT")
 
 for FICHIER in $LINKS; do
-    wget -O "./public/generic/$FICHIER" -q "https://studio.stpo.fr/cayas-app/static/img/generic/$FICHIER"
+    wget -O "./assets/generic/$FICHIER" -q "https://studio.stpo.fr/cayas-app/static/img/generic/$FICHIER"
     echo "$FICHIER"
 done
 
@@ -42,7 +43,7 @@ LINKS=$(extract_links "$PAGE_CONTENT")
 LINKS=$(echo "$LINKS" | grep -v "\.html$")
 
 for FICHIER in $LINKS; do
-    wget -O "./public/svg-sprite/$FICHIER" -q "https://studio.stpo.fr/cayas-app/static/img/svg-sprite/$FICHIER"
+    wget -O "./assets/svg-sprite/$FICHIER" -q "https://studio.stpo.fr/cayas-app/static/img/svg-sprite/$FICHIER"
     echo "$FICHIER"
 done
 
@@ -54,7 +55,7 @@ LINKS=$(extract_links "$PAGE_CONTENT")
 LINKS=$(echo "$LINKS" | grep -v "manifest.json")
 
 for FICHIER in $LINKS; do
-    wget -O "./public/favicon/$FICHIER" -q "https://studio.stpo.fr/cayas-app/static/img/favicon/$FICHIER"
+    wget -O "./assets/favicon/$FICHIER" -q "https://studio.stpo.fr/cayas-app/static/img/favicon/$FICHIER"
     echo "$FICHIER"
 done
 
@@ -63,7 +64,16 @@ PAGE_CONTENT=$(curl -s "https://studio.stpo.fr/cayas-app/static/img/icon-font/")
 LINKS=$(extract_links "$PAGE_CONTENT")
 
 for FICHIER in $LINKS; do
-    wget -O "./public/icon-font/$FICHIER" -q "https://studio.stpo.fr/cayas-app/static/img/icon-font/$FICHIER"
+    wget -O "./assets/icon-font/$FICHIER" -q "https://studio.stpo.fr/cayas-app/static/img/icon-font/$FICHIER"
+    echo "$FICHIER"
+done
+
+echo "Downloading fonts..."
+PAGE_CONTENT=$(curl -s "https://studio.stpo.fr/cayas-app/fonts/")
+LINKS=$(extract_links "$PAGE_CONTENT")
+
+for FICHIER in $LINKS; do
+    wget -O "./assets/fonts/$FICHIER" -q "https://studio.stpo.fr/cayas-app/fonts/$FICHIER"
     echo "$FICHIER"
 done
 
