@@ -8,15 +8,11 @@ layout: layout.html
 ---
 
 <div class="wrapper">
-
   <h1>{{ lesson.name }}</h1>
-  
+
   {% for chapter in lesson.chapters %}
-  <div class="editorial">
-    {{ chapter | markdown }}
-  </div>
-  
-  <hr>
+  <div class="editorial">{{ chapter | markdown }}</div>
+
+  <hr />
   {% endfor %}
-  
 </div>

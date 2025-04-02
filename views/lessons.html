@@ -4,14 +4,16 @@ layout: layout.html
 ---
 
 <ul>
-    {% for learningPath in learningPaths %}
-    <li>
-        <strong>{{ learningPath.name }}</strong>
-        <ul>
-            {% for lesson in learningPath.lessons %}
-            <li><a href="/lesson/{{ lesson.name | slugify }}">{{ lesson.name }}</a></li>
-            {% endfor %}
-        </ul>
-    </li>
-    {% endfor %}
+  {% for learningPath in learningPaths %}
+  <li>
+    <strong>{{ learningPath.name }}</strong>
+    <ul>
+      {% for lesson in learningPath.lessons %}
+      <li>
+        <a href="/lesson/{{ lesson.name | slugify }}">{{ lesson.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+  {% endfor %}
 </ul>

@@ -6,7 +6,7 @@ import { charts } from "./scripts/charts.marked.js";
 import { table } from "./scripts/table.marked.js";
 import { legend } from "./scripts/legend.marked.js";
 import { ninja } from "./scripts/ninja.marked.js";
-import katex from 'katex';
+import katex from "katex";
 
 const R_FootNote = /\[(?<footnote>.{1,3})\]/gm;
 const R_Equation = /\$\$(?<equation>[^\$]*)\$\$/gm;
