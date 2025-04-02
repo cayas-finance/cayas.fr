@@ -5948,6 +5948,10 @@ figure figcaption {
 .editorial .editorial__media .editorial__img img {
   width: 100%;
 }
+.editorial .legend > * {
+  font-size: small;
+  margin-bottom: 2em;
+}
 
 .grunge-zone {
   position: relative;
