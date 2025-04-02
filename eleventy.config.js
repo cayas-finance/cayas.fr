@@ -3,8 +3,11 @@ import autoprefixer from "autoprefixer";
 import cssnanoPlugin from "cssnano";
 import { marked } from "marked";
 import { charts } from "./scripts/charts.marked.js";
+import katex from 'katex';
 
 const R_FootNote = /\[(?<footnote>.{1,3})\]/gm;
+const R_Equation = /\$\$(?<equation>[^\$]*)\$\$/gm;
+const R_InlineEquation = /\$(?<equation>[^\$]*)\$/gm;
 
 export default async function (cfg) {
   cfg.setInputDirectory("views");
@@ -37,10 +40,35 @@ export default async function (cfg) {
     marked.use(charts());
 
     // FootNotes
-    content = content.replace(R_FootNote, '');
+    content = content.replace(R_FootNote, "");
 
     // image in localhost
     content = content.replace("/api", "http://localhost:4200/api");
-    return await marked.parse(content);
+
+    // Equations
+    const equations = [];
+    content = content.replaceAll(R_Equation, (_, eq) => {
+      equations.push(eq);
+      return "@EQUATION";
+    });
+    content = content.replaceAll(R_InlineEquation, (_, eq) => {
+      equations.push(eq);
+      return "@EQUATION";
+    });
+
+    content = await marked.parse(content);
+
+    // Math expression : Convert and replace
+    equations.forEach((equation) => {
+      content = content.replace(
+        "@EQUATION",
+        katex.renderToString(equation, {
+          throwOnError: false,
+          output: "mathml",
+        })
+      );
+    });
+
+    return content;
   });
 }
