@@ -3,6 +3,7 @@ import autoprefixer from "autoprefixer";
 import cssnanoPlugin from "cssnano";
 import { marked } from "marked";
 import { charts } from "./scripts/charts.marked.js";
+import { table } from "./scripts/table.marked.js";
 import katex from 'katex';
 
 const R_FootNote = /\[(?<footnote>.{1,3})\]/gm;
@@ -36,8 +37,8 @@ export default async function (cfg) {
 
   // Markdown
   cfg.addFilter("markdown", async (content) => {
-    // Charts
-    marked.use(charts());
+    // Charts, Tables
+    marked.use(charts(), table());
 
     // FootNotes
     content = content.replace(R_FootNote, "");
