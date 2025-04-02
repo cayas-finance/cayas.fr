@@ -237,13 +237,13 @@ body::before {
   }
 
   &.list-trophies-wide--1::before {
-    background-image: url(/assets/assets/generic/bg_confettis-1.svg);
+    background-image: url(/assets/generic/bg_confettis-1.svg);
   }
   &.list-trophies-wide--2::before {
-    background-image: url(/assets/assets/generic/bg_confettis-2.svg);
+    background-image: url(/assets/generic/bg_confettis-2.svg);
   }
   &.list-trophies-wide--3::before {
-    background-image: url(/assets/assets/generic/bg_confettis-3.svg);
+    background-image: url(/assets/generic/bg_confettis-3.svg);
   }
 }
 
@@ -511,7 +511,7 @@ figure {
       width: 1em;
       height: 1em;
       background-color: var(--ui-black);
-      mask-image: url("/assets/assets/generic/arrow-1--bottom.svg");
+      mask-image: url("/assets/generic/arrow-1--bottom.svg");
     }
 
     &::before {
@@ -593,7 +593,7 @@ figure {
       width: 1.5em;
       height: 1.5em;
       background-color: var(--ui-black);
-      mask-image: url("/assets/assets/generic/arrow-1--bottom.svg");
+      mask-image: url("/assets/generic/arrow-1--bottom.svg");
     }
 
     span {
@@ -670,7 +670,7 @@ figure {
         top: -0.25em;
         width: 2.25em;
         height: 2.25em;
-        mask-image: url("/assets/assets/generic/arrow-2--right.svg");
+        mask-image: url("/assets/generic/arrow-2--right.svg");
         mask-size: auto 2.25em;
         mask-repeat: no-repeat;
         background-color: var(--ui-gray-1);
@@ -802,7 +802,7 @@ figure {
     content: "";
     position: absolute;
     @include offset();
-    background: url(/assets/assets/generic/bg_grunge.webp);
+    background: url(/assets/generic/bg_grunge.webp);
     background-size: cover;
     opacity: 0.25;
   }
@@ -939,7 +939,7 @@ figure {
     content: "";
     position: absolute;
     @include offset(0, 0, 0, 50%);
-    background: url(/assets/assets/generic/bg_grid.png);
+    background: url(/assets/generic/bg_grid.png);
   }
 
   .signup-page__deco {

@@ -1,7 +1,10 @@
-// import ky from 'ky';
+import Fetch from "@11ty/eleventy-fetch";
 
-// export default async function () {
-// 	return await ky('http://localhost:4200/api/v1/lessons').json();
-// }
+export default async function () {
+  const learningPaths = await Fetch("https://app.cayas.fr/api/v1/lessons", {
+    duration: "10m",
+    type: "json",
+  });
 
-export default [];
+  return learningPaths;
+}

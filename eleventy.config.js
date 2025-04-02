@@ -1,6 +1,10 @@
 import postcss from "postcss";
 import autoprefixer from "autoprefixer";
 import cssnanoPlugin from "cssnano";
+import { marked } from "marked";
+import { charts } from "./scripts/charts.marked.js";
+
+const R_FootNote = /\[(?<footnote>.{1,3})\]/gm;
 
 export default async function (cfg) {
   cfg.setInputDirectory("views");
@@ -12,7 +16,7 @@ export default async function (cfg) {
   cfg.addPassthroughCopy("assets");
 
   // CSS
-  cfg.addTemplateFormats('css');
+  cfg.addTemplateFormats("css");
   cfg.addExtension("css", {
     outputFileExtension: "css",
     compile: async (inputContent, inputPath) => {
@@ -25,5 +29,18 @@ export default async function (cfg) {
         return output.css;
       };
     },
+  });
+
+  // Markdown
+  cfg.addFilter("markdown", async (content) => {
+    // Charts
+    marked.use(charts());
+
+    // FootNotes
+    content = content.replace(R_FootNote, '');
+
+    // image in localhost
+    content = content.replace("/api", "http://localhost:4200/api");
+    return await marked.parse(content);
   });
 }

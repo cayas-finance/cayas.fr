@@ -1,6 +1,22 @@
-<ul>
-    {% for learningPath in learningPaths %}
-    <li>{{ learningPath.name }}</li>
-    {% endfor %}
-</ul>
-    
+---
+pagination:
+  data: lessons
+  size: 1
+  alias: lesson
+permalink: "lesson/{{ lesson.name | slugify }}/"
+layout: layout.html
+---
+
+<div class="wrapper">
+
+  <h1>{{ lesson.name }}</h1>
+  
+  {% for chapter in lesson.chapters %}
+  <div class="editorial">
+    {{ chapter | markdown }}
+  </div>
+  
+  <hr>
+  {% endfor %}
+  
+</div>

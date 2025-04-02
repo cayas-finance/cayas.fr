@@ -2150,7 +2150,7 @@ main a[target=_blank]::after {
   height: 0.75em;
   margin-left: 0.25em;
   margin-right: -0.75em;
-  mask-image: url("/assets/assets/generic/icon--blank.svg");
+  mask-image: url("/assets/generic/icon--blank.svg");
   mask-size: auto 0.75em;
   mask-repeat: no-repeat;
   background-color: var(--a11y-pink);
@@ -2609,7 +2609,7 @@ input[type=number] {
   top: 50%;
   width: 0.75em;
   height: 0.75em;
-  mask-image: url("/assets/assets/generic/arrow-1--bottom.svg");
+  mask-image: url("/assets/generic/arrow-1--bottom.svg");
   mask-size: auto 0.75em;
   mask-repeat: no-repeat;
   background-color: var(--a11y-pink);
@@ -2737,7 +2737,7 @@ input[type=radio]:checked + label {
 }
 
 input[type=checkbox] + label::before {
-  background-image: url("/assets/assets/generic/form--checkbox.svg");
+  background-image: url("/assets/generic/form--checkbox.svg");
 }
 
 input[type=checkbox] + label:hover::before {
@@ -2745,11 +2745,11 @@ input[type=checkbox] + label:hover::before {
 }
 
 input[type=checkbox]:checked + label::before {
-  background-image: url("/assets/assets/generic/form--checkbox--checked.svg");
+  background-image: url("/assets/generic/form--checkbox--checked.svg");
 }
 
 input[type=radio] + label::before {
-  background-image: url("/assets/assets/generic/form--radio.svg");
+  background-image: url("/assets/generic/form--radio.svg");
 }
 
 input[type=radio] + label:hover::before {
@@ -2757,7 +2757,7 @@ input[type=radio] + label:hover::before {
 }
 
 input[type=radio]:checked + label::before {
-  background-image: url("/assets/assets/generic/form--radio--checked.svg");
+  background-image: url("/assets/generic/form--radio--checked.svg");
 }
 
 .list-radio-checkbox li {
@@ -4239,7 +4239,7 @@ input[type=range]:disabled::-moz-range-thumb {
   margin: calc(var(--gutter-large) * -1);
   margin-left: 0;
   padding: var(--gutter-large);
-  background: url(/assets/assets/generic/bg_grid.png);
+  background: url(/assets/generic/bg_grid.png);
 }
 .modal-welcome .modal-welcome__img img {
   width: 100%;
@@ -5264,7 +5264,7 @@ button.training-unit:active .training-unit__dot {
   flex-direction: column;
   align-items: center;
   padding: var(--gutter-medium);
-  background: var(--ui-always-white) url(/assets/assets/generic/bg_grid.png) 2rem 2rem;
+  background: var(--ui-always-white) url(/assets/generic/bg_grid.png) 2rem 2rem;
   color: var(--ui-white);
   border: 0.2rem solid var(--brand-pink);
   box-shadow: 0.5rem 0.5rem 0 var(--brand-pink);
@@ -5513,13 +5513,13 @@ body::before {
   color: var(--ui-gray-2);
 }
 .list-trophies-wide.list-trophies-wide--1::before {
-  background-image: url(/assets/assets/generic/bg_confettis-1.svg);
+  background-image: url(/assets/generic/bg_confettis-1.svg);
 }
 .list-trophies-wide.list-trophies-wide--2::before {
-  background-image: url(/assets/assets/generic/bg_confettis-2.svg);
+  background-image: url(/assets/generic/bg_confettis-2.svg);
 }
 .list-trophies-wide.list-trophies-wide--3::before {
-  background-image: url(/assets/assets/generic/bg_confettis-3.svg);
+  background-image: url(/assets/generic/bg_confettis-3.svg);
 }
 
 .list-glossary {
@@ -5736,7 +5736,7 @@ figure figcaption {
   width: 1em;
   height: 1em;
   background-color: var(--ui-black);
-  mask-image: url("/assets/assets/generic/arrow-1--bottom.svg");
+  mask-image: url("/assets/generic/arrow-1--bottom.svg");
 }
 .accordion summary::before {
   margin-top: -0.85em;
@@ -5800,7 +5800,7 @@ figure figcaption {
   width: 1.5em;
   height: 1.5em;
   background-color: var(--ui-black);
-  mask-image: url("/assets/assets/generic/arrow-1--bottom.svg");
+  mask-image: url("/assets/generic/arrow-1--bottom.svg");
 }
 .accordion-glossary summary span {
   text-decoration: underline;
@@ -5856,7 +5856,7 @@ figure figcaption {
   top: -0.25em;
   width: 2.25em;
   height: 2.25em;
-  mask-image: url("/assets/assets/generic/arrow-2--right.svg");
+  mask-image: url("/assets/generic/arrow-2--right.svg");
   mask-size: auto 2.25em;
   mask-repeat: no-repeat;
   background-color: var(--ui-gray-1);
@@ -5963,7 +5963,7 @@ figure figcaption {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(/assets/assets/generic/bg_grunge.webp);
+  background: url(/assets/generic/bg_grunge.webp);
   background-size: cover;
   opacity: 0.25;
 }
@@ -6075,7 +6075,7 @@ figure figcaption {
   right: 0;
   bottom: 0;
   left: 50%;
-  background: url(/assets/assets/generic/bg_grid.png);
+  background: url(/assets/generic/bg_grid.png);
 }
 .signup-page .signup-page__deco {
   overflow: hidden;
