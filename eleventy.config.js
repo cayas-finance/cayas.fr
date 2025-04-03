@@ -1,3 +1,4 @@
+import svgSprite from "eleventy-plugin-svg-sprite";
 import postcss from "postcss";
 import autoprefixer from "autoprefixer";
 import cssnanoPlugin from "cssnano";
@@ -36,6 +37,13 @@ export default async function (cfg) {
       };
     },
   });
+
+    // sprites
+    cfg.addWatchTarget("./sprites/*.svg");
+    cfg.addPlugin(svgSprite, {
+        path: "./sprites", // relative path to SVG directory
+        outputFilepath: "./assets/svg-sprite/svg-sprite.svg"
+    });
 
   // Markdown
   cfg.addFilter("markdown", async (content) => {

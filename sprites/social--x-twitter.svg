@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49.491" height="49.491" viewBox="0 0 49.491 49.491">
+  <g id="X" transform="translate(24.745 24.745)">
+    <g id="Groupe_169" data-name="Groupe 169" transform="translate(-24.083 -24.083)">
+      <circle id="Ellipse_21" data-name="Ellipse 21" cx="17.18" cy="17.18" r="17.18" transform="translate(0 27.295) rotate(-52.599)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="0.946"/>
+      <circle id="Ellipse_22" data-name="Ellipse 22" cx="17.18" cy="17.18" r="17.18" transform="translate(3.346 5.421)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="0.946"/>
+      <ellipse id="Ellipse_23" data-name="Ellipse 23" cx="14.038" cy="14.038" rx="14.038" ry="14.038" transform="translate(3.896 18.815) rotate(-28.748)"/>
+      <ellipse id="Ellipse_24" data-name="Ellipse 24" cx="17.18" cy="17.18" rx="17.18" ry="17.18" transform="matrix(0.145, -0.989, 0.989, 0.145, 3.36, 40.314)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="0.946"/>
+      <path id="Tracé_281" data-name="Tracé 281" d="M35.834,32.524l5.118-5.474H39.008l-4.017,4.3-3.076-4.3H26.6l5.38,7.516L26.6,40.321h1.943l4.28-4.578L36.1,40.321h5.315Zm-6.495-4.066h1.853l7.486,10.456H36.824Z" transform="translate(-11.152 -9.315)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

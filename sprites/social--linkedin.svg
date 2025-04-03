@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.451" height="49.929" viewBox="0 0 50.451 49.929">
+  <g id="IN" transform="translate(25.19 24.965)">
+    <g id="Groupe_165" data-name="Groupe 165" transform="translate(-24.592 -24.296)">
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="17.18" cy="17.18" r="17.18" transform="matrix(0.949, -0.316, 0.316, 0.949, 1.422, 12.218)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="0.946"/>
+      <circle id="Ellipse_6" data-name="Ellipse 6" cx="17.18" cy="17.18" r="17.18" transform="matrix(0.949, -0.316, 0.316, 0.949, 0, 15.8)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="0.946"/>
+      <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="14.038" cy="14.038" rx="14.038" ry="14.038" transform="translate(6.701 34.853) rotate(-77.421)"/>
+      <circle id="Ellipse_8" data-name="Ellipse 8" cx="17.18" cy="17.18" r="17.18" transform="translate(0.592 24.296) rotate(-45)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="0.946"/>
+      <g id="Groupe_164" data-name="Groupe 164" transform="translate(15.724 16.471)">
+        <rect id="Rectangle_57" data-name="Rectangle 57" width="3.194" height="10.317" transform="translate(0.307 5.159)" fill="#fff"/>
+        <path id="Tracé_274" data-name="Tracé 274" d="M26.526,27.155a1.9,1.9,0,1,0-1.888-1.9A1.9,1.9,0,0,0,26.526,27.155Z" transform="translate(-24.638 -23.347)" fill="#fff"/>
+      </g>
+      <path id="Tracé_275" data-name="Tracé 275" d="M39.423,38.807c0-1.45.668-2.315,1.946-2.315,1.175,0,1.739.829,1.739,2.315v5.416h3.178V37.691c0-2.764-1.567-4.1-3.754-4.1a3.6,3.6,0,0,0-3.109,1.7v-1.39H36.359V44.223h3.064Z" transform="translate(-15.092 -12.276)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
