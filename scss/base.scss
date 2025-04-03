@@ -11,6 +11,7 @@
                     misc
                 LISTS
                     inline
+                    social
                 CORE
                     images
                     tables
@@ -107,6 +108,27 @@ body::before{ display: none; }
     &.list-inline--justify{ justify-content: space-between; }
     &.list-inline--center{ justify-content: center; }
     &.list-inline--right{ justify-content: flex-end; }
+}
+
+
+// == social
+// ---------------------------------
+.list-social{
+    gap: .15em;
+
+    .svg-icon{ font-size: 2.5em; }
+
+    a{
+        display: block;
+        // --
+        transition: color ease-in-out 400ms;
+
+        &:hover, &:focus{
+            color: var(--brand-pink);
+            transition-duration: 50ms;
+        }
+    }
+
 }
 
 
@@ -348,7 +370,11 @@ figure{
 
 // dark theme
 .home-cta{
+    overflow: hidden;
+    padding-top: calc(var(--gutter-xlarge) * 1.5);
+    padding-bottom: calc(var(--gutter-xlarge) * 1.5);
     background: var(--ui-white);
+    text-align: center;
 }
 
 
