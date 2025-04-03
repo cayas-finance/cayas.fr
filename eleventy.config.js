@@ -3,6 +3,7 @@ import postcss from "postcss";
 import autoprefixer from "autoprefixer";
 import cssnanoPlugin from "cssnano";
 import spritePlugin from "./scripts/sprite.eleventy.js";
+import svgPlugin from "./scripts/svg.eleventy.js";
 import { marked } from "marked";
 import { charts } from "./scripts/charts.marked.js";
 import { table } from "./scripts/table.marked.js";
@@ -30,6 +31,9 @@ export default async function (cfg) {
 
   // sprites
   cfg.addPlugin(spritePlugin);
+
+  // svg
+  cfg.addPlugin(svgPlugin);
 
   // CSS
   cfg.addTemplateFormats("css");
