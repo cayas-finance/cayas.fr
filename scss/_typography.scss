@@ -1,148 +1,273 @@
-@use "__setup" as *;          // variables & mixins
+@use "__setup" as *; // variables & mixins
 
 // .normal-font is used to set a container to the "normal" font size (.list-separator-container for example)
-.normal-font, .small-font, .smaller-font, .smallest-font{
-    p, li, a, button, input, select, textarea, label, address, th, td{ font-size: inherit!important; }
+.normal-font,
+.small-font,
+.smaller-font,
+.smallest-font {
+  p,
+  li,
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  label,
+  address,
+  th,
+  td {
+    font-size: inherit !important;
+  }
 }
 
-h1, h2, h3, h4, h5, h6, [role="heading"], p, li, label, address, th, td{ > a, > button{ font-size: inherit; font-weight: inherit; }}
-[role="heading"]{ font-weight: bold; }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+[role="heading"],
+p,
+li,
+label,
+address,
+th,
+td {
+  > a,
+  > button {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}
+[role="heading"] {
+  font-weight: bold;
+}
 
 // == default values
 // ---------------------------------
-.normal-font, p, li, a, button, input, select, textarea, label, address, th, td, summary, details{ font-size: 1.8rem; }
-
-.big-font{ font-size: 2.4rem; }
-.small-font{ font-size: 1.7rem; }
-.smaller-font{ font-size: 1.5rem; }
-.smallest-font{ font-size: 1.4rem; }
-
-.title--1{
-    margin-bottom: .5em;
-    font-size: 4.8rem;
-    font-weight: 900;
-    line-height: 1.1;
+.normal-font,
+p,
+li,
+a,
+button,
+input,
+select,
+textarea,
+label,
+address,
+th,
+td,
+summary,
+details {
+  font-size: 1.8rem;
 }
 
-.title--2{
-    margin-bottom: .5em;
-    font-size: 3.4rem;
-    font-weight: 900;
-    line-height: 1.1;
+.big-font {
+  font-size: 2.4rem;
+}
+.small-font {
+  font-size: 1.7rem;
+}
+.smaller-font {
+  font-size: 1.5rem;
+}
+.smallest-font {
+  font-size: 1.4rem;
 }
 
-.title--3{
-    margin-bottom: .5em;
-    font-size: 2.6rem;
-    font-weight: 900;
-    line-height: 1.2;
-
-    span{
-        font-style: normal;
-        font-weight: 600;
-    }
+.title--1 {
+  margin-bottom: 0.5em;
+  font-size: 4.8rem;
+  font-weight: 900;
+  line-height: 1.1;
 }
 
-.title--4{
-    margin-bottom: .5em;
-    font-size: 2.2rem;
+.title--2 {
+  margin-bottom: 0.5em;
+  font-size: 3.4rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.title--3 {
+  margin-bottom: 0.5em;
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 1.2;
+
+  span {
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+.title--4 {
+  margin-bottom: 0.5em;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.35;
+
+  strong {
     font-weight: 700;
-    line-height: 1.35;
-
-    strong{ font-weight: 700; }
+  }
 }
 
-.title--5{
-    margin-bottom: .5em;
-    font-size: 2.2rem;
-    font-weight: 900;
-    line-height: 1.35;
+.title--5 {
+  margin-bottom: 0.5em;
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1.35;
 
-    span{ text-transform: uppercase; }
+  span {
+    text-transform: uppercase;
+  }
 
-    strong{
-        padding: 0 .25em;
-        box-decoration-break: clone;
-        background: var(--brand-pink);
-        color: var(--ui-always-white);
-    }
+  strong {
+    padding: 0 0.25em;
+    box-decoration-break: clone;
+    background: var(--brand-pink);
+    color: var(--ui-always-white);
+  }
 
-    .svg-icon{
-        position: relative;
-        top: .05em;
-        display: inline-block;
-        font-size: 1.4em;
-    }
+  .svg-icon {
+    position: relative;
+    top: 0.05em;
+    display: inline-block;
+    font-size: 1.4em;
+  }
 }
 
-.title--1, .title--2, .title--3, .title--4, .title--5{
-    strong, em{
-        padding: 0 .25em;
-        box-decoration-break: clone;
-    }
+.title--1,
+.title--2,
+.title--3,
+.title--4,
+.title--5 {
+  strong,
+  em {
+    padding: 0 0.25em;
+    box-decoration-break: clone;
+  }
 
-    strong{
-        background: var(--brand-pink);
-        color: var(--ui-always-white);
-    }
+  strong {
+    background: var(--brand-pink);
+    color: var(--ui-always-white);
+  }
 
-    em{
-        background: var(--brand-green);
-        color: var(--ui-always-black);
-        font-style: normal;
-    }
+  em {
+    background: var(--brand-green);
+    color: var(--ui-always-black);
+    font-style: normal;
+  }
 }
-
 
 // == large
 // ---------------------------------
-@media screen and (max-width: $mq-large){
-    .normal-font, p, li, a, button, input, select, textarea, label, address, th, td, summary, details{ font-size: 1.7rem; }
+@media screen and (max-width: $mq-large) {
+  .normal-font,
+  p,
+  li,
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  label,
+  address,
+  th,
+  td,
+  summary,
+  details {
+    font-size: 1.7rem;
+  }
 
-    .big-font{ font-size: 3rem; }
-    .small-font{ font-size: 1.6rem; }
-    .smallest-font{ font-size: 1.3rem; }
+  .big-font {
+    font-size: 3rem;
+  }
+  .small-font {
+    font-size: 1.6rem;
+  }
+  .smallest-font {
+    font-size: 1.3rem;
+  }
 
-    .title--2{ font-size: 3.2rem; }
-    .title--4{ font-size: 2rem; }
-    .title--5{ font-size: 2rem; }
+  .title--2 {
+    font-size: 3.2rem;
+  }
+  .title--4 {
+    font-size: 2rem;
+  }
+  .title--5 {
+    font-size: 2rem;
+  }
 }
-
 
 // == medium
 // ---------------------------------
-@media screen and (max-width: $mq-medium){
-    .normal-font, p, li, a, button, input, select, textarea, label, address, th, td, summary, details{ font-size: 1.6rem; }
+@media screen and (max-width: $mq-medium) {
+  .normal-font,
+  p,
+  li,
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  label,
+  address,
+  th,
+  td,
+  summary,
+  details {
+    font-size: 1.6rem;
+  }
 
-    .big-font{ font-size: 2.6rem; }
-    .small-font{ font-size: 1.4rem; }
-    .smaller-font{ font-size: 1.3rem; }
-    .smallest-font{ font-size: 1.2rem; }
+  .big-font {
+    font-size: 2.6rem;
+  }
+  .small-font {
+    font-size: 1.4rem;
+  }
+  .smaller-font {
+    font-size: 1.3rem;
+  }
+  .smallest-font {
+    font-size: 1.2rem;
+  }
 
-    .title--2{ font-size: 3rem; }
-    .title--4{ font-size: 1.7rem; }
-    .title--5{ font-size: 1.7rem; }
+  .title--2 {
+    font-size: 3rem;
+  }
+  .title--4 {
+    font-size: 1.7rem;
+  }
+  .title--5 {
+    font-size: 1.7rem;
+  }
 }
-
 
 // == small
 // ---------------------------------
-@media screen and (max-width: $mq-small){
-    .title--2{ font-size: 2.8rem; }
+@media screen and (max-width: $mq-small) {
+  .title--2 {
+    font-size: 2.8rem;
+  }
 }
-
 
 // == xsmall
 // ---------------------------------
-@media screen and (max-width: $mq-xsmall){
-    .title--2{ font-size: 2.6rem; }
+@media screen and (max-width: $mq-xsmall) {
+  .title--2 {
+    font-size: 2.6rem;
+  }
 }
-
 
 // == xxsmall
 // ---------------------------------
-@media screen and (max-width: $mq-xxsmall){
-    .title--1{ hyphens: auto; }
-    .title--2{ font-size: 2.4rem; }
+@media screen and (max-width: $mq-xxsmall) {
+  .title--1 {
+    hyphens: auto;
+  }
+  .title--2 {
+    font-size: 2.4rem;
+  }
 }

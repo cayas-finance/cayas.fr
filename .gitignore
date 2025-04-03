@@ -10,7 +10,7 @@ yarn-error.log
 .env
 
 # 11ty
-views/css
+views/*.css
 .cache
 
 # IDEs and editors
