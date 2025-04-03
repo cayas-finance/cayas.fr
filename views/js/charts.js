@@ -1,4 +1,3 @@
-
 var options = [];
 
 const locale = "fr-FR";
@@ -17,10 +16,7 @@ const dateFormatter = new Intl.DateTimeFormat(locale, {
   month: "long",
 });
 
-function formatCurrency(
-  v,
-  options = {},
-) {
+function formatCurrency(v, options = {}) {
   const formatter = new Intl.NumberFormat(locale, {
     style: "currency",
     currency: "EUR",
@@ -30,8 +26,11 @@ function formatCurrency(
   });
   const parts = formatter.formatToParts(v);
 
-  const km = parts.findIndex(({ value }) => value === "M" || value === "k" || value === "Bn");
-  if (km !== -1 && parts.at(km + 1)?.type === "literal") parts.splice(km + 1, 1);
+  const km = parts.findIndex(
+    ({ value }) => value === "M" || value === "k" || value === "Bn"
+  );
+  if (km !== -1 && parts.at(km + 1)?.type === "literal")
+    parts.splice(km + 1, 1);
   return parts.map(({ value }) => value).join("");
 }
 
@@ -48,10 +47,7 @@ function formatDate(v) {
   return dateFormatter.format(v);
 }
 
-function formatValue(
-  v,
-  name,
-) {
+function formatValue(v, name) {
   const isPercentage = name.includes("%");
   const isCurrency = name.includes("€");
   if (typeof v === "number" && isCurrency) return formatCurrency(v);

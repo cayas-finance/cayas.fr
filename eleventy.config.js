@@ -19,7 +19,7 @@ export default async function (cfg) {
   cfg.setInputDirectory("views");
 
   // JavaScript
-  // cfg.addPassthroughCopy("js");
+  cfg.addPassthroughCopy("views/js");
 
   // Assets
   cfg.addPassthroughCopy("views/assets/favicon");
