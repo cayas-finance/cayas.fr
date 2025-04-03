@@ -1,1 +1,55 @@
-<h2>header</h2>
+
+<nav role="navigation" aria-label="Accès rapide">
+    <ul class="list-skip smallest-font">
+        <li><a href="#main-content">Aller au contenu</a></li>
+        <li><a href="#main-nav">Aller à la navigation</a></li>
+    </ul>
+</nav>
+
+<header role="banner" id="main-header" class="main-header sticky-watch">
+
+    <div class="wrapper">
+
+        <h1 class="main-header__logo">
+            <span class="sr-only">Cayas</span>
+
+        </h1>
+
+        <div id="main-nav" class="main-nav">
+
+            <button class="main-nav__burger toggle" aria-expanded="false" data-trap="true" data-freeze="true" data-echap="true" data-burger="true">
+                <span aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                <strong class="smallest-font toggle--off">Menu</strong>
+                <strong class="smallest-font toggle--on">Fermer</strong>
+            </button>
+
+            <div class="main-nav__burger-target" aria-hidden="true">
+
+                <div class="toggle-overlay main-nav__overlay" aria-hidden="true"></div>
+
+                <!-- tabindex -1 because it sometimes takes focus for reasons -->
+                <div class="main-nav__menus" tabindex="-1">
+
+                    <nav role="navigation" aria-label="Menu principal">
+
+                        <ul class="main-nav__menu smaller-font">
+                            <li><a href="#offre"><span>Offre</span></a></li>
+                            <li><a href="#produits"><span>Produits</span></a></li>
+                            <li><a href="#mission"><span>Mission</span></a></li>
+                        </ul>
+
+                        <button class="button button--primary smaller-font">
+                            <span>Démarrer gratuitement</span>
+                        </button>
+
+                    </nav>
+
+                </div><!-- /.main-nav__menus -->
+
+            </div><!-- /.main-nav__burger-target -->
+
+        </div>
+
+    </div><!-- /.wrapper -->
+
+</header>
