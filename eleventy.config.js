@@ -1,8 +1,8 @@
-// import svgSprite from "eleventy-plugin-svg-sprite";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import postcss from "postcss";
 import autoprefixer from "autoprefixer";
 import cssnanoPlugin from "cssnano";
+import spritePlugin from "./scripts/sprite.eleventy.js";
 import { marked } from "marked";
 import { charts } from "./scripts/charts.marked.js";
 import { table } from "./scripts/table.marked.js";
@@ -29,11 +29,7 @@ export default async function (cfg) {
   cfg.addPlugin(eleventyImageTransformPlugin);
 
   // sprites
-  // cfg.addWatchTarget("views/assets/sprites/*.svg");
-  // cfg.addPlugin(svgSprite, {
-  //   path: "views/assets/sprites", // relative path to SVG directory
-  //   outputFilepath: "_site/assets/sprites/icons.svg",
-  // });
+  cfg.addPlugin(spritePlugin);
 
   // CSS
   cfg.addTemplateFormats("css");
