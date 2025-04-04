@@ -5058,7 +5058,6 @@ body::before {
 .wrapper {
   max-width: 122rem;
   padding: 0 var(--gutter-medium);
-  background: yellowgreen;
 }
 
 .list-inline {

@@ -86,8 +86,7 @@ body::before {
 .wrapper {
     max-width: 122rem;
     padding: 0 var(--gutter-medium);
-
-    background: yellowgreen;
+    
     //&.wrapper--medium{ max-width: 104rem; }
     //&.wrapper--wide{ max-width: 124rem; }
 }

@@ -91,4 +91,7 @@ export default async function (cfg) {
 
         return content;
     });
+
+    // Ignore GitIgnore :)
+    cfg.setUseGitIgnore(false);
 }
