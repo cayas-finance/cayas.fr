@@ -278,7 +278,7 @@
     margin: calc(var(--gutter-large) * -1);
     margin-left: 0;
     padding: var(--gutter-large);
-    background: url(/assets/generic/bg_grid.png);
+    background-image: url("/assets/generic/bg_grid.png");
 
     img {
       width: 100%;

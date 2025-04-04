@@ -48,6 +48,7 @@
     stpo.toggle(); // shows and hides stuff
     stpo.isPinned(); // observes if sticky is pinned
     stpo.keyFocus(); // custom styles for keyboard tab focus
+
   });
 
   //
