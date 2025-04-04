@@ -133,6 +133,7 @@ body::before {
 
     a {
         display: block;
+        color: var(--ui-always-black);
         // --
         transition: color ease-in-out 400ms;
 
@@ -313,20 +314,6 @@ figure {
         max-width: 100%;
     }
 
-    h2 strong {
-        padding: 0 0.25em;
-        box-decoration-break: clone;
-        background: var(--brand-pink);
-        color: var(--ui-always-white);
-    }
-
-    strong {
-        padding: 0 0.25em;
-        box-decoration-break: clone;
-        background: var(--brand-green);
-        color: var(--ui-always-black);
-    }
-
     .editorial__quote {
         position: relative;
         padding-left: 6em;
@@ -404,8 +391,54 @@ figure {
 // ---------------------------------
 // dark theme
 .home-hero {
-    background: var(--ui-white) repeat;
+    position: relative;
+    padding-top: calc(var(--gutter-xlarge) * 1.5);
+    padding-bottom: calc(var(--gutter-xlarge) * 1.5);
+    background: var(--ui-white) repeat center;
     background-image: url("/assets/generic/bg_grid.png");
+    text-align: center;
+
+    .home-hero__deco{
+        position: absolute;
+
+        &.home-hero__deco--1{
+            top: 5%;
+            left: 50%;
+            margin-left: -40em;
+            width: 8.5em;
+            height: auto;
+        }
+
+        &.home-hero__deco--2{
+            bottom: 5%;
+            right: 50%;
+            margin-right: -45em;
+            width: 18.5em;
+            height: auto;
+        }
+
+        &.home-hero__deco--3{
+            bottom: -25%;
+            left: 0;
+            width: 14.5em;
+            height: auto;
+        }
+
+        &.home-hero__deco--4{
+            top: 0;
+            right: 0;
+            width: 12.5em;
+            height: auto;
+        }
+    }
+
+    .title--1 strong{
+        color: var(--ui-white);
+        background: var(--a11y-green);
+        box-decoration-break: clone;
+    }
+
+    .list-inline{ margin-top: var(--gutter-large); }
 }
 
 .home-offer{
@@ -420,7 +453,7 @@ figure {
             display: flex;
 
             > *{
-                padding: var(--gutter-medium);
+                padding: var(--gutter-medium) var(--gutter-medium) var(--gutter-large) var(--gutter-medium);
                 @include box-shadow(.2rem, .5rem, var(--color));
             }
 
@@ -444,12 +477,40 @@ figure {
     }
 }
 
+.home-products{
+    border-top: .2rem solid var(--ui-black);
+    border-bottom: .2rem solid var(--ui-black);
+}
+
+.home-mission{
+    padding-top: calc(var(--gutter-xlarge) * 1.5);
+    padding-bottom: calc(var(--gutter-xlarge) * 1.5);
+    background: repeat center;
+    background-image: url("/assets/generic/bg_grid.png");
+
+    .grid > * > *{
+        padding: var(--gutter-large);
+        background: var(--ui-white);
+        @include box-shadow(.2rem, .5rem, var(--brand-pink));
+    }
+
+    strong{
+        padding: 0 .25em;
+        background: var(--brand-green);
+        box-decoration-break: clone;
+        color: var(--ui-always-black);
+        font-weight: normal;
+    }
+}
+
 // dark theme
 .home-cta {
     overflow: hidden;
-    padding-top: calc(var(--gutter-xlarge) * 1.5);
-    padding-bottom: calc(var(--gutter-xlarge) * 1.5);
+    padding-top: calc(var(--gutter-xlarge) * 2);
+    padding-bottom: calc(var(--gutter-xlarge) * 2);
     background: var(--ui-white);
+    border-top: .2rem solid var(--ui-black);
+    border-bottom: .2rem solid var(--ui-black);
     text-align: center;
 }
 

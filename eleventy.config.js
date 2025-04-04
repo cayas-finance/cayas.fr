@@ -46,7 +46,7 @@ export default async function (cfg) {
                 let output = await postcss([
                     autoprefixer,
                     cssnanoPlugin,
-                    //cssImage,
+                    cssImage,
                 ]).process(inputContent, {from: inputPath});
 
                 return output.css;
