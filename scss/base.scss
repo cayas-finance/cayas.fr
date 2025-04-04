@@ -408,6 +408,42 @@ figure {
     background-image: url("/assets/generic/bg_grid.png");
 }
 
+.home-offer{
+    padding-top: calc(var(--gutter-xlarge) * 1.5);
+    padding-bottom: calc(var(--gutter-xlarge) * 1.5);
+    text-align: center;
+
+    .grid{
+        margin-top: var(--gutter-large);
+
+        > *{
+            display: flex;
+
+            > *{
+                padding: var(--gutter-medium);
+                @include box-shadow(.2rem, .5rem, var(--color));
+            }
+
+            .svg-icon{
+                margin-bottom: -.15em;
+                font-size: 5em;
+                line-height: 1;
+            }
+
+            .title--3 strong{
+                display: inline;
+                color: var(--ui-white);
+                background: var(--color);
+                box-decoration-break: clone;
+            }
+
+            &:nth-child(1){ --color: var(--a11y-pink); }
+            &:nth-child(2){ --color: var(--a11y-blue); }
+            &:nth-child(3){ --color: var(--a11y-violet); }
+        }
+    }
+}
+
 // dark theme
 .home-cta {
     overflow: hidden;

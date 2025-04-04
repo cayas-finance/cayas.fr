@@ -1567,7 +1567,7 @@ details {
 
 .title--3, .editorial h2 {
   margin-bottom: 0.5em;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 900;
   line-height: 1.2;
 }
@@ -5289,6 +5289,43 @@ figure figcaption {
 .home-hero {
   background: var(--ui-white) repeat;
   background-image: url("/assets/generic/bg_grid.png");
+}
+
+.home-offer {
+  padding-top: calc(var(--gutter-xlarge) * 1.5);
+  padding-bottom: calc(var(--gutter-xlarge) * 1.5);
+  text-align: center;
+}
+.home-offer .grid {
+  margin-top: var(--gutter-large);
+}
+.home-offer .grid > * {
+  display: flex;
+}
+.home-offer .grid > * > * {
+  padding: var(--gutter-medium);
+  border: 0.2rem solid var(--color);
+  box-shadow: 0.5rem 0.5rem 0 var(--color);
+}
+.home-offer .grid > * .svg-icon {
+  margin-bottom: -0.15em;
+  font-size: 5em;
+  line-height: 1;
+}
+.home-offer .grid > * .title--3 strong, .home-offer .grid > * .editorial h2 strong, .editorial .home-offer .grid > * h2 strong {
+  display: inline;
+  color: var(--ui-white);
+  background: var(--color);
+  box-decoration-break: clone;
+}
+.home-offer .grid > *:nth-child(1) {
+  --color: var(--a11y-pink);
+}
+.home-offer .grid > *:nth-child(2) {
+  --color: var(--a11y-blue);
+}
+.home-offer .grid > *:nth-child(3) {
+  --color: var(--a11y-violet);
 }
 
 .home-cta {
