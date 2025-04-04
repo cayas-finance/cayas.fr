@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="373.864" height="514.9" viewBox="0 0 373.864 514.9">
+  <g id="bg-neon-blue-line" transform="translate(144.864 -415.1)">
+    <path id="Tracé_1626" data-name="Tracé 1626" d="M-123.721,0h227.2a27.667,27.667,0,0,1,27.667,27.667V210.579" transform="translate(-21.143 422.1)" fill="none" stroke="#74fafc" stroke-width="14"/>
+    <path id="Tracé_15055" data-name="Tracé 15055" d="M290.469,667.164H27.667A27.667,27.667,0,0,1,0,639.5V416.107" transform="translate(-557.164 923) rotate(-90)" fill="none" stroke="#74fafc" stroke-width="14"/>
+    <text id="Moula" transform="translate(138 618.531)" fill="#fff" font-size="22" font-family="Outfit"><tspan x="0" y="22">Moula</tspan></text>
+    <g id="station-complete" transform="translate(57 581)">
+      <g id="Groupe_56" data-name="Groupe 56" transform="translate(-648.086 -185.38)">
+        <path id="Tracé_143" data-name="Tracé 143" d="M1072.585,276.6a23.72,23.72,0,1,1,23.72-23.72,23.747,23.747,0,0,1-23.72,23.72" transform="translate(-372 -15)" fill="#74fafc" stroke="#000" stroke-width="6"/>
+        <path id="Tracé_145" data-name="Tracé 145" d="M1063.377,250.615l6.355,8.582,10.23-13.371" transform="translate(-370.743 -13.69)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <rect id="Rectangle_184" data-name="Rectangle 184" width="105" height="105" fill="none"/>
+    </g>
+  </g>
+</svg>

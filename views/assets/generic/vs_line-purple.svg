@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="217.579" height="271.687" viewBox="0 0 217.579 271.687">
+  <g id="bg-purple-line" transform="translate(-1282.421 -43.313)">
+    <path id="Tracé_14171" data-name="Tracé 14171" d="M213.019,0H27.667A27.667,27.667,0,0,0,0,27.667V210.579" transform="translate(1289.421 256.332) rotate(-90)" fill="none" stroke="#6945d8" stroke-width="14"/>
+    <g id="station-complete" transform="translate(1379 204)">
+      <g id="Groupe_56" data-name="Groupe 56" transform="translate(-648.086 -185.38)">
+        <path id="Tracé_143" data-name="Tracé 143" d="M1072.585,276.6a23.72,23.72,0,1,1,23.72-23.72,23.747,23.747,0,0,1-23.72,23.72" transform="translate(-372 -15)" fill="#6945d8" stroke="#000" stroke-width="6"/>
+        <path id="Tracé_145" data-name="Tracé 145" d="M1063.377,250.615l6.355,8.582,10.23-13.371" transform="translate(-370.743 -13.69)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <rect id="Rectangle_184" data-name="Rectangle 184" width="105" height="105" fill="none"/>
+    </g>
+    <text id="Caillasse" transform="translate(1387 287)" fill="#fff" font-size="22" font-family="Outfit"><tspan x="-42" y="22">Caillasse</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="438.578" height="457.808" viewBox="0 0 438.578 457.808">
+  <g id="bg-yellow-line" transform="translate(0 0)">
+    <path id="Tracé_18807" data-name="Tracé 18807" d="M403.808,667.164H27.667A27.667,27.667,0,0,1,0,639.5V280.586" transform="translate(-280.586 403.808) rotate(-90)" fill="none" stroke="#fcd413" stroke-width="14"/>
+    <g id="station-complete" transform="translate(333.578 90.874)">
+      <g id="Groupe_56" data-name="Groupe 56" transform="translate(-648.086 -185.38)">
+        <path id="Tracé_143" data-name="Tracé 143" d="M1072.585,276.6a23.72,23.72,0,1,1,23.72-23.72,23.747,23.747,0,0,1-23.72,23.72" transform="translate(-372 -15)" fill="#fcd414" stroke="#fff" stroke-width="6"/>
+        <path id="Tracé_145" data-name="Tracé 145" d="M1063.377,250.615l6.355,8.582,10.23-13.371" transform="translate(-370.743 -13.69)" fill="#fcd414" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <rect id="Rectangle_184" data-name="Rectangle 184" width="105" height="105" fill="none"/>
+    </g>
+    <g id="station-complete-2" data-name="station-complete" transform="translate(188.578 351.308)">
+      <g id="Groupe_56-2" data-name="Groupe 56" transform="translate(-648.086 -185.38)">
+        <path id="Tracé_143-2" data-name="Tracé 143" d="M1072.585,276.6a23.72,23.72,0,1,1,23.72-23.72,23.747,23.747,0,0,1-23.72,23.72" transform="translate(-372 -15)" fill="#fcd414" stroke="#fff" stroke-width="6"/>
+        <path id="Tracé_145-2" data-name="Tracé 145" d="M1063.377,250.615l6.355,8.582,10.23-13.371" transform="translate(-370.743 -13.69)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <rect id="Rectangle_184-2" data-name="Rectangle 184" width="105" height="105" fill="none"/>
+    </g>
+    <text id="Dolla_dolla_bill_y_all" data-name="Dolla dolla bill y’all" transform="translate(229.578 116.874)" font-size="22" font-family="Outfit"><tspan x="-103" y="22">Dolla dolla </tspan><tspan x="-69" y="47">bill y’all</tspan></text>
+    <text id="Flouze" transform="translate(183.578 429.808)" font-size="22" font-family="Outfit"><tspan x="-31" y="22">Flouze</tspan></text>
+  </g>
+</svg>

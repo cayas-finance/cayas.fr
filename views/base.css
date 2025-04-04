@@ -5287,7 +5287,8 @@ figure figcaption {
 }
 
 .home-hero {
-  background: var(--ui-white);
+  background: var(--ui-white) repeat;
+  background-image: url("/assets/generic/bg_grid.png");
 }
 
 .home-cta {

@@ -86,7 +86,7 @@ body::before {
 .wrapper {
     max-width: 122rem;
     padding: 0 var(--gutter-medium);
-    
+
     //&.wrapper--medium{ max-width: 104rem; }
     //&.wrapper--wide{ max-width: 124rem; }
 }
@@ -404,7 +404,8 @@ figure {
 // ---------------------------------
 // dark theme
 .home-hero {
-    background: var(--ui-white);
+    background: var(--ui-white) repeat;
+    background-image: url("/assets/generic/bg_grid.png");
 }
 
 // dark theme
