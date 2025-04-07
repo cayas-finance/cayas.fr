@@ -483,10 +483,30 @@ figure {
 }
 
 .home-mission{
-    padding-top: calc(var(--gutter-xlarge) * 1.5);
-    padding-bottom: calc(var(--gutter-xlarge) * 1.5);
+    position: relative;
+    padding-top: calc(var(--gutter-xlarge) * 1);
+    padding-bottom: calc(var(--gutter-xlarge) * 1);
     background: repeat center;
     background-image: url("/assets/generic/bg_grid.png");
+
+    .home-mission__deco{
+        position: absolute;
+
+        &.home-mission__deco--1{
+            top: 0;
+            left: 0;
+            width: 18em;
+            height: auto;
+        }
+
+        &.home-mission__deco--2{
+            bottom: 5%;
+            right: 50%;
+            margin-right: -45em;
+            width: 17.5em;
+            height: auto;
+        }
+    }
 
     .grid > * > *{
         padding: var(--gutter-large);
