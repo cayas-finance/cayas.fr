@@ -49,6 +49,30 @@
     stpo.isPinned(); // observes if sticky is pinned
     stpo.keyFocus(); // custom styles for keyboard tab focus
 
+
+      const accordions = Array.from(document.querySelectorAll('.accordion'));
+
+      accordions.forEach((accordion) => {
+
+          const picture = d.getElementById('accordion-picture-' + accordion.dataset.index) || null;
+
+          // you can't close a panel manually
+          accordion.addEventListener('click', (e) => {if (accordion.open) e.preventDefault(); });
+
+          // show me the picture!
+          if (picture !== null){
+              accordion.addEventListener('toggle', () => {
+                  if(accordion.open){
+                      picture.setAttribute("aria-hidden", "false");
+                  }
+                  else{
+                      picture.setAttribute("aria-hidden", "true");
+                  }
+
+              });
+          }
+      });
+
   });
 
   //
@@ -126,6 +150,7 @@
       )
     );
   };
+
 
   //
   // == ACCESSIBLE GIANT TOGGLE
