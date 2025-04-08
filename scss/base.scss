@@ -241,11 +241,6 @@ figure {
 }
 
 
-// == accordion
-// ---------------------------------
-
-
-
 // == editorial
 // ---------------------------------
 .editorial {
@@ -520,32 +515,17 @@ figure {
         padding: 0;
 
         > li{
-            --color: var(--ui-black);
-            --color-boost: var(--ui-black);
             margin-bottom: var(--gutter-medium);
-            color: var(--color);
 
-            &.accordion__item{
+            .accordion{
                 --color: var(--ui-gray-3);
                 --color-boost: var(--ui-gray-3);
                 @include box-shadow(.2rem, .5rem, var(--color-boost));
+                color: var(--color);
 
-                &:has(.accordion:open){
+                &:open{
                     --color: var(--ui-black);
                     --color-boost: var(--brand-pink);
-                }
-            }
-
-            .accordion:not(:open){
-                .accordion__panel{
-                    overflow: hidden;
-                    height: 0;
-                    visibility: hidden;
-                    border: none;
-                    // --
-                    padding: 0 var(--gutter-medium);
-                    opacity: 0;
-                    transition-duration: 400ms;
                 }
             }
 
@@ -592,11 +572,8 @@ figure {
             }
 
             .accordion__panel{
-                border-top: .2rem solid var(--color-boost);
-                // --
                 padding: var(--gutter-small) var(--gutter-medium) var(--gutter-medium);
-                opacity: 1;
-                transition: padding-top 150ms ease-in-out, padding-bottom 150ms ease-in-out, opacity 150ms ease-in-out;
+                border-top: .2rem solid var(--color-boost);
             }
         }
     }

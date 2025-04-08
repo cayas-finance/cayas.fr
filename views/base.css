@@ -5411,29 +5411,18 @@ figure figcaption {
   padding: 0;
 }
 .home-products .accordion-container > li {
-  --color: var(--ui-black);
-  --color-boost: var(--ui-black);
   margin-bottom: var(--gutter-medium);
-  color: var(--color);
 }
-.home-products .accordion-container > li.accordion__item {
+.home-products .accordion-container > li .accordion {
   --color: var(--ui-gray-3);
   --color-boost: var(--ui-gray-3);
   border: 0.2rem solid var(--color-boost);
   box-shadow: 0.5rem 0.5rem 0 var(--color-boost);
+  color: var(--color);
 }
-.home-products .accordion-container > li.accordion__item:has(.accordion:open) {
+.home-products .accordion-container > li .accordion:open {
   --color: var(--ui-black);
   --color-boost: var(--brand-pink);
-}
-.home-products .accordion-container > li .accordion:not(:open) .accordion__panel {
-  overflow: hidden;
-  height: 0;
-  visibility: hidden;
-  border: none;
-  padding: 0 var(--gutter-medium);
-  opacity: 0;
-  transition-duration: 400ms;
 }
 .home-products .accordion-container > li .accordion__title {
   counter-increment: li;
@@ -5474,10 +5463,8 @@ figure figcaption {
   transition-duration: 50ms;
 }
 .home-products .accordion-container > li .accordion__panel {
-  border-top: 0.2rem solid var(--color-boost);
   padding: var(--gutter-small) var(--gutter-medium) var(--gutter-medium);
-  opacity: 1;
-  transition: padding-top 150ms ease-in-out, padding-bottom 150ms ease-in-out, opacity 150ms ease-in-out;
+  border-top: 0.2rem solid var(--color-boost);
 }
 .home-products .accordion-picture {
   display: none;
