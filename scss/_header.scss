@@ -60,7 +60,7 @@ header {
     top: 0;
     right: 0;
     z-index: 1;
-    padding: 0.35em;
+    padding: 0.25em;
     font-size: 3.5rem;
 
     > span {
@@ -183,6 +183,12 @@ header {
 // == small
 // ---------------------------------
 @media screen and (max-width: $mq-small) {
+
+    header{
+        padding-bottom: var(--gutter-small);
+        padding-top: var(--gutter-small);
+    }
+
     // Burger is on!
     // CAUTION: if you move this, update the JS breakpoints too!
     .header-nav {
@@ -214,12 +220,12 @@ header {
                 @include offset();
                 display: block;
                 // --
-                background-color: rgba(0, 0, 0, 0.85);
+                background-color: rgba(0, 0, 0, 0.925);
                 transition: background-color 400ms ease-in-out;
             }
 
             .header-nav__menus {
-                display: block;
+                flex-direction: column;
                 width: 100%;
                 max-height: 100%;
                 overflow: auto;
@@ -228,6 +234,15 @@ header {
                 // --
                 opacity: 0.9999; // Chrome bug
                 transition: opacity 400ms ease-in-out;
+
+                .header-nav__menu{
+                    flex-direction: column;
+                    gap: 1em;
+                    color: var(--ui-always-white);
+                    font-size: 1.5em;
+
+                    li{ display: block; }
+                }
             }
         }
     }

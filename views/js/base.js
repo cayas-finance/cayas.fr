@@ -13,14 +13,10 @@
                 ONZOOM
                 PX_VALUE
                 ACCESSIBLE GIANT TOGGLE
-                ACCESSIBLE TABS
-                DESKTOP/MOBILE TRAINING CANVAS TOGGLE
-                ACCESSIBLE TOOLTIPS
+                ACCORDION TOGGLE
                 STICKY/FIXED IS PINNED
                 STICKY/FIXED IS REVEAL
                 CUSTOM KEY FOCUS
-                SHOW-HIDE FOR PASSWORD FIELDS
-                INPUT RANGE BUBBLES
 ----------------------------------------------------------------------------- */
 (function () {
   //
@@ -48,32 +44,9 @@
     stpo.toggle(); // shows and hides stuff
     stpo.isPinned(); // observes if sticky is pinned
     stpo.keyFocus(); // custom styles for keyboard tab focus
-
-
-      const accordions = Array.from(document.querySelectorAll('.accordion'));
-
-      accordions.forEach((accordion) => {
-
-          const picture = d.getElementById('accordion-picture-' + accordion.dataset.index) || null;
-
-          // you can't close a panel manually
-          accordion.addEventListener('click', (e) => {if (accordion.open) e.preventDefault(); });
-
-          // show me the picture!
-          if (picture !== null){
-              accordion.addEventListener('toggle', () => {
-                  if(accordion.open){
-                      picture.setAttribute("aria-hidden", "false");
-                  }
-                  else{
-                      picture.setAttribute("aria-hidden", "true");
-                  }
-
-              });
-          }
-      });
-
+      stpo.accordion(); // home accordions
   });
+
 
   //
   // == DEBOUNCE
@@ -99,6 +72,7 @@
     };
   };
 
+
   //
   // == BREAKPOINTS
   // --------------------------------------------------
@@ -109,6 +83,7 @@
       .getComputedStyle(document.body, ":before")
       .content.replace(/\"/g, "");
   };
+
 
   //
   // == ONZOOM
@@ -128,6 +103,7 @@
       }
     };
   };
+
 
   //
   // == PX_VALUE
@@ -511,6 +487,36 @@
     );
   };
 
+
+
+    //
+    // == ACCORDION TOGGLE
+    // --------------------------------------------------
+    stpo.accordion = function (){
+
+        const accordions = Array.from(document.querySelectorAll('.accordion'));
+
+        accordions.forEach((accordion) => {
+
+            const picture = d.getElementById('accordion-picture-' + accordion.dataset.index) || null;
+
+            // you can't close a panel manually
+            accordion.addEventListener('click', (e) => {if (accordion.open) e.preventDefault(); });
+
+            // show me the picture!
+            if (picture !== null){
+                accordion.addEventListener('toggle', () => {
+                    if(accordion.open){
+                        picture.setAttribute("aria-hidden", "false");
+                    }
+                    else{
+                        picture.setAttribute("aria-hidden", "true");
+                    }
+                });
+            }
+        });
+    };
+
   //
   // == STICKY/FIXED IS PINNED
   // --------------------------------------------------
@@ -535,6 +541,7 @@
       });
     }
   };
+
 
   //
   // == CUSTOM KEY FOCUS

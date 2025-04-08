@@ -1,48 +1,39 @@
-@use "__setup" as *; // variables & mixins
+@use "__setup" as *;          // variables & mixins
 
 // == global layout
 // ---------------------------------
-html {
+html{
   scroll-behavior: smooth;
-  background: var(--ui-white);
-  font-size: calc(
-    1em * 0.625
-  ); // IE9-IE11 math fixing. See http://bit.ly/1g4X0bX
+  //background: var(--ui-white);
+  font-size: calc(1em * .625);    // IE9-IE11 math fixing. See http://bit.ly/1g4X0bX
 
-  body {
+  body{
     max-width: var(--body-max);
     margin: 0 auto;
     background: var(--ui-white);
-    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.15);
+    //box-shadow: 0 0 5rem rgba(0,0,0,.15);
     text-align: left;
     color: var(--ui-black);
-    font-size: 160%; // "16px" equivalent base font-size
+    font-size: 160%;            // "16px" equivalent base font-size
     font-family: var(--font-1);
     line-height: 1.5;
   }
 
-  &.is-freezed {
-    height: 100vh !important;
-    overflow: hidden !important;
+  &.is-freezed{
+    height: 100vh!important;
+    overflow: hidden!important;
   }
 }
 
 // light or dark theme
-.theme--light,
-.theme--dark {
-  color: var(--ui-black);
-}
-.theme--light {
-  color-scheme: light;
-}
-.theme--dark {
-  color-scheme: dark;
-}
+.theme--light, .theme--dark{ color: var(--ui-black); }
+.theme--light{  color-scheme: light; }
+.theme--dark{   color-scheme: dark; }
 
 // DEBUG -- used to test media-queries (but do it in base.scss please)
 // ALSO -- content is used to pass breakpoints to Javascript (see stpo.getBreakpoint)
-body::before {
-  content: "default";
+body::before{
+  content: 'default';
   z-index: 10000;
   position: fixed;
   top: 0;
@@ -53,486 +44,335 @@ body::before {
   background: greenyellow;
 }
 
+
 // == wrapper
 // ---------------------------------
-.wrapper {
+.wrapper{
   width: 100%;
   margin: 0 auto;
 
   // hack the marginz
-  > .grid,
-  .grid .grid {
+  > .grid, .grid .grid{
     margin-left: calc(var(--gutter-medium) * -1);
     margin-right: calc(var(--gutter-medium) * -1);
   }
 }
 
+
 // == grid
 // ---------------------------------
-.grid {
+.grid{
   display: flex;
   justify-content: center;
   align-items: stretch;
 
-  &.grid--center {
-    align-items: center;
-  }
+  &.grid--center{ align-items: center; }
 
-  &.grid--flat {
+  &.grid--flat{
     flex-direction: column;
     align-items: center;
     gap: var(--gutter-large) 0;
   }
 
-  &.grid--wrap {
+  &.grid--wrap{
     flex-wrap: wrap;
     gap: var(--gutter-large) 0;
   }
 
-  .grid__16 {
-    width: 16.6667%;
-  }
-  .grid__20 {
-    width: 20%;
-  }
-  .grid__25 {
-    width: 25%;
-  }
-  .grid__33 {
-    width: 33.3333%;
-  }
-  .grid__40 {
-    width: 40%;
-  }
-  .grid__50 {
-    width: 50%;
-  }
-  .grid__60 {
-    width: 60%;
-  }
-  .grid__66 {
-    width: 66.6667%;
-  }
-  .grid__75 {
-    width: 75%;
-  }
-  .grid__100 {
-    width: 100%;
-  }
+  .grid__16{ width: 16.6667%; }
+  .grid__20{ width: 20%; }
+  .grid__25{ width: 25%; }
+  .grid__33{ width: 33.3333%; }
+  .grid__40{ width: 40%; }
+  .grid__50{ width: 50%; }
+  .grid__60{ width: 60%; }
+  .grid__66{ width: 66.6667%; }
+  .grid__75{ width: 75%; }
+  .grid__100{ width: 100%; }
 
-  > * {
+  > *{
     padding-left: var(--gutter-medium);
     padding-right: var(--gutter-medium);
   }
 
-  img {
+  img{
     max-width: 100%;
     height: auto;
   }
 }
 
+
 // == media queries helpers
 // ---------------------------------
-@mixin no-mq($min: 0, $max: 9000em) {
+@mixin no-mq($min: 0, $max: 9000em){
   // NEW SYNTAX but unfortunately doesn't work in old iOS
   // @media ($min < width <= $max){
-  @media not all and (max-width: $min) {
-    @media (max-width: $max) {
+  @media not all and (max-width: $min){
+    @media (max-width: $max){
       @include srOnly;
     }
   }
 }
 
-@mixin mq-only($min: 0, $max: 9000em) {
+@mixin mq-only($min: 0, $max: 9000em){
   // NEW SYNTAX but unfortunately doesn't work in old iOS
   // @media ((width <= $min) or (width > $max)){
-  @media (max-width: $min), not all and (max-width: $max) {
+  @media (max-width: $min), not all and (max-width: $max){
     @include srOnly;
   }
 }
 
-.no-default {
-  @include no-mq($mq-xlarge);
-}
-.no-xlarge {
-  @include no-mq($mq-large, $mq-xlarge);
-}
-.no-large {
-  @include no-mq($mq-medium, $mq-large);
-}
-.no-medium {
-  @include no-mq($mq-small, $mq-medium);
-}
-.no-small {
-  @include no-mq($mq-xsmall, $mq-small);
-}
-.no-xsmall {
-  @include no-mq($mq-xxsmall, $mq-xsmall);
-}
-.no-xxsmall {
-  @include no-mq(0, $mq-xxsmall);
-}
+.no-default { @include no-mq($mq-xlarge);               }
+.no-xlarge  { @include no-mq($mq-large,   $mq-xlarge);  }
+.no-large   { @include no-mq($mq-medium,  $mq-large);   }
+.no-medium  { @include no-mq($mq-small,   $mq-medium);  }
+.no-small   { @include no-mq($mq-xsmall,  $mq-small);   }
+.no-xsmall  { @include no-mq($mq-xxsmall, $mq-xsmall);  }
+.no-xxsmall { @include no-mq(0,           $mq-xxsmall); }
 
-.default-only {
-  @include mq-only($mq-xlarge);
-}
-.xlarge-only {
-  @include mq-only($mq-large, $mq-xlarge);
-}
-.large-only {
-  @include mq-only($mq-medium, $mq-large);
-}
-.medium-only {
-  @include mq-only($mq-small, $mq-medium);
-}
-.small-only {
-  @include mq-only($mq-xsmall, $mq-small);
-}
-.xsmall-only {
-  @include mq-only($mq-xxsmall, $mq-xsmall);
-}
-.xxsmall-only {
-  @include mq-only(0, $mq-xxsmall);
-}
+.default-only   { @include mq-only($mq-xlarge);                 }
+.xlarge-only    { @include mq-only($mq-large,   $mq-xlarge);    }
+.large-only     { @include mq-only($mq-medium,  $mq-large);     }
+.medium-only    { @include mq-only($mq-small,   $mq-medium);    }
+.small-only     { @include mq-only($mq-xsmall,  $mq-small);     }
+.xsmall-only    { @include mq-only($mq-xxsmall, $mq-xsmall);    }
+.xxsmall-only   { @include mq-only(0,           $mq-xxsmall);   }
+
 
 // == xlarge
 // ---------------------------------
-@media screen and (max-width: $mq-xlarge) {
+@media screen and (max-width: $mq-xlarge){
+
   // == debug tagging
   // ---------------------------------
-  body:before {
-    content: "xlarge";
+  body:before{
+    content: 'xlarge';
     background-color: aqua;
   }
 
+
   // == grid
   // ---------------------------------
-  .grid {
-    &.grid--xlarge-flat {
+  .grid{
+    &.grid--xlarge-flat{
       flex-direction: column;
       align-items: center;
       gap: var(--gutter-large) 0;
     }
 
-    &.grid--xlarge-wrap {
+    &.grid--xlarge-wrap{
       flex-wrap: wrap;
       gap: var(--gutter-large) 0;
     }
 
-    .grid--xlarge__16 {
-      width: 16.6667%;
-    }
-    .grid--xlarge__20 {
-      width: 20%;
-    }
-    .grid--xlarge__25 {
-      width: 25%;
-    }
-    .grid--xlarge__33 {
-      width: 33.3333%;
-    }
-    .grid--xlarge__40 {
-      width: 40%;
-    }
-    .grid--xlarge__50 {
-      width: 50%;
-    }
-    .grid--xlarge__60 {
-      width: 60%;
-    }
-    .grid--xlarge__66 {
-      width: 66.6667%;
-    }
-    .grid--xlarge__75 {
-      width: 75%;
-    }
-    .grid--xlarge__100 {
-      width: 100%;
-    }
+    .grid--xlarge__16{ width: 16.6667%; }
+    .grid--xlarge__20{ width: 20%; }
+    .grid--xlarge__25{ width: 25%; }
+    .grid--xlarge__33{ width: 33.3333%; }
+    .grid--xlarge__40{ width: 40%; }
+    .grid--xlarge__50{ width: 50%; }
+    .grid--xlarge__60{ width: 60%; }
+    .grid--xlarge__66{ width: 66.6667%; }
+    .grid--xlarge__75{ width: 75%; }
+    .grid--xlarge__100{ width: 100%; }
   }
 }
 
+
 // == large
 // ---------------------------------
-@media screen and (max-width: $mq-large) {
+@media screen and (max-width: $mq-large){
+
   // == debug tagging
   // ---------------------------------
-  body:before {
-    content: "large";
+  body:before{
+    content: 'large';
     background-color: blue;
   }
 
+
   // == grid
   // ---------------------------------
-  .grid {
-    &.grid--large-flat {
+  .grid{
+    &.grid--large-flat{
       flex-direction: column;
       align-items: center;
       gap: var(--gutter-large) 0;
     }
 
-    &.grid--large-wrap {
+    &.grid--large-wrap{
       flex-wrap: wrap;
       gap: var(--gutter-large) 0;
     }
 
-    .grid--large__16 {
-      width: 16.6667%;
-    }
-    .grid--large__20 {
-      width: 20%;
-    }
-    .grid--large__25 {
-      width: 25%;
-    }
-    .grid--large__33 {
-      width: 33.3333%;
-    }
-    .grid--large__40 {
-      width: 40%;
-    }
-    .grid--large__50 {
-      width: 50%;
-    }
-    .grid--large__60 {
-      width: 60%;
-    }
-    .grid--large__66 {
-      width: 66.6667%;
-    }
-    .grid--large__75 {
-      width: 75%;
-    }
-    .grid--large__100 {
-      width: 100%;
-    }
+    .grid--large__16{ width: 16.6667%; }
+    .grid--large__20{ width: 20%; }
+    .grid--large__25{ width: 25%; }
+    .grid--large__33{ width: 33.3333%; }
+    .grid--large__40{ width: 40%; }
+    .grid--large__50{ width: 50%; }
+    .grid--large__60{ width: 60%; }
+    .grid--large__66{ width: 66.6667%; }
+    .grid--large__75{ width: 75%; }
+    .grid--large__100{ width: 100%; }
   }
 }
 
 // == medium
 // ---------------------------------
-@media screen and (max-width: $mq-medium) {
+@media screen and (max-width: $mq-medium){
+
   // == debug tagging
   // ---------------------------------
-  body:before {
-    content: "medium";
+  body:before{
+    content: 'medium';
     background-color: orange;
   }
 
+
   // == grid
   // ---------------------------------
-  .grid {
-    &.grid--medium-flat {
+  .grid{
+    &.grid--medium-flat{
       flex-direction: column;
       align-items: center;
       gap: var(--gutter-large) 0;
     }
 
-    &.grid--medium-wrap {
+    &.grid--medium-wrap{
       flex-wrap: wrap;
       gap: var(--gutter-large) 0;
     }
 
-    .grid--medium__16 {
-      width: 16.6667%;
-    }
-    .grid--medium__20 {
-      width: 20%;
-    }
-    .grid--medium__25 {
-      width: 25%;
-    }
-    .grid--medium__33 {
-      width: 33.3333%;
-    }
-    .grid--medium__40 {
-      width: 40%;
-    }
-    .grid--medium__50 {
-      width: 50%;
-    }
-    .grid--medium__60 {
-      width: 60%;
-    }
-    .grid--medium__66 {
-      width: 66.6667%;
-    }
-    .grid--medium__75 {
-      width: 75%;
-    }
-    .grid--medium__100 {
-      width: 100%;
-    }
+    .grid--medium__16{ width: 16.6667%; }
+    .grid--medium__20{ width: 20%; }
+    .grid--medium__25{ width: 25%; }
+    .grid--medium__33{ width: 33.3333%; }
+    .grid--medium__40{ width: 40%; }
+    .grid--medium__50{ width: 50%; }
+    .grid--medium__60{ width: 60%; }
+    .grid--medium__66{ width: 66.6667%; }
+    .grid--medium__75{ width: 75%; }
+    .grid--medium__100{ width: 100%; }
   }
 }
+
 
 // == small
 // ---------------------------------
-@media screen and (max-width: $mq-small) {
+@media screen and (max-width: $mq-small){
+
   // == debug tagging
   // ---------------------------------
-  body:before {
-    content: "small";
+  body:before{
+    content: 'small';
     background-color: orangered;
   }
 
+
   // == grid
   // ---------------------------------
-  .grid {
-    &.grid--small-flat {
+  .grid{
+    &.grid--small-flat{
       flex-direction: column;
       align-items: center;
       gap: var(--gutter-large) 0;
     }
 
-    &.grid--small-wrap {
+    &.grid--small-wrap{
       flex-wrap: wrap;
       gap: var(--gutter-large) 0;
     }
 
-    .grid--small__16 {
-      width: 16.6667%;
-    }
-    .grid--small__20 {
-      width: 20%;
-    }
-    .grid--small__25 {
-      width: 25%;
-    }
-    .grid--small__33 {
-      width: 33.3333%;
-    }
-    .grid--small__40 {
-      width: 40%;
-    }
-    .grid--small__50 {
-      width: 50%;
-    }
-    .grid--small__60 {
-      width: 60%;
-    }
-    .grid--small__66 {
-      width: 66.6667%;
-    }
-    .grid--small__75 {
-      width: 75%;
-    }
-    .grid--small__100 {
-      width: 100%;
-    }
+    .grid--small__16{ width: 16.6667%; }
+    .grid--small__20{ width: 20%; }
+    .grid--small__25{ width: 25%; }
+    .grid--small__33{ width: 33.3333%; }
+    .grid--small__40{ width: 40%; }
+    .grid--small__50{ width: 50%; }
+    .grid--small__60{ width: 60%; }
+    .grid--small__66{ width: 66.6667%; }
+    .grid--small__75{ width: 75%; }
+    .grid--small__100{ width: 100%; }
   }
 }
+
 
 // == xsmall
 // ---------------------------------
-@media screen and (max-width: $mq-xsmall) {
+@media screen and (max-width: $mq-xsmall){
+
   // == debug tagging
   // ---------------------------------
-  body:before {
-    content: "xsmall";
+  body:before{
+    content: 'xsmall';
     background-color: yellow;
   }
 
+
   // == grid
   // ---------------------------------
-  .grid {
-    &.grid--xsmall-flat {
+  .grid{
+    &.grid--xsmall-flat{
       flex-direction: column;
       align-items: center;
       gap: var(--gutter-large) 0;
     }
 
-    &.grid--xsmall-wrap {
+    &.grid--xsmall-wrap{
       flex-wrap: wrap;
       gap: var(--gutter-large) 0;
     }
 
-    .grid--xsmall__16 {
-      width: 16.6667%;
-    }
-    .grid--xsmall__20 {
-      width: 20%;
-    }
-    .grid--xsmall__25 {
-      width: 25%;
-    }
-    .grid--xsmall__33 {
-      width: 33.3333%;
-    }
-    .grid--xsmall__40 {
-      width: 40%;
-    }
-    .grid--xsmall__50 {
-      width: 50%;
-    }
-    .grid--xsmall__60 {
-      width: 60%;
-    }
-    .grid--xsmall__66 {
-      width: 66.6667%;
-    }
-    .grid--xsmall__75 {
-      width: 75%;
-    }
-    .grid--xsmall__100 {
-      width: 100%;
-    }
+    .grid--xsmall__16{ width: 16.6667%; }
+    .grid--xsmall__20{ width: 20%; }
+    .grid--xsmall__25{ width: 25%; }
+    .grid--xsmall__33{ width: 33.3333%; }
+    .grid--xsmall__40{ width: 40%; }
+    .grid--xsmall__50{ width: 50%; }
+    .grid--xsmall__60{ width: 60%; }
+    .grid--xsmall__66{ width: 66.6667%; }
+    .grid--xsmall__75{ width: 75%; }
+    .grid--xsmall__100{ width: 100%; }
   }
 }
 
+
 // == xxsmall
 // ---------------------------------
-@media screen and (max-width: $mq-xxsmall) {
+@media screen and (max-width: $mq-xxsmall){
+
   // == debug tagging
   // ---------------------------------
-  body:before {
-    content: "xxsmall";
+  body:before{
+    content: 'xxsmall';
     background-color: rebeccapurple;
   }
 
+
   // == grid
   // ---------------------------------
-  .grid {
-    &.grid--xxsmall-flat {
+  .grid{
+    &.grid--xxsmall-flat{
       flex-direction: column;
       align-items: center;
       gap: var(--gutter-large) 0;
     }
 
-    &.grid--xxsmall-wrap {
+    &.grid--xxsmall-wrap{
       flex-wrap: wrap;
       gap: var(--gutter-large) 0;
     }
 
-    .grid--xxsmall__16 {
-      width: 16.6667%;
-    }
-    .grid--xxsmall__20 {
-      width: 20%;
-    }
-    .grid--xxsmall__25 {
-      width: 25%;
-    }
-    .grid--xxsmall__33 {
-      width: 33.3333%;
-    }
-    .grid--xxsmall__40 {
-      width: 40%;
-    }
-    .grid--xxsmall__50 {
-      width: 50%;
-    }
-    .grid--xxsmall__60 {
-      width: 60%;
-    }
-    .grid--xxsmall__66 {
-      width: 66.6667%;
-    }
-    .grid--xxsmall__75 {
-      width: 75%;
-    }
-    .grid--xxsmall__100 {
-      width: 100%;
-    }
+    .grid--xxsmall__16{ width: 16.6667%; }
+    .grid--xxsmall__20{ width: 20%; }
+    .grid--xxsmall__25{ width: 25%; }
+    .grid--xxsmall__33{ width: 33.3333%; }
+    .grid--xxsmall__40{ width: 40%; }
+    .grid--xxsmall__50{ width: 50%; }
+    .grid--xxsmall__60{ width: 60%; }
+    .grid--xxsmall__66{ width: 66.6667%; }
+    .grid--xxsmall__75{ width: 75%; }
+    .grid--xxsmall__100{ width: 100%; }
   }
 }

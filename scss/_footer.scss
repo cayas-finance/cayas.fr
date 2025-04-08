@@ -32,3 +32,36 @@ footer {
         }
     }
 }
+
+
+// == xsmall
+// ---------------------------------
+@media screen and (max-width: $mq-xsmall) {
+    footer{
+        text-align: center;
+
+        .cayas-logo{ margin: 0 auto .5em; }
+
+        .grid > :last-child{
+            text-align: center;
+
+            .list-inline{
+                justify-content: center;
+
+                &.list-social{
+                    margin-top: 3em;
+                    margin-bottom: 1.5em;
+
+                    li{ font-size: 1.25em; }
+                }
+            }
+        }
+
+        .grid:last-child{
+            padding-top: var(--gutter-large);
+
+            > *:first-child{ order: 2; }
+            > *:last-child{ order: 1; }
+        }
+    }
+}
