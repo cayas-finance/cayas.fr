@@ -54,6 +54,24 @@ header {
     }
 }
 
+// no burger!
+.header-nav__menus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+
+    .header-nav__menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2em;
+        margin: 0;
+
+        a:hover, a:focus{ color: var(--brand-pink); }
+    }
+}
+
 .header-burger {
     display: none; // changed on mobile
     position: fixed;

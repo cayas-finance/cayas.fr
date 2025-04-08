@@ -1,0 +1,67 @@
+<nav role="navigation" aria-label="Accès rapide">
+  <ul class="list-skip smallest-font">
+    <li><a href="#main-content">Aller au contenu</a></li>
+    <li><a href="#main-nav">Aller à la navigation</a></li>
+  </ul>
+</nav>
+
+<header role="banner" id="main-header" class="header--sticky sticky-watch">
+  <div class="wrapper">
+    <h1 class="cayas-logo">
+      <span class="sr-only">Cayas</span>
+      {{ 'assets/generic/lg_cayas--spraypainted.svg' | svg }}
+    </h1>
+
+    <div id="main-nav" class="header-nav">
+      <button
+        class="header-burger toggle"
+        aria-expanded="false"
+        data-trap="true"
+        data-freeze="true"
+        data-echap="true"
+        data-burger="true"
+      >
+        <span aria-hidden="true"
+          ><span></span><span></span><span></span><span></span
+        ></span>
+        <strong class="sr-only toggle--off">Menu</strong>
+        <strong class="sr-only toggle--on">Fermer</strong>
+      </button>
+
+      <div class="header-burger-target" aria-hidden="true">
+        <div
+          class="toggle-overlay header-nav__overlay"
+          aria-hidden="true"
+        ></div>
+
+        <!-- tabindex -1 because it sometimes takes focus for reasons -->
+        <nav
+          role="navigation"
+          class="header-nav__menus"
+          aria-label="Menu principal"
+          tabindex="-1"
+        >
+          <ul class="header-nav__menu small-font">
+            <li>
+              <a href="#offre" class="link--alt"><span>Offre</span></a>
+            </li>
+            <li>
+              <a href="#produits" class="link--alt"><span>Produits</span></a>
+            </li>
+            <li>
+              <a href="#mission" class="link--alt"><span>Mission</span></a>
+            </li>
+          </ul>
+
+          <button class="button button--primary smaller-font">
+            <strong>Démarrer gratuitement</strong>
+          </button>
+        </nav>
+        <!-- /.header-nav__menus -->
+      </div>
+      <!-- /.header-burger-target -->
+    </div>
+    <!-- /.header-nav -->
+  </div>
+  <!-- /.wrapper -->
+</header>

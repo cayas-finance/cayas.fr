@@ -2174,6 +2174,23 @@ header .wrapper {
   gap: 1em;
 }
 
+.header-nav__menus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4em;
+}
+.header-nav__menus .header-nav__menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+  margin: 0;
+}
+.header-nav__menus .header-nav__menu a:hover, .header-nav__menus .header-nav__menu a:focus {
+  color: var(--brand-pink);
+}
+
 .header-burger {
   display: none;
   position: fixed;
