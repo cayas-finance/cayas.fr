@@ -6,20 +6,34 @@
 </nav>
 
 <header role="banner" id="main-header" class="header--sticky sticky-watch">
-
   <div class="wrapper">
-
     <h1 class="cayas-logo">
       <span class="sr-only">Cayas</span>
       {{ 'assets/generic/lg_cayas--spraypainted.svg' | svg }}
     </h1>
 
-    <nav role="navigation" class="header-nav__menus" aria-label="Menu principal" tabindex="-1" >
+    <nav
+            role="navigation"
+            class="header-nav__menus"
+            aria-label="Menu principal"
+            tabindex="-1"
+    >
+      <ul class="header-nav__menu small-font no-small no-xsmall no-xxsmall">
+        <li>
+          <a href="#offre" class="link--alt"><span>Offre</span></a>
+        </li>
+        <li>
+          <a href="#produits" class="link--alt"><span>Produits</span></a>
+        </li>
+        <li>
+          <a href="#mission" class="link--alt"><span>Mission</span></a>
+        </li>
+      </ul>
+
       <button class="button button--primary smaller-font">
         <strong>Démarrer <span class="no-xxsmall">gratuitement</span></strong>
       </button>
     </nav><!-- /.header-nav__menu -->
-
-  </div><!-- /.wrapper -->
-
+  </div>
+  <!-- /.wrapper -->
 </header>
