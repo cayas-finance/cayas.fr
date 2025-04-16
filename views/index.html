@@ -1,258 +1,340 @@
 ---
 layout: layout.html
-title: Cayas ★ Prenez le contrôle de votre argent, apprenez à investir et gérer vos finances.
+title: Cayas - Prenez le contrôle de vos finances personnelles.
 description: Chez Cayas, on s’adresse à ceux qui savent que la valeur de l’argent ne se résume pas à un chiffre, que l’enrichissement sans effort est un mirage, que la réalité ne se limite pas à un rendement, et qu’il faut mouiller la chemise pour apprendre.
 ---
 
 {% include 'header--homepage.html' %}
 
 <main role="main" id="main-content">
+  <section class="home-hero theme--dark" aria-labelledby="title-section-01">
+    <img
+      src="assets/generic/vs_piggy-bank.png"
+      alt=""
+      class="home-hero__deco home-hero__deco--1"
+    />
 
-    <section class="home-hero theme--dark" aria-labelledby="title-section-01">
+    <img
+      src="assets/generic/vs_line-neon-blue.svg"
+      alt="Moula"
+      class="home-hero__deco home-hero__deco--3 no-xsmall no-xxsmall"
+    />
+    <img
+      src="assets/generic/vs_line-neon-blue--small.svg"
+      alt="Moula"
+      class="home-hero__deco home-hero__deco--3 no-small no-medium no-large no-xlarge no-default"
+    />
+    <img
+      src="assets/generic/vs_line-purple.svg"
+      alt="Caillasse"
+      class="home-hero__deco home-hero__deco--4 no-xsmall no-xxsmall"
+    />
+    <img
+      src="assets/generic/vs_line-purple--small.svg"
+      alt="Moula"
+      class="home-hero__deco home-hero__deco--4 no-small no-medium no-large no-xlarge no-default"
+    />
+    <img
+      src="assets/generic/vs_capy-rat.svg"
+      alt="Chez Cayas, on n’est pas des gros rats !"
+      class="home-hero__deco home-hero__deco--2"
+    />
 
-        <img src="assets/generic/vs_piggy-bank.png" alt="" class="home-hero__deco home-hero__deco--1">
+    <div class="wrapper">
+      <h1 id="title-section-01" class="title--1">
+        Votre argent bosse dur.<br />
+        <strong>Spoiler</strong> : pas pour vous.
+      </h1>
 
-        <img src="assets/generic/vs_line-neon-blue.svg" alt="Moula" class="home-hero__deco home-hero__deco--3 no-xsmall no-xxsmall">
-        <img src="assets/generic/vs_line-neon-blue--small.svg" alt="Moula" class="home-hero__deco home-hero__deco--3 no-small no-medium no-large no-xlarge no-default">
-        <img src="assets/generic/vs_line-purple.svg" alt="Caillasse" class="home-hero__deco home-hero__deco--4 no-xsmall no-xxsmall">
-        <img src="assets/generic/vs_line-purple--small.svg" alt="Moula" class="home-hero__deco home-hero__deco--4 no-small no-medium no-large no-xlarge no-default">
-        <img src="assets/generic/vs_capy-rat.svg" alt="Chez Cayas, on n’est pas des gros rats !" class="home-hero__deco home-hero__deco--2">
+      <p class="big-font">
+        Avec Cayas, prenez le contrôle de votre argent,<br />
+        apprenez à gérer vos finances personnelles.
+      </p>
 
-        <div class="wrapper">
+      <ul class="list-inline list-inline--center">
+        <li>
+          <a
+            href="https://app.cayas.fr"
+            class="button button--primary smaller-font"
+          >
+            <strong>Commencer</strong>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://app.cayas.fr/signup"
+            class="button button--naked smaller-font"
+          >
+            <strong>Créer un compte</strong>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.wrapper -->
+  </section>
+  <!-- /.home-hero -->
 
-            <h1 id="title-section-01" class="title--1">
-                Votre argent bosse dur.<br/>
-                <strong>Spoiler</strong> : pas pour vous.
-            </h1>
+  <section id="offre" class="home-offer" aria-labelledby="title-section-02">
+    <div class="wrapper">
+      <h2 id="title-section-02" class="title--2">
+        Gérez votre argent en toute confiance avec :
+      </h2>
 
-            <p class="big-font">
-                Avec Cayas, prenez le contrôle de votre argent,<br>
-                apprenez à gérer vos finances personnelles.
+      <div class="grid grid--small-flat">
+        <div class="grid__33 grid--small__100">
+          <div>
+            <svg class="svg-icon" aria-hidden="true">
+              <use
+                xlink:href="{{ '/assets/sprites.svg#icon--student' | url }}"
+              ></use>
+            </svg>
+            <h3 class="title--3"><strong>Un parcours pédagogique</strong></h3>
+            <p>
+              Pour comprendre les concepts essentiels de l’épargne et de
+              l’investissement.
             </p>
+          </div>
+        </div>
+        <!-- /.grid__33 -->
 
-            <ul class="list-inline list-inline--center">
-                <li>
-                    <a href="https://app.cayas.fr" class="button button--primary smaller-font">
-                        <strong>Commencer</strong>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://app.cayas.fr/signup" class="button button--naked smaller-font">
-                        <strong>Créer un compte</strong>
-                    </a>
-                </li>
-            </ul>
+        <div class="grid__33 grid--small__100">
+          <div>
+            <svg class="svg-icon" aria-hidden="true">
+              <use
+                xlink:href="{{ '/assets/sprites.svg#icon--sand-games' | url }}"
+              ></use>
+            </svg>
+            <h3 class="title--3"><strong>Un outil d’allocation</strong></h3>
+            <p>
+              Pour définir votre stratégie en fonction de votre profil de risque
+              et de vos projets de vie.
+            </p>
+          </div>
+        </div>
+        <!-- /.grid__33 -->
 
-        </div><!-- /.wrapper -->
+        <div class="grid__33 grid--small__100">
+          <div>
+            <svg class="svg-icon" aria-hidden="true">
+              <use
+                xlink:href="{{ '/assets/sprites.svg#smiley--playful' | url }}"
+              ></use>
+            </svg>
+            <h3 class="title--3"><strong>Une communauté</strong></h3>
+            <p>
+              Pour parler finance et stratégies d’allocation avec bienveillance
+              et expertise.
+            </p>
+          </div>
+        </div>
+        <!-- /.grid__33 -->
+      </div>
+      <!-- /.grid -->
+    </div>
+    <!-- /.wrapper -->
+  </section>
+  <!-- /.home-offer -->
 
-    </section><!-- /.home-hero -->
-
-    <section id="offre" class="home-offer" aria-labelledby="title-section-02">
-
-        <div class="wrapper">
-
-            <h2 id="title-section-02" class="title--2">
-                Gérez votre argent en toute confiance avec :
+  <section
+    id="produits"
+    class="home-products"
+    aria-labelledby="title-section-03"
+  >
+    <div class="wrapper">
+      <div class="grid grid--xsmall-flat">
+        <div class="grid__50 grid--xsmall__100">
+          <div class="home-products__core">
+            <h2 id="title-section-03" class="title--2">
+              Un parcours pour comprendre, des outils pour agir
             </h2>
 
-            <div class="grid grid--small-flat">
-                <div class="grid__33 grid--small__100">
-                    <div>
-                        <svg class="svg-icon" aria-hidden="true">
-                            <use xlink:href="{{ '/assets/sprites.svg#icon--student' | url }}"></use>
-                        </svg>
-                        <h3 class="title--3"><strong>Un parcours pédagogique</strong></h3>
-                        <p>
-                            Pour comprendre les concepts essentiels de l’épargne et de
-                            l’investissement.
-                        </p>
+            <ol class="accordion-container">
+              <li class="accordion__item">
+                <details class="accordion" data-index="1" name="accordion" open>
+                  <summary class="accordion__caller accordion__title title--3">
+                    <span>Suivez un parcours progressif</span>
+                  </summary>
+                  <div class="accordion__panel">
+                    <div
+                      class="accordion__picture-inside no-small no-medium no-large no-xlarge no-default"
+                    >
+                      <img
+                        src="assets/generic/vs_screen-learning-path.svg"
+                        alt=""
+                      />
                     </div>
-                </div>
-                <!-- /.grid__33 -->
 
-                <div class="grid__33 grid--small__100">
-                    <div>
-                        <svg class="svg-icon" aria-hidden="true">
-                            <use xlink:href="{{ '/assets/sprites.svg#icon--sand-games' | url }}"></use>
-                        </svg>
-                        <h3 class="title--3"><strong>Un outil d’allocation</strong></h3>
-                        <p>Pour définir votre stratégie en fonction de votre profil de risque et de vos projets de
-                            vie.</p>
+                    <p>
+                      On vous a concocté un parcours aux petits oignons pour
+                      démarrer de la base et avancer pas à pas : leçons courtes,
+                      minis jeux, garantis zéro jargon. Vous progressez à votre
+                      rythme, débloquez des badges et musclez vos compétences
+                      pour gérer vos finances.
+                    </p>
+                    <p>
+                      On vous attend pour les blagues sur la fraction de Merton.
+                    </p>
+                  </div>
+                </details>
+              </li>
+              <li class="accordion__item">
+                <details class="accordion" data-index="2" name="accordion">
+                  <summary class="accordion__caller accordion__title title--3">
+                    <span>Définissez une stratégie adaptée à vos projets</span>
+                  </summary>
+                  <div class="accordion__panel">
+                    <div
+                      class="accordion__picture-inside no-small no-medium no-large no-xlarge no-default"
+                    >
+                      <img src="assets/generic/vs_screen-merton.svg" alt="" />
                     </div>
-                </div>
-                <!-- /.grid__33 -->
 
-                <div class="grid__33 grid--small__100">
-                    <div>
-                        <svg class="svg-icon" aria-hidden="true">
-                            <use xlink:href="{{ '/assets/sprites.svg#smiley--playful' | url }}"></use>
-                        </svg>
-                        <h3 class="title--3"><strong>Une communauté</strong></h3>
-                        <p>
-                            Pour parler finance et stratégies d’allocation avec bienveillance et
-                            expertise.
-                        </p>
-                    </div>
-                </div>
-                <!-- /.grid__33 -->
-
-            </div>
-            <!-- /.grid -->
-
+                    <p>
+                      Vos pépettes doivent être au service de votre vie. Acheter
+                      cet appart, financer votre reconversion ou les études des
+                      enfants, préparer la retraite… c’est ça le vrai sujet.
+                      Notre outil d’allocation, fondé sur des méthodes
+                      scientifiques solides, vous aide à adapter votre stratégie
+                      à votre profil de risque et à vos objectifs.
+                    </p>
+                    <p>
+                      Et vous pouvez vous concentrer sur ce qui compte dans
+                      votre vie.
+                    </p>
+                  </div>
+                </details>
+              </li>
+              <li>
+                <span class="accordion__title title--3">
+                  <span class="title--2">Profitez</span>
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use
+                      xlink:href="{{ '/assets/sprites.svg#icon--like' | url }}"
+                    ></use>
+                  </svg>
+                </span>
+              </li>
+            </ol>
+          </div>
+          <!-- /.home-products__core -->
         </div>
-        <!-- /.wrapper -->
+        <!-- /.grid__50 -->
 
-    </section>
-    <!-- /.home-offer -->
-
-    <section
-            id="produits"
-            class="home-products"
-            aria-labelledby="title-section-03"
-    >
-        <div class="wrapper">
-
-            <div class="grid grid--xsmall-flat">
-
-                <div class="grid__50 grid--xsmall__100">
-
-                    <div class="home-products__core">
-
-                        <h2 id="title-section-03" class="title--2">Un parcours pour comprendre, des outils pour agir</h2>
-
-                        <ol class="accordion-container">
-                            <li class="accordion__item">
-                                <details class="accordion" data-index="1" name="accordion" open>
-                                    <summary class="accordion__caller accordion__title title--3">
-                                        <span>Suivez un parcours progressif</span>
-                                    </summary>
-                                    <div class="accordion__panel">
-
-                                        <div class="accordion__picture-inside no-small no-medium no-large no-xlarge no-default">
-                                            <img src="assets/generic/vs_screen-learning-path.svg" alt="">
-                                        </div>
-
-                                        <p>On vous a concocté un parcours aux petits oignons pour démarrer de la base et avancer pas à pas : leçons courtes, minis jeux, garantis zéro jargon. Vous progressez à votre rythme, débloquez des badges et musclez vos compétences pour gérer vos finances.</p>
-                                        <p>On vous attend pour les blagues sur la fraction de Merton.</p>
-
-                                    </div>
-                                </details>
-                            </li>
-                            <li class="accordion__item">
-                                <details class="accordion" data-index="2" name="accordion">
-                                    <summary class="accordion__caller accordion__title title--3">
-                                        <span>Définissez une stratégie adaptée à vos projets</span>
-                                    </summary>
-                                    <div class="accordion__panel">
-
-                                        <div class="accordion__picture-inside no-small no-medium no-large no-xlarge no-default">
-                                            <img src="assets/generic/vs_screen-merton.svg" alt="">
-                                        </div>
-
-                                        <p>Vos pépettes doivent être au service de votre vie. Acheter cet appart, financer votre reconversion ou les études des enfants, préparer la retraite… c’est ça le vrai sujet. Notre outil d’allocation, fondé sur des méthodes scientifiques solides, vous aide à adapter votre stratégie à votre profil de risque et à vos objectifs.</p>
-                                        <p>Et vous pouvez vous concentrer sur ce qui compte dans votre vie.</p>
-
-                                    </div>
-                                </details>
-                            </li>
-                            <li>
-                                <span class="accordion__title title--3">
-                                    <span class="title--2">Profitez</span>
-                                    <svg class="svg-icon" aria-hidden="true"><use xlink:href="{{ '/assets/sprites.svg#icon--like' | url }}"></use></svg>
-                                </span>
-                            </li>
-                        </ol>
-
-                    </div><!-- /.home-products__core -->
-
-                </div>
-                <!-- /.grid__50 -->
-
-                <div class="grid__50 no-xsmall no-xxsmall">
-
-                    <img src="assets/generic/vs_screen-learning-path.svg" alt="" id="accordion-picture-1" class="accordion-picture" aria-hidden="false">
-                    <img src="assets/generic/vs_screen-merton.svg" alt="" id="accordion-picture-2" class="accordion-picture" aria-hidden="true">
-                    
-                </div>
-                <!-- /.grid__50 -->
-
-            </div>
-            <!-- /.grid -->
+        <div class="grid__50 no-xsmall no-xxsmall">
+          <img
+            src="assets/generic/vs_screen-learning-path.svg"
+            alt=""
+            id="accordion-picture-1"
+            class="accordion-picture"
+            aria-hidden="false"
+          />
+          <img
+            src="assets/generic/vs_screen-merton.svg"
+            alt=""
+            id="accordion-picture-2"
+            class="accordion-picture"
+            aria-hidden="true"
+          />
         </div>
-        <!-- /.wrapper -->
-    </section>
-    <!-- /.home-products -->
+        <!-- /.grid__50 -->
+      </div>
+      <!-- /.grid -->
+    </div>
+    <!-- /.wrapper -->
+  </section>
+  <!-- /.home-products -->
 
-    <section id="mission" class="home-mission" aria-labelledby="title-section-04">
+  <section id="mission" class="home-mission" aria-labelledby="title-section-04">
+    <div class="wrapper">
+      <img
+        src="assets/generic/vs_line-yellow.svg"
+        alt="Flouze"
+        class="home-mission__deco home-mission__deco--1 no-xsmall no-xxsmall"
+      />
+      <img
+        src="assets/generic/vs_line-yellow--small.svg"
+        alt="Cash"
+        class="home-mission__deco home-mission__deco--1 no-small no-medium no-large no-xlarge no-default"
+      />
+      <img
+        src="assets/generic/vs_capy-game-on.svg"
+        alt="Game on !"
+        class="home-mission__deco home-mission__deco--2"
+      />
 
-        <div class="wrapper">
-
-            <img src="assets/generic/vs_line-yellow.svg" alt="Flouze" class="home-mission__deco home-mission__deco--1 no-xsmall no-xxsmall">
-            <img src="assets/generic/vs_line-yellow--small.svg" alt="Cash" class="home-mission__deco home-mission__deco--1 no-small no-medium no-large no-xlarge no-default">
-            <img src="assets/generic/vs_capy-game-on.svg" alt="Game on !" class="home-mission__deco home-mission__deco--2">
-
-            <div class="grid">
-                <div class="grid__60 grid--small__100">
-                    <div>
-                        <h2 id="title-section-04" class="title--2">
-                            Chez Cayas, on a une autre idée de la finance
-                        </h2>
-                        <p>
-                            Le monde du conseil bancaire se rémunère grâce aux rétrocommissions,
-                            aux produits maison et aux frais déguisés. Un système qui vous fait
-                            perdre, pendant que d’autres encaissent.
-                        </p>
-                        <p>
-                            Chez Cayas, on vous aide à récupérer ces frais planqués pour les
-                            remettre dans votre poche. Il y a du <strong>punk</strong> dans
-                            notre approche.
-                        </p>
-                        <p>
-                            On s’adresse à ceux qui savent que la valeur de l’argent ne se
-                            résume pas à un chiffre, que l’enrichissement sans effort est un
-                            mirage, que la réalité ne se limite pas à un rendement, et qu’il
-                            faut mouiller la chemise pour apprendre.
-                        </p>
-                        <p>
-                            Chez nous, pas de vente de produits financiers, pas de baratin pour
-                            vous embrouiller. Des intérêts enfin alignés avec les vôtres.
-                        </p>
-                        <p>Un abonnement. Simple. Transparent.</p>
-                        <p>
-                            <strong>Et une mission :</strong> vous aider à mettre vos finances
-                            au service de votre vie.
-                        </p>
-                    </div>
-                </div>
-                <!-- /.grid__60 -->
-            </div>
-            <!-- /.grid -->
+      <div class="grid">
+        <div class="grid__60 grid--small__100">
+          <div>
+            <h2 id="title-section-04" class="title--2">
+              Chez Cayas, on a une autre idée de la finance
+            </h2>
+            <p>
+              Le monde du conseil bancaire se rémunère grâce aux
+              rétrocommissions, aux produits maison et aux frais déguisés. Un
+              système qui vous fait perdre, pendant que d’autres encaissent.
+            </p>
+            <p>
+              Chez Cayas, on vous aide à récupérer ces frais planqués pour les
+              remettre dans votre poche. Il y a du <strong>punk</strong> dans
+              notre approche.
+            </p>
+            <p>
+              On s’adresse à ceux qui savent que la valeur de l’argent ne se
+              résume pas à un chiffre, que l’enrichissement sans effort est un
+              mirage, que la réalité ne se limite pas à un rendement, et qu’il
+              faut mouiller la chemise pour apprendre.
+            </p>
+            <p>
+              Chez nous, pas de vente de produits financiers, pas de baratin
+              pour vous embrouiller. Des intérêts enfin alignés avec les vôtres.
+            </p>
+            <p>Un abonnement. Simple. Transparent.</p>
+            <p>
+              <strong>Et une mission :</strong> vous aider à mettre vos finances
+              au service de votre vie.
+            </p>
+          </div>
         </div>
-        <!-- /.wrapper -->
-    </section>
-    <!-- /.home-mission -->
+        <!-- /.grid__60 -->
+      </div>
+      <!-- /.grid -->
+    </div>
+    <!-- /.wrapper -->
+  </section>
+  <!-- /.home-mission -->
 
-    <section class="home-cta theme--dark" aria-labelledby="title-section-05">
+  <section class="home-cta theme--dark" aria-labelledby="title-section-05">
+    <svg class="svg-icon home-cta__deco home-cta__deco--1" aria-hidden="true">
+      <use xlink:href="{{ '/assets/sprites.svg#icon--rock-on' | url }}"></use>
+    </svg>
+    <img
+      src="assets/generic/vs_line-pink.svg"
+      alt="Cash"
+      class="home-cta__deco home-cta__deco--2 no-xsmall no-xxsmall"
+    />
+    <img
+      src="assets/generic/vs_line-pink--small.svg"
+      alt="Cash"
+      class="home-cta__deco home-cta__deco--2 no-small no-medium no-large no-xlarge no-default"
+    />
 
-        <svg class="svg-icon home-cta__deco home-cta__deco--1" aria-hidden="true"><use xlink:href="{{ '/assets/sprites.svg#icon--rock-on' | url }}"></use></svg>
-        <img src="assets/generic/vs_line-pink.svg" alt="Cash" class="home-cta__deco home-cta__deco--2 no-xsmall no-xxsmall">
-        <img src="assets/generic/vs_line-pink--small.svg" alt="Cash" class="home-cta__deco home-cta__deco--2 no-small no-medium no-large no-xlarge no-default">
+    <div class="wrapper">
+      <h2 id="title-section-05" class="title--1">
+        L’avenir de vos finances est entre vos mains
+      </h2>
+      <p class="big-font">
+        Avec Cayas, vous serez votre meilleur conseiller financier.
+      </p>
 
-        <div class="wrapper">
-
-            <h2 id="title-section-05" class="title--1">L’avenir de vos finances est entre vos mains</h2>
-            <p class="big-font">Avec Cayas, vous serez votre meilleur conseiller financier.</p>
-
-            <div class="txt-c">
-                <a href="https://app.cayas.fr/" class="button button--primary">
-                    <strong>Je prends le contrôle</strong>
-                </a>
-            </div>
-
-        </div><!-- /.wrapper -->
-
-    </section><!-- /.home-cta -->
-
+      <div class="txt-c">
+        <a href="https://app.cayas.fr/" class="button button--primary">
+          <strong>Je prends le contrôle</strong>
+        </a>
+      </div>
+    </div>
+    <!-- /.wrapper -->
+  </section>
+  <!-- /.home-cta -->
 </main>
 
 {% include 'footer.html' %}
