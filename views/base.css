@@ -89,23 +89,38 @@
     --gutter-xlarge: 4rem;
   }
 }
-@supports (color-scheme: light dark) {
-  :root {
-    --a11y-yellow: light-dark(#8d7400,#ffd200);
-    --a11y-orange: light-dark(#c65300,#fe9244);
-    --a11y-violet: light-dark(#6f43e0,#845fe3);
-    --a11y-violet-light: light-dark(#8354ff,#c8b4fd);
-    --a11y-blue: light-dark(#5464fe,#5565fe);
-    --a11y-aqua: light-dark(#048484,#0afefe);
-    --a11y-green: light-dark(#1a8930,#32fe5b);
-    --ui-white: light-dark(#fff,#060605);
-    --ui-black: light-dark(#1d1d1b,#fff);
-    --ui-gray-1: light-dark(#4a4851,#f5f4fb);
-    --ui-gray-2: light-dark(#798b93,#cfd8dc);
-    --ui-gray-4: light-dark(#cfd8dc,#899ea7);
-    --ui-gray-5: light-dark(#f5f4fb,#4a4851);
-  }
+.theme--light {
+  --a11y-yellow: #8d7400;
+  --a11y-orange: #c65300;
+  --a11y-violet: #6f43e0;
+  --a11y-violet-light: #8354ff;
+  --a11y-blue: #5464fe;
+  --a11y-aqua: #048484;
+  --a11y-green: #1a8930;
+  --ui-white: #fff;
+  --ui-black: #1d1d1b;
+  --ui-gray-1: #4a4851;
+  --ui-gray-2: #798b93;
+  --ui-gray-4: #cfd8dc;
+  --ui-gray-5: #f5f4fb;
 }
+
+.theme--dark {
+  --a11y-yellow: #ffd200;
+  --a11y-orange: #fe9244;
+  --a11y-violet: #845fe3;
+  --a11y-violet-light: #c8b4fd;
+  --a11y-blue: #5565fe;
+  --a11y-aqua: #0afefe;
+  --a11y-green: #32fe5b;
+  --ui-white: #060605;
+  --ui-black: #fff;
+  --ui-gray-1: #f5f4fb;
+  --ui-gray-2: #cfd8dc;
+  --ui-gray-4: #899ea7;
+  --ui-gray-5: #4a4851;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
