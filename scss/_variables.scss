@@ -15,49 +15,107 @@ $mq-xxsmall:    #{em(460)};
 //
 // == CSS VARIABLES
 // --------------------------------------------------
-:root{
-  // == enable ligh/dark theming
-  // cf. https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark
-  // ---------------------------------
-  color-scheme: light dark;
+// == enable ligh/dark theming
+// cf. https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark
+// ---------------------------------
+:root{ color-scheme: light dark; }
 
+:root, .theme--light{
 
-  // == main colorz
-  // ---------------------------------
   // == brand
   // ---------------------------------
-  --brand-pink: #e8006e;          // accessible on #fff and #060605   // was #ff0079
-  --brand-blue: #5464fe;          // accessible on #fff               // was #4152ff
-  --brand-violet: #6f43e0;        // accessible on #fff
-  --brand-pink-light: #fe7aab;    // accessible on #060605
-  --brand-yellow: #ffd200;        // accessible on #060605
-  --brand-orange: #fe9244;        // accessible on #060605
-  --brand-violet-light: #c8b4fd;  // accessible on #060605
-  --brand-aqua: #0afefe;          // accessible on #060605
-  --brand-green: #32fe5b;         // accessible on #060605
+  // primary (fuschia)
+  --brand-primary: var(--brand-fuschia-2);    // default
+  --brand-primary-1: var(--brand-fuschia-1);
+  --brand-primary-2: var(--brand-fuschia-2);
+  --brand-primary-3: var(--brand-fuschia-3);
+  --brand-primary-4: var(--brand-fuschia-4);
 
-  // == same brand colors, but forced to a11y-compliant values when color-scheme is supported (see below)
-  // use it for content that has to be accessible (i.e. texts, button icons)
-  // ---------------------------------
-  --a11y-pink: #e8006e;           // accessible on #fff and #060605   // was #ff0079
-  --a11y-blue: #5464fe;           // accessible on #fff               // was #4152ff
-  --a11y-violet: #6f43e0;         // accessible on #fff
-  --a11y-pink-light: #fe7aab;     // accessible on #060605
-  --a11y-yellow: #ffd200;         // accessible on #060605
-  --a11y-orange: #fe9244;         // accessible on #060605
-  --a11y-violet-light: #c8b4fd;   // accessible on #060605
-  --a11y-aqua: #0afefe;           // accessible on #060605
-  --a11y-green: #32fe5b;          // accessible on #060605
+  // fuschia
+  --brand-fuschia: var(--brand-fuschia-2);    // default
+  --brand-fuschia-1: #600c4c;
+  --brand-fuschia-2: #ed1e79;
+  --brand-fuschia-3: #ff97c5;
+  --brand-fuschia-4: #ffd5e8;
+
+  // aqua
+  --brand-aqua: var(--brand-aqua-3);          // default
+  --brand-aqua-1: #0d5064;
+  --brand-aqua-2: #1aecef;
+  --brand-aqua-3: #75fafc;
+  --brand-aqua-4: #C6feff;
+
+  // lilac
+  --brand-lilac: var(--brand-lilac-3);        // default
+  --brand-lilac-1: #150b70;
+  --brand-lilac-2: #5e3ef0;
+  --brand-lilac-3: #c5b5f8;
+  --brand-lilac-4: #E4dffc;
+
+  // pink
+  --brand-pink: var(--brand-pink-3);          // default
+  --brand-pink-1: #620708;
+  --brand-pink-2: #d74470;
+  --brand-pink-3: #ed81aa;
+  --brand-pink-4: #fcc1d7;
+
+  // yellow
+  --brand-yellow: var(--brand-yellow-3);      // default
+  --brand-yellow-1: #5a4201;
+  --brand-yellow-2: #d5a405;
+  --brand-yellow-3: #fcd414;
+  --brand-yellow-4: #ffec70;
+
+  // green (success)
+  --brand-green: var(--brand-green-3);        // default
+  --brand-green-1: #1e5c17;
+  --brand-green-2: #1e9a14;
+  --brand-green-3: #7cfa72;
+  --brand-green-4: #ccfdc9;
+
+  // blue
+  --brand-blue: var(--brand-blue-2);          // default
+  --brand-blue-1: #09288e;
+  --brand-blue-2: #4451ff;
+  --brand-blue-3: #8bacff;
+  --brand-blue-4: #d6e2ff;
+
+  // purple
+  --brand-purple: var(--brand-purple-2);      // default
+  --brand-purple-1: #441b71;
+  --brand-purple-2: #6945d8;
+  --brand-purple-3: #9e7bee;
+  --brand-purple-4: #d8c0fb;
+
+  // orange (warning)
+  --brand-orange: var(--brand-orange-3);      // default
+  --brand-orange-1: #5e2800;
+  --brand-orange-2: #d86712;
+  --brand-orange-3: #ef9755;
+  --brand-orange-4: #fbc69e;
+
+  // red (error)
+  --brand-red: var(--brand-red-3);            // default
+  --brand-red-1: #870a01;
+  --brand-red-2: #fd5144;
+  --brand-red-3: #ff8077;
+  --brand-red-4: #ffcfcc;
 
   // == ui
   // ---------------------------------
   --ui-white: #fff;
   --ui-black: #060605;
-  --ui-gray-1: #4a4851;
-  --ui-gray-2: #899ea7;
-  --ui-gray-3: #b0bec5;
-  --ui-gray-4: #cfd8dc;
-  --ui-gray-5: #f5f4fb;
+
+  --ui-gray-1: #2f4050;
+  --ui-gray-2: #3c4c5d;
+  --ui-gray-3: #50657c;
+  --ui-gray-4: #647e9b;
+  --ui-gray-5: #748daa;
+  --ui-gray-6: #8da6c4;
+  --ui-gray-7: #a1b8d3;
+  --ui-gray-8: #b8cbe0;
+  --ui-gray-9: #dae5f1;
+  --ui-gray-10: #ecf2f8;
 
   --ui-game-1: #03433c;
   --ui-game-2: #08815c;
@@ -67,6 +125,8 @@ $mq-xxsmall:    #{em(460)};
   --ui-always-black: #060605;
   --ui-always-white: #fff;
 
+  // fixme: not used
+  // ---------------------------------
   --ui-toolRed-1: #de1a00;
   --ui-toolRed-2: #ffe3e0;
   --ui-toolGreen-1: #5a7b00;
@@ -85,7 +145,7 @@ $mq-xxsmall:    #{em(460)};
 
   // == max body size
   // ---------------------------------
-  --body-max: #{em(2560)};
+  --body-max: #{em(2000)};
 
 
   // == gutters
@@ -110,70 +170,133 @@ $mq-xxsmall:    #{em(460)};
   :root{
     // == gutters
     // ---------------------------------
-    --gutter-xsmall:    .5rem;
-    --gutter-small:     .75rem;
-    --gutter-medium:    1.5rem;
+    --gutter-xsmall:    .25rem;
+    --gutter-small:     .5rem;
+    --gutter-medium:    1rem;
     --gutter-large:     2rem;
     --gutter-xlarge:    4rem;
   }
 }
 
 
-// if supported, dark theme features
-// WARNING: IOS CHROME/SAFARI BUG, we can't use this.
-//@supports (color-scheme: light dark){
-//  :root{
-//    --a11y-yellow:          light-dark(#8d7400,#ffd200);    // accessible on #fff and #060605
-//    --a11y-orange:          light-dark(#c65300,#fe9244);    // accessible on #fff and #060605
-//    --a11y-violet:          light-dark(#6f43e0,#845fe3);    // accessible on #fff and #060605
-//    --a11y-violet-light:    light-dark(#8354ff,#c8b4fd);    // accessible on #fff and #060605
-//    --a11y-blue:            light-dark(#5464fe,#5565fe);    // accessible on #fff and #060605
-//    --a11y-aqua:            light-dark(#048484,#0afefe);    // accessible on #fff and #060605
-//    --a11y-green:           light-dark(#1a8930,#32fe5b);    // accessible on #fff and #060605
-//
-//    --ui-white: light-dark(#fff,#060605);
-//    --ui-black: light-dark(#1d1d1b,#fff);
-//    --ui-gray-1: light-dark(#4a4851,#f5f4fb);
-//    --ui-gray-2: light-dark(#798b93,#cfd8dc);
-//    //--ui-gray-3: #b0bec5; // same?
-//    --ui-gray-4: light-dark(#cfd8dc,#899ea7);
-//    --ui-gray-5: light-dark(#f5f4fb,#4a4851);
-//  }
-//}
-
-// WARNING: so we use this instead.
-.theme--light{
-  --a11y-yellow:          #8d7400;    // accessible on #fff
-  --a11y-orange:          #c65300;    // accessible on #fff
-  --a11y-violet:          #6f43e0;    // accessible on #fff
-  --a11y-violet-light:    #8354ff;    // accessible on #fff
-  --a11y-blue:            #5464fe;    // accessible on #fff
-  --a11y-aqua:            #048484;    // accessible on #fff
-  --a11y-green:           #1a8930;    // accessible on #fff
-
-  --ui-white:             #fff;
-  --ui-black:             #1d1d1b;
-  --ui-gray-1:            #4a4851;
-  --ui-gray-2:            #798b93;
-  //--ui-gray-3: #b0bec5; // same?
-  --ui-gray-4:            #cfd8dc;
-  --ui-gray-5:            #f5f4fb;
+// == color generic classes
+// ---------------------------------
+@mixin theme($color: fuschia){
+  --theme: var(--brand-#{$color});
+  --theme-1: var(--brand-#{$color}-1);
+  --theme-2: var(--brand-#{$color}-2);
+  --theme-3: var(--brand-#{$color}-3);
+  --theme-4: var(--brand-#{$color}-4);
 }
 
+.theme--fuschia     { @include theme(fuschia); }
+.theme--aqua        { @include theme(aqua); }
+.theme--lilac       { @include theme(lilac); }
+.theme--pink        { @include theme(pink); }
+.theme--yellow      { @include theme(yellow); }
+.theme--green       { @include theme(green); }
+.theme--blue        { @include theme(blue); }
+.theme--purple      { @include theme(purple); }
+.theme--orange      { @include theme(orange); }
+.theme--red         { @include theme(red); }
+
+// force theme color on something
+.theme-color{ color: var(--theme-2, var(--ui-gray-1)); }
+
 .theme--dark{
-  --a11y-yellow: #ffd200; // accessible on #060605
-  --a11y-orange: #fe9244; // accessible on #060605
-  --a11y-violet: #845fe3; // accessible on #060605
-  --a11y-violet-light: #c8b4fd; // accessible on #060605
-  --a11y-blue: #5565fe; // accessible on #060605
-  --a11y-aqua: #0afefe; // accessible on #060605
-  --a11y-green: #32fe5b; // accessible on #060605
+  // fuschia
+  --brand-fuschia: var(--brand-fuschia-3);    // default
+  --brand-fuschia-4: #600c4c;
+  --brand-fuschia-3: #ed1e79;
+  --brand-fuschia-2: #ff97c5;
+  --brand-fuschia-1: #ffd5e8;
+
+  // aqua
+  --brand-aqua: var(--brand-aqua-2);          // default
+  --brand-aqua-4: #0d5064;
+  --brand-aqua-3: #1aecef;
+  --brand-aqua-2: #75fafc;
+  --brand-aqua-1: #C6feff;
+
+  // lilac
+  --brand-lilac: var(--brand-lilac-2);        // default
+  --brand-lilac-4: #150b70;
+  --brand-lilac-3: #5e3ef0;
+  --brand-lilac-2: #c5b5f8;
+  --brand-lilac-1: #E4dffc;
+
+  // pink
+  --brand-pink: var(--brand-pink-2);          // default
+  --brand-pink-4: #620708;
+  --brand-pink-3: #d74470;
+  --brand-pink-2: #ed81aa;
+  --brand-pink-1: #fcc1d7;
+
+  // yellow
+  --brand-yellow: var(--brand-yellow-2);      // default
+  --brand-yellow-4: #5a4201;
+  --brand-yellow-3: #d5a405;
+  --brand-yellow-2: #fcd414;
+  --brand-yellow-1: #ffec70;
+
+  // green (success)
+  --brand-green: var(--brand-green-2);        // default
+  --brand-green-4: #1e5c17;
+  --brand-green-3: #1e9a14;
+  --brand-green-2: #7cfa72;
+  --brand-green-1: #ccfdc9;
+
+  // blue
+  --brand-blue: var(--brand-blue-3);          // default
+  --brand-blue-4: #09288e;
+  --brand-blue-3: #4451ff;
+  --brand-blue-2: #8bacff;
+  --brand-blue-1: #d6e2ff;
+
+  // purple
+  --brand-purple: var(--brand-purple-3);      // default
+  --brand-purple-4: #441b71;
+  --brand-purple-3: #6945d8;
+  --brand-purple-2: #9e7bee;
+  --brand-purple-1: #d8c0fb;
+
+  // orange (warning)
+  --brand-orange: var(--brand-orange-2);      // default
+  --brand-orange-4: #5e2800;
+  --brand-orange-3: #d86712;
+  --brand-orange-2: #ef9755;
+  --brand-orange-1: #fbc69e;
+
+  // red (error)
+  --brand-red: var(--brand-red-2);            // default
+  --brand-red-4: #870a01;
+  --brand-red-3: #fd5144;
+  --brand-red-2: #ff8077;
+  --brand-red-1: #ffcfcc;
 
   --ui-white: #060605;
   --ui-black: #fff;
-  --ui-gray-1: #f5f4fb;
-  --ui-gray-2: #cfd8dc;
-  //--ui-gray-3: #b0bec5; // same?
-  --ui-gray-4: #899ea7;
-  --ui-gray-5: #4a4851;
+
+  --ui-gray-1: #ecf2f8;
+  --ui-gray-2: #dae5f1;
+  --ui-gray-3: #b8cbe0;
+  --ui-gray-4: #a1b8d3;
+  --ui-gray-5: #8da6c4;
+  --ui-gray-6: #748daa;
+  --ui-gray-7: #647e9b;
+  --ui-gray-8: #50657c;
+  --ui-gray-9: #3c4c5d;
+  --ui-gray-10: #2f4050;
+
+
+  // == special cases tuning
+  // ---------------------------------
+  &.view--lesson .wrapper{ background: transparent; }
+
+  .grunge-zone::before{ filter: invert(100%); }
+
+  img.training-canvas__deco-item{
+    filter: grayscale(50%) saturate(270%) hue-rotate(42deg);
+    opacity: .4;
+  }
 }

@@ -189,26 +189,47 @@ button,
         }
     }
 
-    &.button--primary {
+    &.button--primary{
         --ui-text: var(--ui-white);
         --ui-border: var(--ui-black);
         --ui-background: var(--ui-black);
-        --ui-shadow: var(--a11y-pink);
+        --ui-shadow: var(--brand-primary);
         --ui-hover: var(--ui-black);
-        --ui-boost: var(--a11y-pink-light);
+        --ui-boost: var(--brand-primary-4);
     }
 
-    &.button--secondary {
+    &.button--secondary{
         --ui-text: var(--ui-black);
         --ui-border: var(--ui-black);
         --ui-background: var(--ui-white);
         --ui-shadow: var(--ui-black);
         --ui-hover: var(--ui-white);
-        --ui-boost: var(--a11y-pink-light);
+        --ui-boost: var(--brand-primary-4);
     }
 
-    &.button--naked {
-        --padding-h: .15em !important;
+    &.button--disabled{
+        --ui-text: var(--ui-always-white);
+        --ui-border: var(--ui-gray-8);
+        --ui-background: var(--ui-gray-8);
+        --ui-shadow: var(--ui-gray-1);
+        --ui-hover: var(--ui-gray-8);
+        --ui-boost: var(--ui-always-white);
+        cursor: not-allowed;
+
+        &:hover, &:focus, &:active{
+            &::before{ transform: translate(.35em, .35em); }
+        }
+
+        &:active{
+            > span, > strong{
+                background: var(--ui-background);
+                color: var(--ui-text);
+            }
+        }
+    }
+
+    &.button--naked{
+        --padding-h: 0!important;
         --ui-background: transparent;
         --ui-shadow: transparent;
         --ui-hover: transparent;
@@ -216,26 +237,16 @@ button,
 
         @include text-underline();
 
-        span {
+        span{
             margin-left: 0;
             margin-right: 0;
             clip-path: none;
         }
 
-        &::before,
-        &::after {
-            display: none;
-        }
+        &::before, &::after{ display: none; }
 
-        &:hover,
-        &:focus {
+        &:hover, &:focus{
             @include text-underline--hover();
-        }
-
-        &:active{
-            > span, > strong{
-                color: var(--a11y-pink);
-            }
         }
     }
 
@@ -378,7 +389,7 @@ button.link--picto {
     color: var(--ui-white);
     text-decoration: none;
     // --
-    background: var(--a11y-blue);
+    background: var(--brand-blue);
     transition: background-color ease-out 300ms;
 
     &:hover,
@@ -422,7 +433,7 @@ main a[target="_blank"] {
         mask-image: url("/assets/generic/icon--blank.svg");
         mask-size: auto 0.75em;
         mask-repeat: no-repeat;
-        background-color: var(--a11y-pink);
+        background-color: var(--brand-pink);
         white-space: nowrap;
     }
 }

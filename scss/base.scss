@@ -57,7 +57,7 @@
 // ---------------------------------
 ::selection {
     color: var(--ui-always-white);
-    background-color: var(--brand-pink);
+    background-color: var(--brand-fuschia);
 }
 
 * {
@@ -134,7 +134,7 @@ body::before { display: none; }
 
         &:hover,
         &:focus {
-            color: var(--brand-pink);
+            color: var(--brand-fuschia);
             transition-duration: 50ms;
         }
     }
@@ -219,7 +219,7 @@ figure {
             &::before{
                 content: counter(ol) '.';
                 width: 2.25em;
-                color: var(--a11y-pink);
+                color: var(--brand-fuschia);
                 text-align: right;
                 font-weight: bold;
             }
@@ -231,7 +231,7 @@ figure {
     h2 strong{
         padding: 0 .25em;
         box-decoration-break: clone;
-        background: var(--brand-pink);
+        background: var(--brand-fuschia);
         color: var(--ui-always-white);
     }
 
@@ -245,7 +245,7 @@ figure {
     .editorial__boost{
         padding: var(--gutter-large);
         background: var(--ui-white);
-        @include box-shadow(.2rem, .5rem, var(--brand-pink));
+        @include box-shadow(.2rem, .5rem, var(--brand-fuschia));
     }
 
     .editorial__quote{
@@ -257,7 +257,7 @@ figure {
             left: 0;
             top: -.15em; // cheat
             font-size: 5em;
-            color: var(--brand-pink);
+            color: var(--brand-fuschia);
             line-height: 1;
         }
 
@@ -369,7 +369,7 @@ figure {
         &.page-transverse__deco--4{
             left: 2.5%;
             bottom: 10%;
-            color: var(--brand-violet);
+            color: var(--brand-purple);
         }
     }
 }
@@ -423,7 +423,7 @@ figure {
 
     .title--1 strong{
         color: var(--ui-white);
-        background: var(--a11y-green);
+        background: var(--brand-green);
         box-decoration-break: clone;
     }
 
@@ -444,7 +444,7 @@ figure {
             > *{
                 width: 100%;
                 padding: var(--gutter-medium) var(--gutter-medium) var(--gutter-large) var(--gutter-medium);
-                @include box-shadow(.2rem, .5rem, var(--color));
+                @include box-shadow(.2rem, .5rem, var(--theme));
             }
 
             .svg-icon{
@@ -456,13 +456,13 @@ figure {
             .title--3 strong{
                 display: inline;
                 color: var(--ui-always-white);
-                background: var(--color);
+                background: var(--theme);
                 box-decoration-break: clone;
             }
 
-            &:nth-child(1){ --color: var(--a11y-pink); }
-            &:nth-child(2){ --color: var(--a11y-blue); }
-            &:nth-child(3){ --color: var(--a11y-violet); }
+            //&:nth-child(1){ --color: var(--brand-fuschia); }
+            //&:nth-child(2){ --color: var(--brand-blue); }
+            //&:nth-child(3){ --color: var(--brand-violet); }
         }
     }
 }
@@ -514,7 +514,7 @@ figure {
 
                 &:open{
                     --color: var(--ui-black);
-                    --color-boost: var(--brand-pink);
+                    --color-boost: var(--brand-fuschia);
                 }
             }
 
@@ -618,7 +618,7 @@ figure {
         > * > *{
             padding: var(--gutter-large);
             background: var(--ui-white);
-            @include box-shadow(.2rem, .5rem, var(--brand-pink));
+            @include box-shadow(.2rem, .5rem, var(--brand-fuschia));
         }
     }
 
