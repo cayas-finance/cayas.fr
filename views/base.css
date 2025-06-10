@@ -12,11 +12,14 @@
                 LISTS
                     inline
                     social
+                    checklist
                 CORE
                     images
+                    status
                     editorial
                     transverse
                     home
+                    split page
                     core misc
                 MEDIA QUERIES
                     xlarge
@@ -683,11 +686,14 @@ dialog {
                 LISTS
                     inline
                     social
+                    checklist
                 CORE
                     images
+                    status
                     editorial
                     transverse
                     home
+                    split page
                     core misc
                 MEDIA QUERIES
                     xlarge
@@ -792,11 +798,14 @@ dialog {
                 LISTS
                     inline
                     social
+                    checklist
                 CORE
                     images
+                    status
                     editorial
                     transverse
                     home
+                    split page
                     core misc
                 MEDIA QUERIES
                     xlarge
@@ -1580,11 +1589,14 @@ body::before {
                 LISTS
                     inline
                     social
+                    checklist
                 CORE
                     images
+                    status
                     editorial
                     transverse
                     home
+                    split page
                     core misc
                 MEDIA QUERIES
                     xlarge
@@ -1937,11 +1949,14 @@ details {
                 LISTS
                     inline
                     social
+                    checklist
                 CORE
                     images
+                    status
                     editorial
                     transverse
                     home
+                    split page
                     core misc
                 MEDIA QUERIES
                     xlarge
@@ -2073,6 +2088,7 @@ button.link--alt:focus,
 .button > strong {
   z-index: 1;
   position: relative;
+  width: 100%;
   padding: var(--padding-v) var(--padding-h);
   margin: 0.2rem 0.4rem;
   clip-path: polygon(3.5% -0.2rem, 100% 0, 98% 100%, 0 100%, 0 100%);
@@ -2159,7 +2175,7 @@ button.link--alt:focus,
   text-decoration-color: inherit;
   transition: text-decoration-color 400ms ease-out;
 }
-.button.button--naked span {
+.button.button--naked span, .button.button--naked strong {
   margin-left: 0;
   margin-right: 0;
   clip-path: none;
@@ -2248,7 +2264,7 @@ button.link--alt:focus,
   display: inline-flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 0.25em;
+  gap: 0.5em;
   text-decoration: none;
   text-align: left;
   line-height: 1.25;
@@ -2342,11 +2358,14 @@ main a[target=_blank]::after {
                 LISTS
                     inline
                     social
+                    checklist
                 CORE
                     images
+                    status
                     editorial
                     transverse
                     home
+                    split page
                     core misc
                 MEDIA QUERIES
                     xlarge
@@ -2415,8 +2434,11 @@ header .wrapper {
   gap: 2em;
   margin: 0;
 }
+.header-nav__menus .header-nav__menu li {
+  margin-top: 0.5rem;
+}
 .header-nav__menus .header-nav__menu a:hover, .header-nav__menus .header-nav__menu a:focus {
-  color: var(--brand-pink);
+  color: var(--brand-fuschia);
 }
 
 .header-burger {
@@ -2511,6 +2533,9 @@ header .wrapper {
     padding-bottom: var(--gutter-small);
     padding-top: var(--gutter-small);
   }
+  .header-nav__menus {
+    gap: 1em;
+  }
   .header-nav .header-burger {
     display: block;
   }
@@ -2564,6 +2589,11 @@ header .wrapper {
     display: block;
   }
 }
+@media screen and (max-width: calc(580 / 16 * 1em)) {
+  .header-nav__menus .header-nav__menu li {
+    margin-top: 0;
+  }
+}
 /*------------------------------------------------------------------------------
     CSS Document (http://www.w3.org/Style/CSS/)
 
@@ -2578,11 +2608,14 @@ header .wrapper {
                 LISTS
                     inline
                     social
+                    checklist
                 CORE
                     images
+                    status
                     editorial
                     transverse
                     home
+                    split page
                     core misc
                 MEDIA QUERIES
                     xlarge
@@ -2719,12 +2752,64 @@ body::before {
   transition-duration: 50ms;
 }
 
+.list-checklist li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5em;
+}
+.list-checklist li:not(:first-child) {
+  margin-top: 0.5em;
+}
+.list-checklist li .svg-icon {
+  flex: 0 0 auto;
+  fill: transparent;
+  stroke: var(--brand-green);
+  stroke-width: 0.3rem;
+  font-size: 1.25em;
+}
+
 figure img {
   display: block;
   max-width: 100%;
 }
 figure figcaption {
   margin-top: 1rem;
+}
+
+.status {
+  --text-color: var(--theme-1, var(--ui-gray-1));
+  --dot-color: var(--theme-2, var(--ui-gray-6));
+  --color: var(--theme-4, var(--ui-gray-8));
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+  padding: 0.1em 0.5em;
+  background: var(--color);
+  border-radius: 1em;
+  color: var(--text-color);
+  white-space: nowrap;
+  line-height: 1.15;
+}
+.status::before {
+  display: none;
+  content: "";
+  height: 0.75em;
+  width: 0.75em;
+  border-radius: 50%;
+  background-color: var(--dot-color);
+}
+.status.status--indicator::before {
+  display: block;
+}
+
+.status-alt {
+  display: inline-block;
+  padding: 0.05em 0.25em;
+  background: var(--theme-4, var(--ui-gray-9));
+  color: var(--theme-1, var(--ui-gray-1));
+  font-weight: 700;
 }
 
 .editorial h1:not(:first-child), .editorial h2:not(:first-child), .editorial h3:not(:first-child), .editorial h4:not(:first-child) {
@@ -3160,6 +3245,97 @@ figure figcaption {
   height: auto;
 }
 
+.split-page {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: safe center;
+  align-items: safe center;
+  padding-bottom: var(--gutter-large);
+  background: var(--ui-white);
+  border-bottom: 1px solid var(--ui-gray-9);
+}
+.split-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background-image: url("/assets/generic/bg_grid.png");
+}
+.split-page .split-page__deco {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.split-page .split-page__deco .split-page__deco-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  height: auto;
+  color: var(--theme, var(--ui-gray-8));
+}
+.split-page .split-page__deco .split-page__deco-item.svg-icon {
+  opacity: 0.75;
+}
+.split-page main {
+  position: relative;
+  padding-top: 5em;
+}
+.split-page .grid {
+  padding-bottom: var(--gutter-large);
+}
+
+.block-offer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: var(--gutter-medium);
+  padding: var(--gutter-medium) var(--gutter-large);
+  background: var(--ui-white);
+  border: 0.2rem solid var(--theme, var(--ui-black));
+  box-shadow: 0.5rem 0.5rem 0 var(--theme, var(--ui-black));
+}
+.block-offer .block-offer__img {
+  position: absolute;
+  top: 0;
+  width: 25%;
+  max-width: 12.5rem;
+}
+.block-offer .block-offer__img.block-offer__img--left {
+  right: 100%;
+  margin-right: -0.5rem;
+}
+.block-offer .block-offer__img.block-offer__img--right {
+  transform: scale(-1, 1);
+  left: 100%;
+  margin-left: -0.75rem;
+}
+.block-offer .block-offer__content {
+  flex-grow: 1;
+}
+.block-offer .block-offer__intro {
+  margin-bottom: var(--gutter-medium);
+}
+.block-offer p {
+  margin: 0;
+}
+.block-offer p + ul {
+  margin-top: 1em;
+}
+.block-offer .button {
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .cayas-logo {
   max-width: 12rem;
   margin: 0;
@@ -3242,6 +3418,27 @@ hr.hr--naked {
     left: 70%;
     width: 30%;
     bottom: 0;
+  }
+  .split-page::before {
+    left: 0;
+  }
+  .split-page .header-logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .split-page main {
+    padding-top: 2em;
+  }
+  .split-page .grid:not(.split-page__columns) {
+    padding-bottom: 2em;
+    gap: 2em;
+  }
+  .split-page .grid:not(.split-page__columns) > :first-child {
+    order: 2;
+  }
+  .split-page .grid:not(.split-page__columns) > :last-child {
+    order: 1;
   }
 }
 @media screen and (max-width: calc(580 / 16 * 1em)) {

@@ -12,11 +12,14 @@
                 LISTS
                     inline
                     social
+                    checklist
                 CORE
                     images
+                    status
                     editorial
                     transverse
                     home
+                    split page
                     core misc
                 MEDIA QUERIES
                     xlarge
@@ -140,6 +143,29 @@ body::before { display: none; }
     }
 }
 
+
+// == checklist
+// ---------------------------------
+.list-checklist{
+    li{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: .5em;
+
+        &:not(:first-child){ margin-top: .5em; }
+
+        .svg-icon{
+            flex: 0 0 auto;
+            fill: transparent;
+            stroke: var(--brand-green);
+            stroke-width: .3rem;
+            font-size: 1.25em;
+        }
+    }
+}
+
+
 //
 // == CORE
 // --------------------------------------------------
@@ -154,6 +180,44 @@ figure {
     figcaption {
         margin-top: 1rem;
     }
+}
+
+
+// == status
+// ---------------------------------
+.status{
+    --text-color: var(--theme-1, var(--ui-gray-1));
+    --dot-color: var(--theme-2, var(--ui-gray-6));
+    --color: var(--theme-4, var(--ui-gray-8));
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: .25em;
+    padding: .1em .5em;
+    background: var(--color);
+    border-radius: 1em;
+    color: var(--text-color);
+    white-space: nowrap;
+    line-height: 1.15;
+
+    &::before{
+        display: none;
+        content: '';
+        height: .75em;
+        width: .75em;
+        border-radius: 50%;
+        background-color: var(--dot-color);
+    }
+
+    &.status--indicator::before{ display: block; }
+}
+
+.status-alt{
+    display: inline-block;
+    padding: .05em .25em;
+    background: var(--theme-4, var(--ui-gray-9));
+    color: var(--theme-1, var(--ui-gray-1));
+    font-weight: 700;
 }
 
 
@@ -201,7 +265,7 @@ figure {
                 top: -.25em;
                 width: 2.25em;
                 height: 2.25em;
-                mask-image: url('/assets/generic/arrow-2--right.svg');
+                mask-image: url("/assets/generic/arrow-2--right.svg");
                 mask-size: auto 2.25em;
                 mask-repeat: no-repeat;
                 background-color: var(--ui-gray-2);
@@ -662,6 +726,95 @@ figure {
     }
 }
 
+
+// == split page
+// ---------------------------------
+.split-page{
+    position: relative;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: safe center;
+    align-items: safe center;
+    padding-bottom: var(--gutter-large);
+    background: var(--ui-white);
+    border-bottom: 1px solid var(--ui-gray-9);
+
+    &::before{
+        content: '';
+        position: absolute;
+        @include offset(0,0,0,50%);
+        background-image: url("/assets/generic/bg_grid.png");
+    }
+
+    .split-page__deco{
+        overflow: hidden;
+        position: absolute;
+        @include offset();
+
+        .split-page__deco-item{
+            position: absolute;
+            top: 50%;       // plz override
+            left: 50%;      // plz override
+            width: 20%;     // plz override
+            height: auto;
+            color: var(--theme, var(--ui-gray-8));
+
+            &.svg-icon{ opacity: .75; }
+        }
+    }
+
+    main{
+        position: relative;
+        padding-top: 5em;
+    }
+
+    .grid{ padding-bottom: var(--gutter-large); }
+}
+
+
+.block-offer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: var(--gutter-medium);
+    padding: var(--gutter-medium) var(--gutter-large);
+    background: var(--ui-white);
+    @include box-shadow(.2rem, .5rem, var(--theme, var(--ui-black)));
+
+    .block-offer__img{
+        position: absolute;
+        top: 0;
+        width: 25%;
+        max-width: 12.5rem;
+
+        &.block-offer__img--left{
+            right: 100%;
+            margin-right: -.5rem;
+        }
+
+        &.block-offer__img--right{
+            transform: scale(-1,1);
+            left: 100%;
+            margin-left: -.75rem;
+        }
+    }
+
+    .block-offer__content{ flex-grow: 1; }
+    .block-offer__intro{ margin-bottom: var(--gutter-medium); }
+
+    p{ margin: 0; }
+    p + ul{ margin-top: 1em; }
+
+    .button{
+        width: 100%;
+        max-width: 30rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
 // == core misc
 // ---------------------------------
 .cayas-logo {
@@ -781,6 +934,29 @@ hr {
             left: 70%;
             width: 30%;
             bottom: 0;
+        }
+    }
+
+
+    // == split page
+    // ---------------------------------
+    .split-page{
+        &::before{ left: 0; }
+
+        .header-logo{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        main{ padding-top: 2em; }
+
+        .grid:not(.split-page__columns){
+            padding-bottom: 2em;
+            gap: 2em;
+
+            > :first-child{ order: 2; }
+            > :last-child{ order: 1; }
         }
     }
 }
