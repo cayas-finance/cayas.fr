@@ -82,11 +82,13 @@ body::before { display: none; }
 
 // == wrapper
 // ---------------------------------
-.wrapper {
-    max-width: 122rem;
+.wrapper{
+    max-width: 80rem;
     padding: 0 var(--gutter-medium);
 
-    &.wrapper--small{ max-width: 90rem; }
+    &.wrapper--small{ max-width: 50rem; }
+    &.wrapper--medium{ max-width: 104rem; }
+    &.wrapper--wide{ max-width: 124rem; }
 }
 
 //

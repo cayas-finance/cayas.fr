@@ -2706,11 +2706,17 @@ body::before {
 }
 
 .wrapper {
-  max-width: 122rem;
+  max-width: 80rem;
   padding: 0 var(--gutter-medium);
 }
 .wrapper.wrapper--small {
-  max-width: 90rem;
+  max-width: 50rem;
+}
+.wrapper.wrapper--medium {
+  max-width: 104rem;
+}
+.wrapper.wrapper--wide {
+  max-width: 124rem;
 }
 
 .list-inline {
