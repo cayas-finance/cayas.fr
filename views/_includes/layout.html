@@ -47,6 +47,19 @@
     <script src="{{ '/js/charts.js' | url }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.6.0/dist/echarts.min.js"></script>
 
+    <script>
+      var _paq = (window._paq = window._paq || []);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var siteId = "3";
+        var u = "https://app.cayas.fr/";
+        _paq.push(["setTrackerUrl", u + "api/track"]);
+        _paq.push(["setSiteId", siteId]);
+      })();
+    </script>
+    <script src="https://app.cayas.fr/api/m.js"></script>
+
     <title>{{ title }}</title>
 
     <meta charset="utf-8" />
