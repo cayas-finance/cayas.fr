@@ -2818,26 +2818,35 @@ figure figcaption {
   font-weight: 700;
 }
 
-.editorial h1:not(:first-child), .editorial h2:not(:first-child), .editorial h3:not(:first-child), .editorial h4:not(:first-child) {
+.editorial h1:not(:first-child),
+.editorial h2:not(:first-child),
+.editorial h3:not(:first-child),
+.editorial h4:not(:first-child) {
   margin-top: 2.5em;
 }
-.editorial ul, .editorial ol {
+.editorial ul,
+.editorial ol {
   margin-bottom: 1.5em;
   padding-left: 0;
 }
-.editorial ul li, .editorial ol li {
+.editorial ul li,
+.editorial ol li {
   overflow: hidden;
   position: relative;
   padding: 0.1rem 0.1rem 0.1rem 2.75em;
   margin-bottom: 0.75em;
 }
-.editorial ul li::before, .editorial ol li::before {
+.editorial ul li::before,
+.editorial ol li::before {
   position: absolute;
   left: 0;
   top: 0;
   line-height: inherit !important;
 }
-.editorial ul li ul, .editorial ul li ol, .editorial ol li ul, .editorial ol li ol {
+.editorial ul li ul,
+.editorial ul li ol,
+.editorial ol li ul,
+.editorial ol li ol {
   margin-top: 0.5em;
   margin-bottom: 0;
   margin-left: 0;
@@ -2866,7 +2875,8 @@ figure figcaption {
   text-align: right;
   font-weight: bold;
 }
-.editorial img, .editorial picture {
+.editorial img,
+.editorial picture {
   max-width: 100%;
 }
 .editorial h2 strong {
@@ -2891,7 +2901,8 @@ figure figcaption {
   position: relative;
   padding-left: 6em;
 }
-.editorial .editorial__quote .icon, .editorial .editorial__quote .svg-icon {
+.editorial .editorial__quote .icon,
+.editorial .editorial__quote .svg-icon {
   position: absolute;
   left: 0;
   top: -0.15em;
@@ -3410,7 +3421,8 @@ hr.hr--naked {
   .editorial .grid.grid--small-flat .grid__50:last-child {
     margin-top: 0;
   }
-  .home-offer .grid, .home-mission .grid {
+  .home-offer .grid,
+  .home-mission .grid {
     max-width: 40rem;
     margin: 0 auto;
   }
@@ -3552,4 +3564,24 @@ hr.hr--naked {
   a[href="javascript:"] {
     content: "";
   }
+}
+.editorial table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.editorial table td,
+.editorial table th {
+  border: 1px solid #ddd;
+  font-size: 100%;
+  padding: 1em 0.5em;
+  vertical-align: top;
+}
+
+.editorial blockquote {
+  margin-left: 2em;
+  font-size: 100%;
+  color: #777;
+}
+.editorial blockquote p {
+  margin: 0;
 }
