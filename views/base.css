@@ -1723,7 +1723,7 @@ details {
 
 .title--1 {
   margin-bottom: 0.5em;
-  font-size: 5.6rem;
+  font-size: 7rem;
   font-weight: 900;
   line-height: 1.1;
 }
@@ -1855,7 +1855,7 @@ details {
     font-size: 1.3rem;
   }
   .title--1 {
-    font-size: 4.6rem;
+    font-size: 5rem;
   }
   .title--2, .editorial h1 {
     font-size: 3.2rem;
@@ -2419,6 +2419,9 @@ header .wrapper {
   justify-content: space-between;
   align-items: center;
   gap: 1em;
+}
+header .cayas-logo {
+  width: 30%;
 }
 
 .header-nav__menus {
@@ -3028,7 +3031,7 @@ figure figcaption {
   bottom: 5%;
   right: 5%;
   width: 20%;
-  max-width: 50rem;
+  max-width: 30rem;
   height: auto;
 }
 .home-hero .home-hero__deco.home-hero__deco--3 {
@@ -3238,9 +3241,10 @@ figure figcaption {
 .home-cta {
   position: relative;
   overflow: hidden;
-  padding-top: calc(var(--gutter-xlarge) * 2);
-  padding-bottom: calc(var(--gutter-xlarge) * 2);
+  padding-top: calc(var(--gutter-xlarge) * 1.5);
+  padding-bottom: calc(var(--gutter-xlarge) * 1.5);
   background: var(--ui-white);
+  background-image: url("/assets/generic/bg_grid.png");
   border-top: 0.2rem solid var(--ui-black);
   border-bottom: 0.2rem solid var(--ui-black);
   text-align: center;
@@ -3251,7 +3255,7 @@ figure figcaption {
 .home-cta .home-cta__deco.home-cta__deco--1 {
   top: 0;
   left: 0;
-  font-size: 12.5vw;
+  font-size: 8.5vw;
   color: var(--brand-green);
 }
 .home-cta .home-cta__deco.home-cta__deco--2 {

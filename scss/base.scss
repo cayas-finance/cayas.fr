@@ -496,7 +496,7 @@ figure {
       bottom: 5%;
       right: 5%;
       width: 20%;
-      max-width: 50rem;
+      max-width: 30rem;
       height: auto;
     }
 
@@ -739,9 +739,10 @@ figure {
 .home-cta {
   position: relative;
   overflow: hidden;
-  padding-top: calc(var(--gutter-xlarge) * 2);
-  padding-bottom: calc(var(--gutter-xlarge) * 2);
+  padding-top: calc(var(--gutter-xlarge) * 1.5);
+  padding-bottom: calc(var(--gutter-xlarge) * 1.5);
   background: var(--ui-white);
+  background-image: url("/assets/generic/bg_grid.png");
   border-top: 0.2rem solid var(--ui-black);
   border-bottom: 0.2rem solid var(--ui-black);
   text-align: center;
@@ -752,7 +753,7 @@ figure {
     &.home-cta__deco--1 {
       top: 0;
       left: 0;
-      font-size: 12.5vw;
+      font-size: 8.5vw;
       color: var(--brand-green);
     }
 
