@@ -1,3 +1,127 @@
+# Pages CMS Configuration for cayas.fr
+
+# Media configuration for blog images and other assets
 media:
-  input: views/assets
-  output: /
+  - name: blog-images
+    label: Images du blog
+    input: views/assets/blog
+    output: /assets/blog
+    extensions: [jpg, jpeg, png, webp, svg, gif]
+  - name: documents
+    label: Documents
+    input: views/assets/documents
+    output: /assets/documents
+    extensions: [pdf, doc, docx]
+
+# Content configuration
+content:
+  # Blog posts collection
+  - name: blog
+    label: Articles de blog
+    type: collection
+    path: views/blog
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{fields.slug}.md"
+    view:
+      fields: [title, date, author, published]
+      primary: title
+      sort: [date]
+      default:
+        sort: date
+        order: desc
+      search: [title, excerpt, tags]
+    fields:
+      - name: title
+        label: Titre
+        type: string
+        required: true
+        description: Le titre de votre article de blog
+
+      - name: slug
+        label: Slug d'URL
+        type: string
+        required: true
+        description: Version adaptée à l'URL du titre (ex. "mon-article-de-blog")
+        pattern:
+          regex: '^[a-z0-9]+(?:-[a-z0-9]+)*$'
+          message: 'Le slug doit contenir uniquement des lettres minuscules, des chiffres et des tirets'
+
+      - name: date
+        label: Date de publication
+        type: date
+        required: true
+        default: "{date}"
+
+      - name: author
+        label: Auteur
+        type: string
+        required: true
+        default: "L'équipe Cayas"
+
+      - name: excerpt
+        label: Extrait
+        type: text
+        description: Description courte pour la page de liste (150-200 caractères)
+        required: true
+
+      - name: featured_image
+        label: Image mise en avant
+        type: image
+        description: Image principale de l'article de blog
+        required: false
+
+      - name: tags
+        label: Tags
+        type: string
+        list:
+          min: 1
+          max: 5
+        description: Ajoutez 1 à 5 tags pour la catégorisation
+
+      - name: published
+        label: Publié
+        type: boolean
+        default: false
+        description: Définir sur true pour publier l'article
+
+       - name: featured
+        label: À la une
+        type: boolean
+        default: false
+        description: Définir sur true pour mettre l'article en avant
+
+      - name: seo
+        label: SEO & Réseaux sociaux
+        component: seo
+        description: Configurer l'apparence dans les moteurs de recherche et sur les réseaux sociaux
+        required: false
+
+      - name: body
+        label: Contenu
+        type: rich-text
+        description: Contenu de l'article de blog
+
+
+# Components for reusable field groups
+components:
+  seo:
+    label: Paramètres SEO
+    type: object
+    fields:
+      - name: meta_title
+        label: Titre meta
+        type: string
+        description: Titre SEO (50-60 caractères)
+      - name: meta_description
+        label: Description meta
+        type: text
+        description: Description SEO (150-160 caractères)
+      - name: og_image
+        label: Image de partage social
+        type: image
+
+# Settings
+settings:
+  content:
+    merge: true  # Preserve existing fields when editing
+  hide: false   # Show settings in UI
