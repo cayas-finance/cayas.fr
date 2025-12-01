@@ -2686,6 +2686,10 @@ footer .grid > :last-child .list-social {
     order: 1;
   }
 }
+.blog-img-center {
+  margin: 0 auto;
+}
+
 ::selection {
   color: var(--ui-always-white);
   background-color: var(--brand-fuschia);

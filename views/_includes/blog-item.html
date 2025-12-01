@@ -1,0 +1,46 @@
+<article>
+  {% if post.data.featured_image %}
+  <div>
+    <a href="/le-journal/{{ post.data.slug }}/">
+      <img
+        src="{{ post.data.featured_image }}"
+        alt="{{ post.data.title }}"
+        loading="lazy"
+      />
+    </a>
+  </div>
+  {% else %}
+  <div>
+    <!-- Image placeholder -->
+  </div>
+  {% endif %}
+
+  <div>
+    <h3>
+      <a href="/le-journal/{{ post.data.slug }}/">{{ post.data.title }}</a>
+    </h3>
+
+    {% if post.data.tags.size > 0 %}
+    <ul>
+      {% for tag in post.data.tags %}
+      <li><a href="/le-journal/sujet/{{ tag.slug }}/">{{ tag.name }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <div>
+      <time datetime="{{ post.data.date | date: ' YYYY-MM-DD' }}">
+        Le {{ post.data.date | date: 'D MMMM YYYY' }}
+      </time>
+      {% if post.data.author %}
+      <span>par {{ post.data.author }}</span>
+      {% endif %}
+    </div>
+
+    {% if post.data.excerpt %}
+    <div>{{ post.data.excerpt }}</div>
+    {% endif %}
+
+    <a href="/le-journal/{{ post.data.slug }}/"> Lire la suite → </a>
+  </div>
+</article>
