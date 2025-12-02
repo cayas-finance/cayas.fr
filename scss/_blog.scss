@@ -1,3 +1,115 @@
+@use "__setup" as *; // variables & mixins
+
+.blog-home-hero{
+  position: relative;
+  padding-top: var(--gutter-large);
+  padding-bottom: var(--gutter-large);
+  background: var(--ui-white) repeat center;
+  background-image: url("/assets/generic/bg_grid.png");
+  text-align: center;
+  
+  
+  .blog-home-hero__title{
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    
+    .cayas-logo{
+      width: 80%;
+      max-width: 80%;
+    }
+
+    .cayas-journal{
+      width: 80%;
+      transform: translate(25%,-35%);
+    }
+
+    svg{ width: 100%; }
+  }
+
+  h2{ margin: -1em 0 0; }
+  
+}
+
+.blog-filters{
+  padding: var(--gutter-medium) 0;
+
+  nav{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+  }
+
+  .list-inline{ gap: .5em; }
+  .list-social{ gap: .05em; }
+}
+
+.blog-item{
+  .blog-item__img{
+    position: relative;
+    height: 0;
+    padding-bottom: 60%;
+    background: var(--ui-white) repeat center;
+    background-image: url("/assets/generic/bg_grid.png");
+    
+    img{
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .blog-item__txt{
+    position: relative;
+    padding: var(--gutter-medium);
+    @include box-shadow(0.2rem, 0.5rem, var(--theme, var(--brand-fuschia)));
+
+    .list-inline{
+      gap: .5em;
+      margin-bottom: var(--gutter-small);
+
+      a{ position: relative; }
+    }
+
+    .blog-item__title{
+      margin: 0;
+
+      a{
+        @include text-underline(transparent);
+
+        &::before{
+          content: '';
+          position: absolute;
+          @include offset();
+        }
+
+        &:hover, &:focus{
+          @include text-underline--hover(currentColor);
+        }
+      }
+    }
+
+    .blog-item__meta{
+      margin-bottom: var(--gutter-small);
+    }
+
+    .link--picto{
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .blog-img-center {
   margin: 0 auto;
 }

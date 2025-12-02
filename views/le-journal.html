@@ -7,43 +7,59 @@ permalink: /le-journal/
 {% include 'header.html' %}
 
 <main role="main" id="main-content">
-  <header>
-  <section class="home-hero theme--dark" aria-labelledby="title-section-01">
-    <div class="wrapper wrapper--wide txt-c">
-      <img
-        class="blog-img-center"
-        src="assets/generic/lg_le-journal.png"
-        alt="Cayas - Le Journal"
-      />
-      <h2 id="title-section-01">L’édducation financière, mais indépendante</h2>
-    </div>
-  </section>
-    <nav role="navigation" aria-label="Navigation par sujets">
-      <div>
-        <div>
-          <span>Sujets:</span>
-          <ul>
-            {% for tag in collections.tags %}
-            <li>
-              <a href="/le-journal/sujet/{{ tag.slug }}/">{{ tag.name }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
 
-        <div class="grid__60 grid--xsmall__100">
-          {% include 'social-list.html' %}
-        </div>
+  <section class="blog-home-hero theme--dark" aria-labelledby="title-section-01">
+
+    <div class="wrapper wrapper--wide">
+
+      <h1 id="title-section-01" class="blog-home-hero__title">
+        <div class="cayas-logo">{{ 'assets/generic/lg_cayas--spraypainted.svg' | svg }}</div>
+        <div class="cayas-journal">{{ 'assets/generic/tt_le-journal.svg' | svg }}</div>
+      </h1><!-- /.blog-home-hero__title -->
+      <h2 class="txt-c">L’éducation financière, mais indépendante</h2>
+
+    </div><!-- .wrapper -->
+
+  </section>
+
+  <div class="wrapper wrapper--wide">
+
+    <section class="block-mirror blog-filters" aria-labelledby="title-section-02">
+
+      <h2 id="title-section-02" class="sr-only">Filtres</h2>
+
+      <nav role="navigation" aria-label="Filtrer par sujets">
+
+        <span>Sujets :</span>
+
+        <ul class="list-inline">
+          {% for tag in collections.tags %}
+          <li>
+            <a href="/le-journal/sujet/{{ tag.slug }}/" class="theme--fuschia">
+              <span class="smaller-font status-alt"><span>{{ tag.name }}</span></span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+
+      </nav>
+
+      <div class="smaller-font">
+
+        {% include 'social-list.html' %}
+
       </div>
-    </nav>
+
+    </section><!-- /.block-mirror -->
 
   {% if collections.blog.size > 0 %}
     <!-- Featured Section: À la une -->
     {% assign featuredPosts = collections.blog | where: "data.featured", true %}
     {% if featuredPosts.size > 0 %}
-    <section aria-labelledby="featured-title">
-      <div>
-        <h2 id="featured-title">À la une</h2>
+
+    <section aria-labelledby="title-section-03">
+
+        <h2 id="title-section-03" class="title--2">À la une</h2>
 
         <div>
           <!-- Main featured article (left) -->
@@ -51,33 +67,41 @@ permalink: /le-journal/
             {% include 'blog-item.html', post: mainFeatured %}
           {% endfor %}
         </div>
-      </div>
+
     </section>
+
+    <hr class="hr--naked">
     {% endif %}
 
     <!-- Recently Added Section: Ajouté récemment -->
-    <section aria-labelledby="recent-title">
-      <div>
-        <h2 id="recent-title">Ajouté récemment</h2>
+    <section aria-labelledby="title-section-04">
 
-        <div>
+        <h2 id="title-section-04" class="title--2">Ajouté récemment</h2>
+
+        <ul class="grid grid--wrap">
           {% assign recentCount = 0 %}
           {% for post in collections.blog %}
             {% unless post.data.featured %}
+              <li class="grid__33">
               {% include 'blog-item.html', post: post %}
+              </li>
             {% endunless %}
           {% endfor %}
-        </div>
-      </div>
+        </ul>
+
     </section>
+
   {% else %}
-    <div>
+
       <p>
         Aucun article publié pour le moment. Revenez bientôt pour découvrir nos
         nouveaux contenus !
       </p>
-    </div>
+
   {% endif %}
+
+  </div><!-- /.wrapper -->
+
 </main>
 
 {% include 'footer.html' %}

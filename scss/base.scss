@@ -135,6 +135,14 @@ body::before {
 .list-social {
   gap: 0.15em;
 
+  li{
+    a{
+      padding: 0;
+
+      &::after{ display: none; }
+    }
+  }
+
   .svg-icon {
     font-size: 2.5em;
   }
@@ -866,8 +874,33 @@ figure {
   }
 }
 
+
+// == component: block-mirror
+// ---------------------------------
+// all the compos with two facing elements that wrap when no more space
+.block-mirror{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--gutter-medium);
+
+  *{ margin: 0; }
+  .sized-img{ margin: 0; }
+
+  &.block-mirror--full > *{ flex: 1 1 0; }
+  &.block-mirror--nowrap{ flex-wrap: nowrap; }
+}
+
+
 // == core misc
 // ---------------------------------
+// color helpers
+.color-gray     { color: var(--ui-gray-4); }            // gray color helper for all small texts and stuff
+.color-green    { color: var(--brand-green-2); }        // this is for stonk up
+.color-orange   { color: var(--brand-orange-3); }       // this is for stonk mid
+.color-red      { color: var(--brand-red-2); }          // this is for stonk down
+
 .cayas-logo {
   max-width: 12rem;
   margin: 0;

@@ -1,46 +1,56 @@
-<article>
+<article class="blog-item theme--green">
+
   {% if post.data.featured_image %}
-  <div>
-    <a href="/le-journal/{{ post.data.slug }}/">
+  <div class="blog-item__img">
+
       <img
         src="{{ post.data.featured_image }}"
-        alt="{{ post.data.title }}"
+        alt=""
         loading="lazy"
       />
-    </a>
-  </div>
-  {% else %}
-  <div>
-    <!-- Image placeholder -->
-  </div>
+
+  </div><!-- /.blog-item__img -->
   {% endif %}
 
-  <div>
-    <h3>
-      <a href="/le-journal/{{ post.data.slug }}/">{{ post.data.title }}</a>
-    </h3>
+  <div class="blog-item__txt">
 
     {% if post.data.tags.size > 0 %}
-    <ul>
+    <ul class="list-inline">
       {% for tag in post.data.tags %}
-      <li><a href="/le-journal/sujet/{{ tag.slug }}/">{{ tag.name }}</a></li>
+      <li>
+        <span class="theme--fuschia"><span class="smaller-font status-alt"><span>{{ tag.name }}</span></span></span>
+      </li>
       {% endfor %}
     </ul>
     {% endif %}
 
-    <div>
+    <h3 class="blog-item__title title--3">
+      <a href="/le-journal/{{ post.data.slug }}/">{{ post.data.title }}</a>
+    </h3>
+
+    <div class="blog-item__meta smaller-font color-gray">
+
       <time datetime="{{ post.data.date | date: ' YYYY-MM-DD' }}">
         Le {{ post.data.date | date: 'D MMMM YYYY' }}
       </time>
+
       {% if post.data.author %}
       <span>par {{ post.data.author }}</span>
       {% endif %}
-    </div>
+
+    </div><!-- /.blog-item__meta -->
 
     {% if post.data.excerpt %}
     <div>{{ post.data.excerpt }}</div>
     {% endif %}
 
-    <a href="/le-journal/{{ post.data.slug }}/"> Lire la suite → </a>
-  </div>
+    <div class="link--picto small-font">
+      <strong>Lire la suite</strong>
+      <svg class="svg-icon" aria-hidden="true">
+        <use xlink:href="{{ '/assets/sprites.svg#arrow--right' | url }}"></use>
+      </svg>
+    </div>
+
+  </div><!-- /.blog-item__txt -->
+
 </article>

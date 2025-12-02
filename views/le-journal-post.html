@@ -10,49 +10,64 @@ layout: layout.html
 {% include 'header.html' %}
 
 <article>
-  <header>
-    <div class="wrapper--wide">
-      <h1>{{ post.data.title }}</h1>
 
-      <div>
-        <time datetime="{{ post.data.date | date: 'YYYY-MM-DD' }}">
-          {{ post.data.date | date: 'D MMMM YYYY' }}
-        </time>
-        {% if post.data.author %}
-        <span>par {{ post.data.author }}</span>
-        {% endif %}
-      </div>
+  <div class="blog-post-hero theme--dark">
 
-      {% if post.data.tags.length > 0 %}
-      <div>
-        {% for tag in post.data.tags %}
-        <span><a href="/le-journal/sujet/{{ tag.slug }}/">{{ tag.name }}</a></span>
-        {% endfor %}
-      </div>
-      {% endif %}
+    <div class="wrapper wrapper--wide">
 
-      {% if post.data.excerpt %}
-      <p>{{ post.data.excerpt }}</p>
+      image
+
+    </div><!-- .wrapper -->
+
+  </div>
+
+  <div class="wrapper wrapper--wide">
+
+    <h1>{{ post.data.title }}</h1>
+
+    <div>
+      <time datetime="{{ post.data.date | date: 'YYYY-MM-DD' }}">
+        {{ post.data.date | date: 'D MMMM YYYY' }}
+      </time>
+      {% if post.data.author %}
+      <span>par {{ post.data.author }}</span>
       {% endif %}
     </div>
+
+    {% if post.data.tags.length > 0 %}
+    <div>
+      {% for tag in post.data.tags %}
+      <span><a href="/le-journal/sujet/{{ tag.slug }}/">{{ tag.name }}</a></span>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if post.data.excerpt %}
+    <p>{{ post.data.excerpt }}</p>
+    {% endif %}
+
 
     {% if post.data.featured_image %}
     <div>
       <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" loading="eager">
     </div>
     {% endif %}
-  </header>
 
-  <div class="wrapper--wide">
+
     <div class="editorial">
       {{ post.content | markdown }}
     </div>
 
-    <footer>
-      <nav>
-        <a href="/le-journal/">← Retour au journal</a>
-      </nav>
-  </div>
+
+    <nav>
+      <a href="/le-journal/">← Retour au journal</a>
+    </nav>
+
+
+
+  </div><!-- /.wrapper -->
+
+
 </article>
 
 {% include 'footer.html' %}

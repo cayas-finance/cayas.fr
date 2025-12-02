@@ -2686,6 +2686,133 @@ footer .grid > :last-child .list-social {
     order: 1;
   }
 }
+/*------------------------------------------------------------------------------
+    CSS Document (http://www.w3.org/Style/CSS/)
+
+    project:    Cayas
+    created:    2025-01-01
+    author:     Christophe ANDRIEU (http://www.stpo.fr)
+
+    summary:    SETUP, VARIABLES AND SPECIFIC SCSS
+                GLOBAL LAYOUT
+                    generic
+                    misc
+                LISTS
+                    inline
+                    social
+                    checklist
+                CORE
+                    images
+                    status
+                    editorial
+                    transverse
+                    home
+                    split page
+                    core misc
+                MEDIA QUERIES
+                    xlarge
+                    large
+                    medium
+                    small
+                    xsmall
+                    xxsmall
+                PRINT
+----------------------------------------------------------------------------- */
+.blog-home-hero {
+  position: relative;
+  padding-top: var(--gutter-large);
+  padding-bottom: var(--gutter-large);
+  background: var(--ui-white) repeat center;
+  background-image: url("/assets/generic/bg_grid.png");
+  text-align: center;
+}
+.blog-home-hero .blog-home-hero__title {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.blog-home-hero .blog-home-hero__title .cayas-logo {
+  width: 80%;
+  max-width: 80%;
+}
+.blog-home-hero .blog-home-hero__title .cayas-journal {
+  width: 80%;
+  transform: translate(25%, -35%);
+}
+.blog-home-hero .blog-home-hero__title svg {
+  width: 100%;
+}
+.blog-home-hero h2 {
+  margin: -1em 0 0;
+}
+
+.blog-filters {
+  padding: var(--gutter-medium) 0;
+}
+.blog-filters nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.blog-filters .list-inline {
+  gap: 0.5em;
+}
+.blog-filters .list-social {
+  gap: 0.05em;
+}
+
+.blog-item .blog-item__img {
+  position: relative;
+  height: 0;
+  padding-bottom: 60%;
+  background: var(--ui-white) repeat center;
+  background-image: url("/assets/generic/bg_grid.png");
+}
+.blog-item .blog-item__img img {
+  height: 100%;
+  margin: 0 auto;
+}
+.blog-item .blog-item__txt {
+  position: relative;
+  padding: var(--gutter-medium);
+  border: 0.2rem solid var(--theme, var(--brand-fuschia));
+  box-shadow: 0.5rem 0.5rem 0 var(--theme, var(--brand-fuschia));
+}
+.blog-item .blog-item__txt .list-inline {
+  gap: 0.5em;
+  margin-bottom: var(--gutter-small);
+}
+.blog-item .blog-item__txt .list-inline a {
+  position: relative;
+}
+.blog-item .blog-item__txt .blog-item__title {
+  margin: 0;
+}
+.blog-item .blog-item__txt .blog-item__title a {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 400ms ease-out;
+}
+.blog-item .blog-item__txt .blog-item__title a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.blog-item .blog-item__txt .blog-item__title a:hover, .blog-item .blog-item__txt .blog-item__title a:focus {
+  text-decoration-color: currentColor;
+  transition-duration: 50ms;
+}
+.blog-item .blog-item__txt .blog-item__meta {
+  margin-bottom: var(--gutter-small);
+}
+.blog-item .blog-item__txt .link--picto {
+  width: 100%;
+  justify-content: flex-end;
+}
+
 .blog-img-center {
   margin: 0 auto;
 }
@@ -2751,6 +2878,12 @@ body::before {
 
 .list-social {
   gap: 0.15em;
+}
+.list-social li a {
+  padding: 0;
+}
+.list-social li a::after {
+  display: none;
 }
 .list-social .svg-icon {
   font-size: 2.5em;
@@ -3359,6 +3492,42 @@ figure figcaption {
   max-width: 30rem;
   margin: 0 auto;
   text-align: center;
+}
+
+.block-mirror {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--gutter-medium);
+}
+.block-mirror * {
+  margin: 0;
+}
+.block-mirror .sized-img {
+  margin: 0;
+}
+.block-mirror.block-mirror--full > * {
+  flex: 1 1 0;
+}
+.block-mirror.block-mirror--nowrap {
+  flex-wrap: nowrap;
+}
+
+.color-gray {
+  color: var(--ui-gray-4);
+}
+
+.color-green {
+  color: var(--brand-green-2);
+}
+
+.color-orange {
+  color: var(--brand-orange-3);
+}
+
+.color-red {
+  color: var(--brand-red-2);
 }
 
 .cayas-logo {
