@@ -76,7 +76,13 @@ content:
         list:
           min: 0
           max: 5
-        description: Ajoutez jusqu'à 5 tags pour la catégorisation
+        options:
+          values:
+            - Apprentissage
+            - Conseils
+            - L'avis Cayas
+          creatable: true
+        description: Sélectionnez des tags ou créez-en de nouveaux
         required: false
 
       - name: published
