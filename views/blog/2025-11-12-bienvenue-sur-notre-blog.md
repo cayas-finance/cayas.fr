@@ -7,8 +7,7 @@ excerpt: Découvrez notre nouveau blog dédié à l'éducation financière. Nous
   partagerons régulièrement des conseils, analyses et actualités pour vous aider
   dans votre parcours d'investissement.
 tags:
-  - actualités
-  - cayas
+  - Apprentissage
 published: true
 featured: true
 ---
