@@ -2890,6 +2890,7 @@ footer .grid > :last-child .list-social {
 .list-masonry {
   columns: 3 28rem;
   column-gap: var(--gutter-large);
+  column-fill: balance;
 }
 .list-masonry > li {
   display: inline-flex;

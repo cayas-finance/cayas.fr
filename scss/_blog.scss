@@ -138,6 +138,7 @@
 .list-masonry{
   columns: 3 28rem;
   column-gap: var(--gutter-large);
+  column-fill: balance; // not working
 
   > li{
     display: inline-flex;
