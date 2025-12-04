@@ -11,6 +11,23 @@ import "dayjs/locale/fr.js";
 
 dayjs.locale("fr");
 
+const colorsList = [
+  "fuschia",
+  "aqua",
+  "lilac",
+  "pink",
+  "yellow",
+  "green",
+  "blue",
+  "purple",
+]
+const getColorFromString = (str = "default") => {
+  const index = Math.abs(str.toLowerCase().split("").reduce((acc, char) => {
+    return acc + char.charCodeAt(0);
+  }, 0)) % colorsList.length;
+  return colorsList[index] || colorsList[0];
+}
+
 export default async function (cfg) {
   cfg.setInputDirectory("views");
 
@@ -68,6 +85,7 @@ export default async function (cfg) {
         data.categories = data.categories || [];
         data.excerpt = data.excerpt || "";
         data.featured_image = data.featured_image || null;
+        data.color = getColorFromString(data.title || data.slug);
 
         data.tags = data.tags.map(tagMapper);
 
