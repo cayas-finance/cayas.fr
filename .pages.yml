@@ -72,7 +72,7 @@ content:
 
       - name: tags
         label: Tags
-        type: string
+        type: select
         list:
           min: 0
           max: 5
