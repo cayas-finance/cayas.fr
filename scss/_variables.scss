@@ -201,9 +201,9 @@ $mq-xxsmall:    #{em(460)};
 .theme--red         { @include theme(red); }
 
 // blog themes
-.theme--actualites  { @include theme(fuschia); }
-.theme--cayas       { @include theme(aqua); }
-.theme--conseils    { @include theme(green); }
+.theme--apprentissage     { @include theme(fuschia); }
+.theme--lavis-cayas       { @include theme(aqua); }
+.theme--conseils          { @include theme(green); }
 
 // force theme color on something
 .theme-color{ color: var(--theme-2, var(--ui-gray-1)); }

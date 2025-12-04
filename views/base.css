@@ -217,7 +217,7 @@
   --theme-4: var(--brand-red-4);
 }
 
-.theme--actualites {
+.theme--apprentissage {
   --theme: var(--brand-fuschia);
   --theme-1: var(--brand-fuschia-1);
   --theme-2: var(--brand-fuschia-2);
@@ -225,7 +225,7 @@
   --theme-4: var(--brand-fuschia-4);
 }
 
-.theme--cayas {
+.theme--lavis-cayas {
   --theme: var(--brand-aqua);
   --theme-1: var(--brand-aqua-1);
   --theme-2: var(--brand-aqua-2);
