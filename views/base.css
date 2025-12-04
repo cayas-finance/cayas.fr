@@ -217,6 +217,30 @@
   --theme-4: var(--brand-red-4);
 }
 
+.theme--actualites {
+  --theme: var(--brand-fuschia);
+  --theme-1: var(--brand-fuschia-1);
+  --theme-2: var(--brand-fuschia-2);
+  --theme-3: var(--brand-fuschia-3);
+  --theme-4: var(--brand-fuschia-4);
+}
+
+.theme--cayas {
+  --theme: var(--brand-aqua);
+  --theme-1: var(--brand-aqua-1);
+  --theme-2: var(--brand-aqua-2);
+  --theme-3: var(--brand-aqua-3);
+  --theme-4: var(--brand-aqua-4);
+}
+
+.theme--conseils {
+  --theme: var(--brand-green);
+  --theme-1: var(--brand-green-1);
+  --theme-2: var(--brand-green-2);
+  --theme-3: var(--brand-green-3);
+  --theme-4: var(--brand-green-4);
+}
+
 .theme-color {
   color: var(--theme-2, var(--ui-gray-1));
 }

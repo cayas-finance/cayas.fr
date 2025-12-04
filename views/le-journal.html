@@ -35,7 +35,7 @@ permalink: /le-journal/
         <ul class="list-inline">
           {% for tag in collections.tags %}
           <li>
-            <a href="/le-journal/sujet/{{ tag.slug }}/" class="theme--fuschia">
+            <a href="/le-journal/sujet/{{ tag.slug }}/" class="theme--{{ tag.slug }}">
               <span class="smaller-font status-alt"><span>{{ tag.name }}</span></span>
             </a>
           </li>
@@ -64,7 +64,15 @@ permalink: /le-journal/
         <div>
           <!-- Main featured article (left) -->
           {% for mainFeatured in featuredPosts %}
+          {% if featuredPosts.size == 1 %}
+          <div class="grid__100">
             {% include 'blog-item.html', post: mainFeatured %}
+          </div>
+          {% else %}
+          <div class="{% if forloop.index == 1 %}grid__50 toto{% else %}grid__33{% endif %}">
+            {% include 'blog-item.html', post: mainFeatured %}
+          </div>
+          {% endif %}
           {% endfor %}
         </div>
 
