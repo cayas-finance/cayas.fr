@@ -81,7 +81,6 @@ content:
             - Apprentissage
             - Conseils
             - L'avis Cayas
-          creatable: true
         description: Sélectionnez des tags ou créez-en de nouveaux
         required: false
 
