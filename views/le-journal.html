@@ -1,5 +1,5 @@
 ---
-title: Cayas - Le Media
+title: Cayas - Le Journal
 layout: layout.html
 permalink: /le-journal/
 ---
@@ -16,6 +16,7 @@ permalink: /le-journal/
         <div class="cayas-logo">{{ 'assets/generic/lg_cayas--spraypainted.svg' | svg }}</div>
         <div class="cayas-journal">{{ 'assets/generic/tt_le-journal.svg' | svg }}</div>
       </h1><!-- /.blog-home-hero__title -->
+
       <h2 class="txt-c">L’éducation financière, mais indépendante</h2>
 
     </div><!-- .wrapper -->
@@ -61,7 +62,7 @@ permalink: /le-journal/
 
         <h2 id="title-section-03" class="title--2">À la une</h2>
 
-        <div>
+        <div class="grid">
           <!-- Main featured article (left) -->
           {% for mainFeatured in featuredPosts %}
           {% if featuredPosts.size == 1 %}
@@ -69,7 +70,7 @@ permalink: /le-journal/
             {% include 'blog-item.html', post: mainFeatured %}
           </div>
           {% else %}
-          <div class="{% if forloop.index == 1 %}grid__50 toto{% else %}grid__33{% endif %}">
+          <div class="{% if forloop.index == 1 %}grid__66 toto{% else %}grid__33{% endif %}">
             {% include 'blog-item.html', post: mainFeatured %}
           </div>
           {% endif %}
