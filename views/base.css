@@ -1751,6 +1751,9 @@ details {
   font-weight: 900;
   line-height: 1.1;
 }
+.title--1.title--1--smaller {
+  font-size: 4.8rem;
+}
 
 .title--2, .editorial h1 {
   margin-bottom: 0.5em;
@@ -1881,6 +1884,9 @@ details {
   .title--1 {
     font-size: 5rem;
   }
+  .title--1.title--1--smaller {
+    font-size: 4rem;
+  }
   .title--2, .editorial h1 {
     font-size: 3.2rem;
   }
@@ -1926,6 +1932,9 @@ details {
   .title--1 {
     font-size: 3.6rem;
   }
+  .title--1.title--1--smaller {
+    font-size: 3.4rem;
+  }
   .title--2, .editorial h1 {
     font-size: 3rem;
   }
@@ -1945,6 +1954,9 @@ details {
   }
   .title--1 {
     font-size: 3.2rem;
+  }
+  .title--1.title--1--smaller {
+    font-size: 3rem;
   }
   .title--2, .editorial h1 {
     font-size: 2.8rem;
@@ -2742,32 +2754,42 @@ footer .grid > :last-child .list-social {
                     xxsmall
                 PRINT
 ----------------------------------------------------------------------------- */
-.blog-home-hero {
+.blog-hero {
+  overflow: hidden;
   position: relative;
-  padding-top: var(--gutter-large);
-  padding-bottom: var(--gutter-large);
   background: var(--ui-white) repeat center;
   background-image: url("/assets/generic/bg_grid.png");
   text-align: center;
 }
-.blog-home-hero .blog-home-hero__title {
-  width: 100%;
+.blog-hero .blog-hero__title {
+  width: 50%;
   max-width: 40rem;
+  min-width: 20rem;
   margin: 0 auto;
+  padding-top: var(--gutter-large);
 }
-.blog-home-hero .blog-home-hero__title .cayas-logo {
+.blog-hero .blog-hero__title .cayas-logo {
+  display: block;
   width: 80%;
   max-width: 80%;
 }
-.blog-home-hero .blog-home-hero__title .cayas-journal {
+.blog-hero .blog-hero__title .cayas-journal {
+  display: block;
   width: 80%;
   transform: translate(25%, -35%);
 }
-.blog-home-hero .blog-home-hero__title svg {
+.blog-hero .blog-hero__title svg {
   width: 100%;
 }
-.blog-home-hero h2 {
-  margin: -1em 0 0;
+.blog-hero .title--4, .blog-hero .editorial h3, .editorial .blog-hero h3, .blog-hero .editorial h4, .editorial .blog-hero h4 {
+  margin: -1em 0 var(--gutter-large);
+}
+.blog-hero .blog-hero__img {
+  width: auto;
+  height: 100%;
+  max-height: 30rem;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .blog-filters {
@@ -2786,10 +2808,12 @@ footer .grid > :last-child .list-social {
 }
 
 .blog-item {
+  position: relative;
   border: 0.2rem solid var(--theme, var(--brand-fuschia));
   box-shadow: 0.5rem 0.5rem 0 var(--theme, var(--brand-fuschia));
 }
 .blog-item .blog-item__img {
+  overflow: hidden;
   background: var(--ui-black) repeat center;
   background-image: url("/assets/generic/bg_grid.png");
 }
@@ -2799,9 +2823,13 @@ footer .grid > :last-child .list-social {
   max-height: 20rem;
   max-width: 100%;
   margin: 0 auto;
+  transition: transform ease-in-out 300ms;
+}
+.blog-item:has(a:hover, a:focus) .blog-item__img img {
+  transform: scale(1.05);
+  transition-duration: 50ms;
 }
 .blog-item .blog-item__txt {
-  position: relative;
   padding: var(--gutter-medium);
 }
 .blog-item .blog-item__txt .list-inline {
@@ -2869,8 +2897,18 @@ footer .grid > :last-child .list-social {
   margin-bottom: var(--gutter-large);
 }
 
-.blog-img-center {
-  margin: 0 auto;
+.blog-overflow {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  width: 100%;
+  background-color: var(--ui-gray-8);
+}
+
+.blog-article-title {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: calc(1010 / 16 * 1em)) {
@@ -2902,6 +2940,10 @@ mark {
 html {
   scroll-padding-top: 10rem;
   scroll-padding-bottom: 10rem;
+}
+
+body::before {
+  display: none;
 }
 
 .wrapper {

@@ -84,6 +84,10 @@ details {
     font-size: 7rem;
     font-weight: 900;
     line-height: 1.1;
+    
+    &.title--1--smaller{
+        font-size: 4.8rem;
+    }
 }
 
 .title--2 {
@@ -190,6 +194,7 @@ details {
     .smallest-font  { font-size: 1.3rem; }
 
     .title--1       { font-size: 5rem; }
+    .title--1.title--1--smaller{ font-size: 4rem; }
     .title--2       { font-size: 3.2rem; }
     .title--3       { font-size: 2.3rem; }
     .title--4       { font-size: 2rem; }
@@ -223,6 +228,7 @@ details {
     .smallest-font  { font-size: 1.2rem; }
 
     .title--1       { font-size: 3.6rem; }
+    .title--1.title--1--smaller{ font-size: 3.4rem; }
     .title--2       { font-size: 3rem; }
     .title--3       { font-size: 2rem; }
     .title--4       { font-size: 1.8rem; }
@@ -247,6 +253,7 @@ details {
     .big-font       { font-size: 1.8rem; }
 
     .title--1       { font-size: 3.2rem; }
+    .title--1.title--1--smaller{ font-size: 3rem; }
     .title--2       { font-size: 2.8rem; }
     .title--3       { font-size: 1.8rem; }
     .title--4       { font-size: 1.7rem; }

@@ -11,21 +11,39 @@ layout: layout.html
 
 <article>
 
-  <div class="blog-post-hero theme--dark">
+  <div class="blog-overflow">
+
+  </div><!-- /.blog-overflow -->
+
+  {% if post.data.featured_image %}
+  <div class="blog-hero theme--dark" aria-labelledby="title-blog-hero">
 
     <div class="wrapper wrapper--wide">
-
-      image
-
+      <img src="{{ post.data.featured_image }}" class="blog-hero__img" alt="" loading="eager">
     </div><!-- .wrapper -->
 
-  </div>
+  </div><!-- /.blog-hero -->
+  {% endif %}
 
-  <div class="wrapper wrapper--wide">
+  <hr class="hr--naked">
 
-    <h1>{{ post.data.title }}</h1>
+  <div class="wrapper">
 
-    <div>
+    {% if post.data.tags.length > 0 %}
+    <ul class="list-inline">
+      {% for tag in post.data.tags %}
+      <li>
+        <a href="/le-journal/sujet/{{ tag.slug }}/" class="theme--{{ tag.slug }}">
+          <span class="smaller-font status-alt"><span>{{ tag.name }}</span></span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <h1 class="blog-article-title title--1 title--1--smaller">{{ post.data.title }}</h1>
+
+    <div class="small-font color-gray">
       <time datetime="{{ post.data.date | date: 'YYYY-MM-DD' }}">
         {{ post.data.date | date: 'D MMMM YYYY' }}
       </time>
@@ -34,39 +52,26 @@ layout: layout.html
       {% endif %}
     </div>
 
-    {% if post.data.tags.length > 0 %}
-    <div>
-      {% for tag in post.data.tags %}
-      <span><a href="/le-journal/sujet/{{ tag.slug }}/">{{ tag.name }}</a></span>
-      {% endfor %}
-    </div>
-    {% endif %}
+    <hr class="hr--naked">
 
     {% if post.data.excerpt %}
     <p>{{ post.data.excerpt }}</p>
     {% endif %}
 
-
-    {% if post.data.featured_image %}
-    <div>
-      <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" loading="eager">
-    </div>
-    {% endif %}
-
-
     <div class="editorial">
       {{ post.content | markdown }}
     </div>
 
+    <hr class="hr--large">
 
-    <nav>
-      <a href="/le-journal/">← Retour au journal</a>
-    </nav>
-
-
+    <p>
+      <a href="/le-journal/" class="link--picto">
+        <svg class="svg-icon" aria-hidden="true"><use xlink:href="{{ '/assets/sprites.svg#arrow--left' | url }}"></use></svg>
+        <span>Retour au journal</span>
+      </a>
+    </p>
 
   </div><!-- /.wrapper -->
-
 
 </article>
 

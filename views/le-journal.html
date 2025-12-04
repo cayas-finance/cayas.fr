@@ -8,26 +8,13 @@ permalink: /le-journal/
 
 <main role="main" id="main-content">
 
-  <section class="blog-home-hero theme--dark" aria-labelledby="title-section-01">
-
-    <div class="wrapper wrapper--wide">
-
-      <h1 id="title-section-01" class="blog-home-hero__title">
-        <div class="cayas-logo">{{ 'assets/generic/lg_cayas--spraypainted.svg' | svg }}</div>
-        <div class="cayas-journal">{{ 'assets/generic/tt_le-journal.svg' | svg }}</div>
-      </h1><!-- /.blog-home-hero__title -->
-
-      <h2 class="txt-c">L’éducation financière, mais indépendante</h2>
-
-    </div><!-- .wrapper -->
-
-  </section>
+  {% include 'blog-hero.html' %}
 
   <div class="wrapper wrapper--wide">
 
-    <section class="block-mirror blog-filters" aria-labelledby="title-section-02">
+    <section class="block-mirror blog-filters" aria-labelledby="title-blog-filters">
 
-      <h2 id="title-section-02" class="sr-only">Filtres</h2>
+      <h2 id="title-blog-filters" class="sr-only">Filtres</h2>
 
       <nav role="navigation" aria-label="Filtrer par sujets">
 
@@ -51,29 +38,23 @@ permalink: /le-journal/
 
       </div>
 
-    </section><!-- /.block-mirror -->
+    </section><!-- /.blog-filters -->
 
-  {% if collections.blog.size > 0 %}
+    {% if collections.blog.size > 0 %}
     <!-- Featured Section: À la une -->
     {% assign featuredPosts = collections.blog | where: "data.featured", true %}
     {% if featuredPosts.size > 0 %}
 
-    <section aria-labelledby="title-section-03">
+    <section aria-labelledby="title-section-une">
 
-        <h2 id="title-section-03" class="title--2">À la une</h2>
+        <h2 id="title-section-une" class="title--2">À la une</h2>
 
         <ul class="list-une">
           <!-- Main featured article (left) -->
           {% for mainFeatured in featuredPosts %}
-          {% if featuredPosts.size == 1 %}
           <li>
             {% include 'blog-item.html', post: mainFeatured %}
           </li>
-          {% else %}
-          <li class="{% if forloop.index == 1 %}grr{% else %}gro{% endif %}">
-            {% include 'blog-item.html', post: mainFeatured %}
-          </li>
-          {% endif %}
           {% endfor %}
         </ul>
 
@@ -83,9 +64,9 @@ permalink: /le-journal/
     {% endif %}
 
     <!-- Recently Added Section: Ajouté récemment -->
-    <section aria-labelledby="title-section-04">
+    <section aria-labelledby="title-section-posts">
 
-      <h2 id="title-section-04" class="title--2">Ajouté récemment</h2>
+      <h2 id="title-section-posts" class="title--2">Ajouté récemment</h2>
 
       <ul class="list-masonry">
         {% assign recentCount = 0 %}
@@ -104,7 +85,7 @@ permalink: /le-journal/
 
       <p>
         Aucun article publié pour le moment. Revenez bientôt pour découvrir nos
-        nouveaux contenus !
+        nouveaux contenus !
       </p>
 
   {% endif %}
