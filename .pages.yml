@@ -80,7 +80,7 @@ content:
           values:
             - Apprentissage
             - Conseils
-            - L'avis Cayas
+            - L’avis Cayas
         description: Sélectionnez des tags ou créez-en de nouveaux
         required: false
 
