@@ -29,7 +29,7 @@ content:
       default:
         sort: date
         order: desc
-      search: [title, excerpt, tags]
+    search: [title, excerpt]
     fields:
       - name: title
         label: Titre
@@ -74,9 +74,10 @@ content:
         label: Tags
         type: string
         list:
-          min: 1
+          min: 0
           max: 5
-        description: Ajoutez 1 à 5 tags pour la catégorisation
+        description: Ajoutez jusqu'à 5 tags pour la catégorisation
+        required: false
 
       - name: published
         label: Publié
@@ -84,7 +85,7 @@ content:
         default: false
         description: Définir sur true pour publier l'article
 
-       - name: featured
+      - name: featured
         label: À la une
         type: boolean
         default: false
