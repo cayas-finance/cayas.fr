@@ -2942,6 +2942,10 @@ html {
   scroll-padding-bottom: 10rem;
 }
 
+body::before {
+  display: none;
+}
+
 .wrapper {
   max-width: 80rem;
   padding: 0 var(--gutter-medium);
