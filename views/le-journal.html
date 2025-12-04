@@ -85,18 +85,18 @@ permalink: /le-journal/
     <!-- Recently Added Section: Ajouté récemment -->
     <section aria-labelledby="title-section-04">
 
-        <h2 id="title-section-04" class="title--2">Ajouté récemment</h2>
+      <h2 id="title-section-04" class="title--2">Ajouté récemment</h2>
 
-        <ul class="grid grid--wrap">
-          {% assign recentCount = 0 %}
-          {% for post in collections.blog %}
-            {% unless post.data.featured %}
-              <li class="grid__33">
-              {% include 'blog-item.html', post: post %}
-              </li>
-            {% endunless %}
-          {% endfor %}
-        </ul>
+      <ul class="masonry-with-columns">
+        {% assign recentCount = 0 %}
+        {% for post in collections.blog %}
+        {% unless post.data.featured %}
+        <li>
+          {% include 'blog-item.html', post: post %}
+        </li>
+        {% endunless %}
+        {% endfor %}
+      </ul>
 
     </section>
 

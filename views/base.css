@@ -2795,6 +2795,7 @@ footer .grid > :last-child .list-social {
 }
 .blog-item .blog-item__img img {
   width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 .blog-item .blog-item__txt {
@@ -2834,6 +2835,16 @@ footer .grid > :last-child .list-social {
 .blog-item .blog-item__txt .link--picto {
   width: 100%;
   justify-content: flex-end;
+}
+
+.masonry-with-columns {
+  columns: 3 30rem;
+  column-gap: var(--gutter-large);
+}
+.masonry-with-columns > li {
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: var(--gutter-large);
 }
 
 .blog-img-center {

@@ -53,6 +53,7 @@
     
     img{
       width: 100%;
+      height: auto;
       margin: 0 auto;
     }
   }
@@ -102,6 +103,18 @@
 
 
 
+.masonry-with-columns{
+  columns: 3 30rem;
+  column-gap: var(--gutter-large);
+
+  > li{
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: var(--gutter-large);
+  }
+
+
+}
 
 
 
