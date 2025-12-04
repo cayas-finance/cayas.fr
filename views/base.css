@@ -2785,22 +2785,21 @@ footer .grid > :last-child .list-social {
   gap: 0.05em;
 }
 
+.blog-item {
+  border: 0.2rem solid var(--theme, var(--brand-fuschia));
+  box-shadow: 0.5rem 0.5rem 0 var(--theme, var(--brand-fuschia));
+}
 .blog-item .blog-item__img {
-  position: relative;
-  height: 0;
-  padding-bottom: 60%;
-  background: var(--ui-white) repeat center;
+  background: var(--ui-black) repeat center;
   background-image: url("/assets/generic/bg_grid.png");
 }
 .blog-item .blog-item__img img {
-  height: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 .blog-item .blog-item__txt {
   position: relative;
   padding: var(--gutter-medium);
-  border: 0.2rem solid var(--theme, var(--brand-fuschia));
-  box-shadow: 0.5rem 0.5rem 0 var(--theme, var(--brand-fuschia));
 }
 .blog-item .blog-item__txt .list-inline {
   gap: 0.5em;

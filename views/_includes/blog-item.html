@@ -18,7 +18,7 @@
     <ul class="list-inline">
       {% for tag in post.data.tags %}
       <li>
-        <span class="theme--fuschia"><span class="smaller-font status-alt"><span>{{ tag.name }}</span></span></span>
+        <span class="theme--{{ tag.slug }}"><span class="smaller-font status-alt"><span>{{ tag.name }}</span></span></span>
       </li>
       {% endfor %}
     </ul>

@@ -45,15 +45,14 @@
 }
 
 .blog-item{
+  @include box-shadow(0.2rem, 0.5rem, var(--theme, var(--brand-fuschia)));
+
   .blog-item__img{
-    position: relative;
-    height: 0;
-    padding-bottom: 60%;
-    background: var(--ui-white) repeat center;
+    background: var(--ui-black) repeat center;
     background-image: url("/assets/generic/bg_grid.png");
     
     img{
-      height: 100%;
+      width: 100%;
       margin: 0 auto;
     }
   }
@@ -61,7 +60,6 @@
   .blog-item__txt{
     position: relative;
     padding: var(--gutter-medium);
-    @include box-shadow(0.2rem, 0.5rem, var(--theme, var(--brand-fuschia)));
 
     .list-inline{
       gap: .5em;
