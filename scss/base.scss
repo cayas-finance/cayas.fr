@@ -79,7 +79,7 @@ html {
 // DEBUG -- used to test media-queries
 // ALSO -- content is used to pass breakpoints to Javascript (see stpo.getBreakpoint)
 body::before {
-  display: none;
+  //display: none;
 }
 
 // == wrapper
