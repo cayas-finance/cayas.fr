@@ -62,24 +62,24 @@ permalink: /le-journal/
 
         <h2 id="title-section-03" class="title--2">À la une</h2>
 
-        <div class="grid">
+        <ul class="list-une">
           <!-- Main featured article (left) -->
           {% for mainFeatured in featuredPosts %}
           {% if featuredPosts.size == 1 %}
-          <div class="grid__100">
+          <li>
             {% include 'blog-item.html', post: mainFeatured %}
-          </div>
+          </li>
           {% else %}
-          <div class="{% if forloop.index == 1 %}grid__66 toto{% else %}grid__33{% endif %}">
+          <li class="{% if forloop.index == 1 %}grr{% else %}gro{% endif %}">
             {% include 'blog-item.html', post: mainFeatured %}
-          </div>
+          </li>
           {% endif %}
           {% endfor %}
-        </div>
+        </ul>
 
     </section>
 
-    <hr class="hr--naked">
+    <hr class="hr--naked hr--large">
     {% endif %}
 
     <!-- Recently Added Section: Ajouté récemment -->
@@ -87,7 +87,7 @@ permalink: /le-journal/
 
       <h2 id="title-section-04" class="title--2">Ajouté récemment</h2>
 
-      <ul class="masonry-with-columns">
+      <ul class="list-masonry">
         {% assign recentCount = 0 %}
         {% for post in collections.blog %}
         {% unless post.data.featured %}
