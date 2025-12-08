@@ -8,6 +8,7 @@ import { cssImage } from "./scripts/image.postcss.js";
 import { marked } from "marked";
 import dayjs from "dayjs";
 import "dayjs/locale/fr.js";
+import blockcite from "@comtext/markdown-it-blockquote-cite";
 
 dayjs.locale("fr");
 
@@ -31,6 +32,7 @@ const getColorFromString = (str = "default") => {
 export default async function (cfg) {
   cfg.setInputDirectory("views");
 
+  cfg.amendLibrary("md", (mdLib) => mdLib.use(blockcite));
 
  // Slugify function to remove special characters and create URL-friendly slugs
  const slugify = (str) => {
