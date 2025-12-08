@@ -10,17 +10,16 @@ layout: layout.html
 {% include 'header.html' %}
 
 <main role="main" id="main-content">
-
   {% include 'blog-hero.html' %}
 
   <div class="wrapper wrapper--wide">
-
-    <section class="block-mirror blog-filters" aria-labelledby="title-blog-filters">
-
+    <section
+      class="block-mirror blog-filters"
+      aria-labelledby="title-blog-filters"
+    >
       <h2 id="title-blog-filters" class="sr-only">Filtres</h2>
 
       <nav role="navigation" aria-label="Filtrer par sujets">
-
         <span>Sujets :</span>
 
         <ul class="link--picto">
@@ -28,57 +27,52 @@ layout: layout.html
           tagItem.slug == tag.slug %} {% if isActive %}
           <li>
             <a href="/le-journal/" class="theme--{{ tag.slug }}">
-              <span class="smaller-font status-alt"><span>{{ tag.name }}</span></span>
+              <span class="smaller-font status-alt">
+                <span>{{ tagItem.name }}</span>
+              </span>
             </a>
           </li>
           {% else %}
           <li>
             <a href="/le-journal/sujet/{{ tagItem.slug }}/">
-              <span class="smaller-font status-alt"><span>{{ tag.name }}</span></span>
-            </a
-            >
+              <span class="smaller-font status-alt">
+                <span>{{ tagItem.name }}</span>
+              </span>
+            </a>
           </li>
           {% endif %} {% endfor %}
         </ul>
-
       </nav>
 
-      <div class="smaller-font">
-
-        {% include 'social-list.html' %}
-
-      </div>
-
-    </section><!-- /.blog-filters -->
+      <div class="smaller-font">{% include 'social-list.html' %}</div>
+    </section>
+    <!-- /.blog-filters -->
 
     {% assign filteredPostsByTag = collections.blog | postsByTag: tag.slug %} {%
     if filteredPostsByTag.size > 0 %}
     <section aria-labelledby="title-section-posts">
-
       <h2 id="title-section-posts" class="title--2">{{ tag.name }}</h2>
 
       <ul class="list-masonry">
         {% for post in filteredPostsByTag %}
-        <li>
-          {% include 'blog-item.html', post: post %}
-        </li>
+        <li>{% include 'blog-item.html', post: post %}</li>
         {% endfor %}
       </ul>
-
     </section>
 
     {% else %}
-      <p>Aucun article trouvé avec le tag « {{ tag.name }} ».</p>
-      <p>
-        <a href="/le-journal/" class="link--picto">
-          <svg class="svg-icon" aria-hidden="true"><use xlink:href="{{ '/assets/sprites.svg#arrow--left' | url }}"></use></svg>
-          <span>Retour au journal</span>
-        </a>
-      </p>
+    <p>Aucun article trouvé avec le tag « {{ tag.name }} ».</p>
+    <p>
+      <a href="/le-journal/" class="link--picto">
+        <svg class="svg-icon" aria-hidden="true">
+          <use xlink:href="{{ '/assets/sprites.svg#arrow--left' | url }}"></use>
+        </svg>
+        <span>Retour au journal</span>
+      </a>
+    </p>
     {% endif %}
-
-  </div><!-- /.wrapper -->
-
+  </div>
+  <!-- /.wrapper -->
 </main>
 
 {% include 'footer.html' %}
