@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------------------------------------------------
     CSS Document (http://www.w3.org/Style/CSS/)
 
@@ -1762,13 +1763,13 @@ details {
   line-height: 1.1;
 }
 
-.title--3, .editorial h2 {
+.title--3, .editorial h2, .editorial blockquote {
   margin-bottom: 0.5em;
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 1.2;
 }
-.title--3 span, .editorial h2 span {
+.title--3 span, .editorial h2 span, .editorial blockquote span {
   font-style: normal;
   font-weight: 600;
 }
@@ -1813,8 +1814,10 @@ details {
 .editorial h1 em,
 .title--3 strong,
 .editorial h2 strong,
+.editorial blockquote strong,
 .title--3 em,
 .editorial h2 em,
+.editorial blockquote em,
 .title--4 strong,
 .editorial h3 strong,
 .editorial h4 strong,
@@ -1831,6 +1834,7 @@ details {
 .editorial h1 strong,
 .title--3 strong,
 .editorial h2 strong,
+.editorial blockquote strong,
 .title--4 strong,
 .editorial h3 strong,
 .editorial h4 strong,
@@ -1843,6 +1847,7 @@ details {
 .editorial h1 em,
 .title--3 em,
 .editorial h2 em,
+.editorial blockquote em,
 .title--4 em,
 .editorial h3 em,
 .editorial h4 em,
@@ -1890,7 +1895,7 @@ details {
   .title--2, .editorial h1 {
     font-size: 3.2rem;
   }
-  .title--3, .editorial h2 {
+  .title--3, .editorial h2, .editorial blockquote {
     font-size: 2.3rem;
   }
   .title--4, .editorial h3, .editorial h4 {
@@ -1938,7 +1943,7 @@ details {
   .title--2, .editorial h1 {
     font-size: 3rem;
   }
-  .title--3, .editorial h2 {
+  .title--3, .editorial h2, .editorial blockquote {
     font-size: 2rem;
   }
   .title--4, .editorial h3, .editorial h4 {
@@ -1961,7 +1966,7 @@ details {
   .title--2, .editorial h1 {
     font-size: 2.8rem;
   }
-  .title--3, .editorial h2 {
+  .title--3, .editorial h2, .editorial blockquote {
     font-size: 1.8rem;
   }
   .title--4, .editorial h3, .editorial h4 {
@@ -3075,14 +3080,15 @@ figure figcaption {
 .editorial ul,
 .editorial ol {
   margin-bottom: 1.5em;
+  margin-left: 1em;
   padding-left: 0;
 }
 .editorial ul li,
 .editorial ol li {
   overflow: hidden;
   position: relative;
-  padding: 0.1rem 0.1rem 0.1rem 2.75em;
-  margin-bottom: 0.75em;
+  padding: 0.1rem 0.1rem 0.1rem 1.75em;
+  margin-bottom: 0.5em;
 }
 .editorial ul li::before,
 .editorial ol li::before {
@@ -3100,14 +3106,7 @@ figure figcaption {
   margin-left: 0;
 }
 .editorial ul li::before {
-  content: "";
-  top: -0.25em;
-  width: 2.25em;
-  height: 2.25em;
-  mask-image: url("/assets/generic/arrow-2--right.svg");
-  mask-size: auto 2.25em;
-  mask-repeat: no-repeat;
-  background-color: var(--ui-gray-2);
+  content: "●";
 }
 .editorial ol {
   counter-reset: ol;
@@ -3126,6 +3125,7 @@ figure figcaption {
 .editorial img,
 .editorial picture {
   max-width: 100%;
+  height: auto;
 }
 .editorial h2 strong {
   padding: 0 0.25em;
@@ -3145,30 +3145,27 @@ figure figcaption {
   border: 0.2rem solid var(--brand-fuschia);
   box-shadow: 0.5rem 0.5rem 0 var(--brand-fuschia);
 }
-.editorial .editorial__quote {
+.editorial blockquote {
   position: relative;
-  padding-left: 6em;
+  margin: 0 0 1.5em;
+  padding: 1.5em 2em 1.5em 5em;
+  background: var(--ui-gray-10);
 }
-.editorial .editorial__quote .icon,
-.editorial .editorial__quote .svg-icon {
+.editorial blockquote p {
+  color: var(--ui-black);
+}
+.editorial blockquote::before {
+  content: "";
   position: absolute;
-  left: 0;
-  top: -0.15em;
-  font-size: 5em;
-  color: var(--brand-fuschia);
-  line-height: 1;
-}
-.editorial .editorial__quote blockquote {
-  margin: 0;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid var(--ui-gray-4);
-}
-.editorial .editorial__quote blockquote > * {
-  font-size: inherit;
-}
-.editorial .editorial__quote figcaption {
-  margin-top: 1rem;
-  font-style: italic;
+  left: 0.25em;
+  top: 0.25em;
+  width: 1em;
+  height: 1em;
+  mask-image: url("/assets/generic/icon--quotes.svg");
+  mask-size: auto 0.75em;
+  mask-repeat: no-repeat;
+  background-color: var(--brand-fuschia);
+  font-size: 3em;
 }
 .editorial .editorial__media {
   margin: 4rem 0;
@@ -3202,6 +3199,17 @@ figure figcaption {
 .editorial .editorial__media .editorial__img img {
   width: 100%;
   height: auto;
+}
+.editorial table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.editorial table td,
+.editorial table th {
+  border: 1px solid #ddd;
+  font-size: 100%;
+  padding: 1em 0.5em;
+  vertical-align: top;
 }
 .editorial .grid > * {
   margin-top: 1.5em;
@@ -3324,7 +3332,7 @@ figure figcaption {
   font-size: 5em;
   line-height: 1;
 }
-.home-offer .grid > * .title--3 strong, .home-offer .grid > * .editorial h2 strong, .editorial .home-offer .grid > * h2 strong {
+.home-offer .grid > * .title--3 strong, .home-offer .grid > * .editorial h2 strong, .editorial .home-offer .grid > * h2 strong, .home-offer .grid > * .editorial blockquote strong, .editorial .home-offer .grid > * blockquote strong {
   display: inline;
   color: var(--ui-always-white);
   background: var(--theme);
@@ -3852,24 +3860,4 @@ hr.hr--large {
   a[href="javascript:"] {
     content: "";
   }
-}
-.editorial table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.editorial table td,
-.editorial table th {
-  border: 1px solid #ddd;
-  font-size: 100%;
-  padding: 1em 0.5em;
-  vertical-align: top;
-}
-
-.editorial blockquote {
-  margin-left: 2em;
-  font-size: 100%;
-  color: #777;
-}
-.editorial blockquote p {
-  margin: 0;
 }
