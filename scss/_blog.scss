@@ -78,6 +78,10 @@
       transform: scale(1.05);
       transition-duration: 50ms;
     }
+
+    .blog-item__txt .link--picto{
+      @include text-underline--hover(currentColor);
+    }
   }
 
   .blog-item__txt{
@@ -115,6 +119,7 @@
     .link--picto{
       width: 100%;
       justify-content: flex-end;
+      @include text-underline(transparent);
     }
   }
 }

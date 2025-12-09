@@ -235,8 +235,15 @@ figure {
   display: inline-block;
   padding: 0.05em 0.25em;
   background: var(--theme-4, var(--ui-gray-9));
+  border: 1px solid transparent;
   color: var(--theme-1, var(--ui-gray-1));
   font-weight: 700;
+}
+
+a .status-alt{
+  &:hover, &:focus{
+    border-color: var(--theme-3, var(--ui-gray-3));
+  }
 }
 
 // == editorial
@@ -381,13 +388,10 @@ figure {
   //}
 
   blockquote{
-    @extend .title--3;
     position: relative;
     margin: 0 0 1.5em;
     padding: 1.5em 2em 1.5em 5em;
     background: var(--ui-gray-10);
-
-    p{ color: var(--ui-black); }
 
     &::before{
       content: "";
@@ -401,6 +405,18 @@ figure {
       mask-repeat: no-repeat;
       background-color: var(--brand-fuschia);
       font-size: 3em;
+    }
+
+    p{
+      @extend .title--3;
+      color: var(--ui-black);
+    }
+
+    cite{
+      display: block;
+      padding-top: var(--gutter-small);
+      border-top: 1px solid var(--ui-gray-8);
+      font-style: normal;
     }
   }
 

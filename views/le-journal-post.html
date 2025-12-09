@@ -54,11 +54,12 @@ layout: layout.html
 
     <hr class="hr--naked">
 
-    {% if post.data.excerpt %}
-    <p>{{ post.data.excerpt }}</p>
-    {% endif %}
-
     <div class="editorial">
+
+      {% if post.data.excerpt %}
+      <p>{{ post.data.excerpt }}</p>
+      {% endif %}
+
       {{ post.content | markdown }}
     </div>
 

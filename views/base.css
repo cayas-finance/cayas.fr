@@ -1763,13 +1763,13 @@ details {
   line-height: 1.1;
 }
 
-.title--3, .editorial h2, .editorial blockquote {
+.title--3, .editorial h2, .editorial blockquote p {
   margin-bottom: 0.5em;
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 1.2;
 }
-.title--3 span, .editorial h2 span, .editorial blockquote span {
+.title--3 span, .editorial h2 span, .editorial blockquote p span {
   font-style: normal;
   font-weight: 600;
 }
@@ -1814,10 +1814,10 @@ details {
 .editorial h1 em,
 .title--3 strong,
 .editorial h2 strong,
-.editorial blockquote strong,
+.editorial blockquote p strong,
 .title--3 em,
 .editorial h2 em,
-.editorial blockquote em,
+.editorial blockquote p em,
 .title--4 strong,
 .editorial h3 strong,
 .editorial h4 strong,
@@ -1834,7 +1834,7 @@ details {
 .editorial h1 strong,
 .title--3 strong,
 .editorial h2 strong,
-.editorial blockquote strong,
+.editorial blockquote p strong,
 .title--4 strong,
 .editorial h3 strong,
 .editorial h4 strong,
@@ -1847,7 +1847,7 @@ details {
 .editorial h1 em,
 .title--3 em,
 .editorial h2 em,
-.editorial blockquote em,
+.editorial blockquote p em,
 .title--4 em,
 .editorial h3 em,
 .editorial h4 em,
@@ -1895,7 +1895,7 @@ details {
   .title--2, .editorial h1 {
     font-size: 3.2rem;
   }
-  .title--3, .editorial h2, .editorial blockquote {
+  .title--3, .editorial h2, .editorial blockquote p {
     font-size: 2.3rem;
   }
   .title--4, .editorial h3, .editorial h4 {
@@ -1943,7 +1943,7 @@ details {
   .title--2, .editorial h1 {
     font-size: 3rem;
   }
-  .title--3, .editorial h2, .editorial blockquote {
+  .title--3, .editorial h2, .editorial blockquote p {
     font-size: 2rem;
   }
   .title--4, .editorial h3, .editorial h4 {
@@ -1966,7 +1966,7 @@ details {
   .title--2, .editorial h1 {
     font-size: 2.8rem;
   }
-  .title--3, .editorial h2, .editorial blockquote {
+  .title--3, .editorial h2, .editorial blockquote p {
     font-size: 1.8rem;
   }
   .title--4, .editorial h3, .editorial h4 {
@@ -2834,6 +2834,10 @@ footer .grid > :last-child .list-social {
   transform: scale(1.05);
   transition-duration: 50ms;
 }
+.blog-item:has(a:hover, a:focus) .blog-item__txt .link--picto {
+  text-decoration-color: currentColor;
+  transition-duration: 50ms;
+}
 .blog-item .blog-item__txt {
   padding: var(--gutter-medium);
 }
@@ -2870,6 +2874,9 @@ footer .grid > :last-child .list-social {
 .blog-item .blog-item__txt .link--picto {
   width: 100%;
   justify-content: flex-end;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 400ms ease-out;
 }
 
 .list-une {
@@ -3067,8 +3074,13 @@ figure figcaption {
   display: inline-block;
   padding: 0.05em 0.25em;
   background: var(--theme-4, var(--ui-gray-9));
+  border: 1px solid transparent;
   color: var(--theme-1, var(--ui-gray-1));
   font-weight: 700;
+}
+
+a .status-alt:hover, a .status-alt:focus {
+  border-color: var(--theme-3, var(--ui-gray-3));
 }
 
 .editorial h1:not(:first-child),
@@ -3151,9 +3163,6 @@ figure figcaption {
   padding: 1.5em 2em 1.5em 5em;
   background: var(--ui-gray-10);
 }
-.editorial blockquote p {
-  color: var(--ui-black);
-}
 .editorial blockquote::before {
   content: "";
   position: absolute;
@@ -3166,6 +3175,15 @@ figure figcaption {
   mask-repeat: no-repeat;
   background-color: var(--brand-fuschia);
   font-size: 3em;
+}
+.editorial blockquote p {
+  color: var(--ui-black);
+}
+.editorial blockquote cite {
+  display: block;
+  padding-top: var(--gutter-small);
+  border-top: 1px solid var(--ui-gray-8);
+  font-style: normal;
 }
 .editorial .editorial__media {
   margin: 4rem 0;
@@ -3332,7 +3350,7 @@ figure figcaption {
   font-size: 5em;
   line-height: 1;
 }
-.home-offer .grid > * .title--3 strong, .home-offer .grid > * .editorial h2 strong, .editorial .home-offer .grid > * h2 strong, .home-offer .grid > * .editorial blockquote strong, .editorial .home-offer .grid > * blockquote strong {
+.home-offer .grid > * .title--3 strong, .home-offer .grid > * .editorial h2 strong, .editorial .home-offer .grid > * h2 strong, .home-offer .grid > * .editorial blockquote p strong, .editorial blockquote .home-offer .grid > * p strong {
   display: inline;
   color: var(--ui-always-white);
   background: var(--theme);
