@@ -23,6 +23,9 @@ seo:
   meta_description: Découvrez ce qu’est un ETF, comment il fonctionne, ses
     avantages, ses risques et les critères essentiels pour bien choisir et
     investir.
+tags:
+  - Investir en Bourse
+  - ETF
 ---
 Les **ETF** (Exchange Traded Funds) se sont imposés comme l’un des véhicules d’investissement les plus utilisés au monde. Accessibles, peu coûteux et transparents, ils ont profondément transformé la gestion d’actifs depuis les années 1990.  
 Mais derrière leur apparente simplicité se cache une mécanique précise, souvent mal comprise par les investisseurs particuliers.
