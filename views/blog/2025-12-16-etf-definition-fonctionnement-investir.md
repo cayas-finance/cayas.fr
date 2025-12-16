@@ -29,8 +29,6 @@ Mais derrière leur apparente simplicité se cache une mécanique précise, souv
 
 Dans cet article, nous expliquons **ce qu’est un ETF**, pourquoi il a été créé, **comment il fonctionne concrètement**, quels sont ses avantages, ses risques, et **comment bien choisir un ETF** quand on débute.
 
-[https://youtu.be/xqh1YtQyouk](https://youtu.be/xqh1YtQyouk?si=IVzXiglzgxO3xH2T)
-
 * * *
 
 ## Qu’est-ce qu’un ETF ?
