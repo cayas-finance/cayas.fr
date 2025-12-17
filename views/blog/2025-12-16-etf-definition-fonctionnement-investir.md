@@ -17,7 +17,7 @@ excerpt: >-
   comment il fonctionne concrètement, quels sont ses avantages, ses risques, et
   comment bien choisir un ETF quand on débute.
 published: true
-featured: false
+featured: true
 seo:
   meta_title: "ETF : définition, fonctionnement et comment bien investir"
   meta_description: Découvrez ce qu’est un ETF, comment il fonctionne, ses
