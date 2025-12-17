@@ -1,6 +1,6 @@
 ---
-title: Bienvenue sur notre blog !
-slug: bienvenue-sur-notre-blog
+title: Hello World
+slug: hello-world-blog-cayas
 date: 2025-11-12
 author: L'équipe Cayas
 excerpt: Cayas démocratise l’éducation financière pour apprendre à investir
