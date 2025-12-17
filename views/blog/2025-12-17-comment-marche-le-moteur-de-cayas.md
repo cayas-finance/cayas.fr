@@ -13,6 +13,8 @@ excerpt: Avec Cayas+, vous accédez à un outil de simulation intelligent pour
   risque de ruine.
 published: true
 featured: false
+tags:
+  - L’avis Cayas
 ---
 Avec [l’outil Plan de vie](https://app.cayas.fr/tools/life-plan) de Cayas :
 
