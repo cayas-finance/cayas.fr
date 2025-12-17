@@ -12,7 +12,7 @@ excerpt: Avec Cayas+, vous accédez à un outil de simulation intelligent pour
   optimisé, en maximisant vos chances de succès mais aussi en maîtrisant le
   risque de ruine.
 published: true
-featured: false
+featured: true
 tags:
   - L’avis Cayas
 ---
