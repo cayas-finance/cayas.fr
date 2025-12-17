@@ -12,6 +12,7 @@ tags:
   - Investir en Bourse
 published: true
 featured: false
+featured_image: /assets/blog/vs_blog-cover-01.png
 ---
 # « Si c’est gratuit, c’est vous le produit »
 
