@@ -66,3 +66,5 @@ Nous utilisons un langage clair et accessible, évitant le jargon. Notre but est
 **À très bientôt,**
 
 _L'équipe Cayas_
+
+[![](/assets/blog/vs_blog-link-01.jpg)](https://app.cayas.fr/lessons)
