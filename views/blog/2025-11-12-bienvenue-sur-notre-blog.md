@@ -3,9 +3,12 @@ title: Bienvenue sur notre blog !
 slug: bienvenue-sur-notre-blog
 date: 2025-11-12
 author: L'équipe Cayas
-excerpt: Découvrez notre nouveau blog dédié à l'éducation financière. Nous
-  partagerons régulièrement des conseils, analyses et actualités pour vous aider
-  dans votre parcours d'investissement.
+excerpt: Cayas démocratise l’éducation financière pour apprendre à investir
+  sereinement. Sur notre blog, vous trouverez des conseils pratiques sur
+  l’investissement, la gestion du risque et les erreurs à éviter en tant
+  qu’investisseur débutant ou plus avancé. Rejoignez une communauté engagée et
+  suivez un parcours pédagogique clair, sans jargon ni conflit d’intérêt, pour
+  reprendre le pouvoir sur votre épargne.
 tags:
   - Apprentissage
 published: true
