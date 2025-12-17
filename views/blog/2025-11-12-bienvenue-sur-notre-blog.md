@@ -12,7 +12,7 @@ excerpt: Cayas démocratise l’éducation financière pour apprendre à investi
 tags:
   - Apprentissage
 published: true
-featured: true
+featured: false
 ---
 Cet espace est dédié à l'éducation financière et à l'investissement.
 
