@@ -12,7 +12,7 @@ tags:
   - Investir en Bourse
   - Apprentissage
 published: true
-featured: true
+featured: false
 ---
 # Bien investir, c'est plus simple que ce qu'on pense
 
