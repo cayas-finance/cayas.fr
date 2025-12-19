@@ -9,6 +9,7 @@ import { marked } from "marked";
 import dayjs from "dayjs";
 import "dayjs/locale/fr.js";
 import blockcite from "@comtext/markdown-it-blockquote-cite";
+import embedYouTube from "eleventy-plugin-youtube-embed";
 
 dayjs.locale("fr");
 
@@ -172,6 +173,16 @@ export default async function (cfg) {
 
   // svg
   cfg.addPlugin(svgPlugin);
+
+  // YouTube embeds
+  cfg.addPlugin(embedYouTube, {
+    lite: {
+      responsive: true,
+    },
+    noCookie: true,
+    modestBranding: true,
+    recommendSelfOnly: true,
+  });
 
   // CSS
   cfg.addTemplateFormats("css");
