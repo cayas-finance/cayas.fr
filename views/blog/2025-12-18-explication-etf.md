@@ -50,6 +50,6 @@ On explique tout ça dans notre [parcours pédagogique, accessible et sans jargo
 
 Et si vous voulez allez plus loin, on a fait une vidéo à ce sujet avec Marie-Ève Bussière, une experte des ETF :
 
-<iframe width="800" height="515" src="[https://www.youtube.com/embed/keppoZ7\_VSU?si=iUCGRkWEVym8Bjsr](https://www.youtube.com/embed/keppoZ7_VSU?si=iUCGRkWEVym8Bjsr)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="760" height="500" src="https://www.youtube.com/watch?v=keppoZ7\_VSU&t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-[https://www.youtube.com/watch?v=keppoZ7\_VSU&t=119s](https://www.youtube.com/watch?v=keppoZ7_VSU&t=119s)
+[https://www.youtube.com/watch?v=keppoZ7\_VSU&t](https://www.youtube.com/watch?v=keppoZ7_VSU&t=119s)
