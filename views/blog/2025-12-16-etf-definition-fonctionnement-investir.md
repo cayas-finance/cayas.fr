@@ -60,7 +60,7 @@ En Europe, les ETF sont apparus un peu plus tard, **au début des années 2000**
 Les ETF ont été un véritable **disrupteur** dans la gestion d’actifs.  
 Ils ont remis en question une idée longtemps dominante :
 
-> _Payer cher un gérant actif garantit une meilleure performance._
+> Payer cher un gérant actif garantit une meilleure performance.
 
 Les études montrent que, sur de nombreux marchés (notamment les grandes capitalisations), **la majorité des fonds actifs ne font pas mieux que leur indice de référence sur le long terme**.
 
@@ -125,7 +125,7 @@ Acheter un ETF paraît simple. Mais que se passe-t-il réellement **derrière le
 
 ## Deux marchés : primaire et secondaire
 
-#### 1\. Le marché secondaire
+### 1\. Le marché secondaire
 
 C’est le marché classique :
 
@@ -138,7 +138,7 @@ C’est le marché classique :
 
 Dans ce cas, **le gestionnaire de l’ETF n’intervient pas**.
 
-2\. Le marché primaire (création / destruction de parts)
+### 2\. Le marché primaire (création / destruction de parts)
 
 Lorsque l’offre et la demande ne s’équilibrent pas :
 
