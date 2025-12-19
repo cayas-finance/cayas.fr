@@ -11,6 +11,7 @@ tags:
   - Conseils
 published: true
 featured: false
+featured_image: /assets/blog/jamy-pourquoi.png
 ---
 # Pourquoi vous ne savez pas investir… et pourquoi ce n’est pas (complètement) votre faute
 
