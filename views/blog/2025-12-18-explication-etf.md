@@ -37,7 +37,7 @@ Et la beauté de la chose, c’est que cette approche vaut aussi bien pour les i
     
 *   **Liquidité** : à tout moment, on peut en acheter et en vendre, sur les horaires d’ouverture de la Bourse.
     
-*   Et cerise sur le gâteau : vous pouvez y investir avec une fiscalité allégée grâce au Plan d’épargne en actions (PEA). Cocorico.
+*   Et cerise sur le gâteau : vous pouvez y investir avec une **fiscalité allégée** grâce au Plan d’épargne en actions (PEA). Cocorico.
     
 
 # Quels sont les risques des ETF ?
