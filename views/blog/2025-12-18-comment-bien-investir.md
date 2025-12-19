@@ -9,7 +9,6 @@ excerpt: Beaucoup pensent que bien investir demande de lire The Economist, de
   plus simples. Et qu’il n’est pas nécessaire d’être un prix Nobel pour prendre
   de bonnes décisions financières.
 tags:
-  - Investir en Bourse
   - Apprentissage
 published: true
 featured: false
