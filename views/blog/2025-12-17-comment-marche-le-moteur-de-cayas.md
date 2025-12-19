@@ -16,6 +16,12 @@ featured: true
 tags:
   - L’avis Cayas
 featured_image: /assets/blog/Hero image blog.png
+seo:
+  meta_title: Comment marche le moteur de Cayas ?
+  meta_description: Notre modèle calcule votre allocation optimisée, adaptée à vos
+    contraintes de liquidités et à vos projets de vie. Parce que votre plan
+    d’investissement doit être optimisé, en maximisant vos chances de succès
+    mais aussi en maîtrisant le risque de ruine. On vous explique comment.
 ---
 Avec [l’outil Plan de vie](https://app.cayas.fr/tools/life-plan) de Cayas :
 
