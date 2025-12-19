@@ -23,6 +23,7 @@ tags:
   - Apprentissage
 published: true
 featured: false
+featured_image: /assets/blog/Hero image blog (1).png
 ---
 Les **ETF (Exchange Traded Fund)** sont des fonds qui s’achètent et se vendent en Bourse facilement. Ils suivent des **indices**. Vous pouvez visualiser un indice comme une palanquée d’actions d’entreprises différentes, regroupées selon un découpage maison, en fonction de la géographie ou de la taille des entreprises.
 
