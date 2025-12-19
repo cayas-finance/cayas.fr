@@ -9,7 +9,6 @@ excerpt: Les conseils financiers « gratuits » cachent souvent un coût colos
   pour faire fructifier votre argent dans votre propre intérêt.
 tags:
   - Conseils
-  - Investir en Bourse
 published: true
 featured: false
 featured_image: /assets/blog/vs_blog-cover-01.png
