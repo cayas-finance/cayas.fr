@@ -10,7 +10,7 @@ excerpt: Cayas démocratise l’éducation financière pour apprendre à investi
   suivez un parcours pédagogique clair, sans jargon ni conflit d’intérêt, pour
   reprendre le pouvoir sur votre épargne.
 tags:
-  - Apprentissage
+  - L’avis Cayas
 published: true
 featured: false
 ---
