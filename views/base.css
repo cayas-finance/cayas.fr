@@ -3145,12 +3145,6 @@ a .status-alt:hover, a .status-alt:focus {
   background: var(--brand-fuschia);
   color: var(--ui-always-white);
 }
-.editorial strong {
-  padding: 0 0.25em;
-  box-decoration-break: clone;
-  background: var(--brand-green);
-  color: var(--ui-always-black);
-}
 .editorial .editorial__boost {
   padding: var(--gutter-large);
   background: var(--ui-white);
@@ -3178,6 +3172,10 @@ a .status-alt:hover, a .status-alt:focus {
 }
 .editorial blockquote p {
   color: var(--ui-black);
+}
+.editorial blockquote p em {
+  background: none;
+  padding: 0;
 }
 .editorial blockquote cite {
   display: block;

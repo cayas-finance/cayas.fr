@@ -344,12 +344,12 @@ a .status-alt{
     color: var(--ui-always-white);
   }
 
-  strong {
-    padding: 0 0.25em;
-    box-decoration-break: clone;
-    background: var(--brand-green);
-    color: var(--ui-always-black);
-  }
+  //strong {
+  //  padding: 0 0.25em;
+  //  box-decoration-break: clone;
+  //  background: var(--brand-green);
+  //  color: var(--ui-always-black);
+  //}
 
   .editorial__boost {
     padding: var(--gutter-large);
@@ -410,6 +410,12 @@ a .status-alt{
     p{
       @extend .title--3;
       color: var(--ui-black);
+
+      // reset title--3
+      em{
+        background: none;
+        padding: 0;
+      }
     }
 
     cite{
