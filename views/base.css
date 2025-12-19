@@ -3129,7 +3129,7 @@ a .status-alt:hover, a .status-alt:focus {
 }
 .editorial ol li::before {
   content: counter(ol) ".";
-  width: 2.25em;
+  width: 1em;
   color: var(--brand-fuschia);
   text-align: right;
   font-weight: bold;

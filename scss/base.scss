@@ -323,7 +323,7 @@ a .status-alt{
 
       &::before {
         content: counter(ol) ".";
-        width: 2.25em;
+        width: 1em;
         color: var(--brand-fuschia);
         text-align: right;
         font-weight: bold;
