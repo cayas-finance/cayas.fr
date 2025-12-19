@@ -13,6 +13,7 @@ tags:
   - L’avis Cayas
 published: true
 featured: false
+featured_image: /assets/blog/cayas.png
 ---
 Cet espace est dédié à l'éducation financière et à l'investissement.
 
