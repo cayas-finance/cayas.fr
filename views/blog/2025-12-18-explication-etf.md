@@ -48,6 +48,6 @@ On explique tout ça dans notre [parcours pédagogique, accessible et sans jargo
 
 <p style="text-align: center"><a href="app.cayas.fr"><img src="/assets/blog/Banniere_blog_Capy.jpg" alt="Bannière Cayas"></a></p>
 
-Et si vous voulez allez plus loin, on a fait une vidéo à ce sujet avec Marie-Ève Bussière, une experte des ETF :  
+Et si vous voulez allez plus loin, on a fait une vidéo à ce sujet avec Marie-Ève Bussière, une experte des ETF :
 
-<iframe width="760" height="500" src="https://www.youtube.com/embed/keppoZ7\_VSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="760" height="500" src="https://www.youtube.com/embed/keppoZ7\\\_VSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
