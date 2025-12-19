@@ -20,8 +20,7 @@ excerpt: >-
   **Investir en ETF est la stratégie privilégiée** par de plus en plus
   d’investisseurs, débutants comme aguerris.
 tags:
-  - Investir en Bourse
-  - Conseils
+  - Apprentissage
 published: true
 featured: false
 ---
