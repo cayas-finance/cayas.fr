@@ -49,4 +49,4 @@ Le bon niveau de risque dépend de votre situation, de vos objectifs, et de votr
 
 Et non, vous n’avez pas besoin d’écouter _BFM Business_ tous les matins pour ça. Capy vous en garde.
 
-<p style="text-align: center"><a href="https://app.cayas.fr/"><img src="/assets/blog/Banniere_blog_Capy.jpg"></a></p>
+<p style="text-align: center"><a href="https://app.cayas.fr/"><img src="/assets/blog/Banniere_blog_Capy.jpg" alt="Bannière Cayas"></a></p>

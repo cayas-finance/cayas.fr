@@ -51,6 +51,10 @@ export default async function (cfg) {
 };
 
   const tagMapper = (tag) => {
+    // Handle already-processed tags (objects) in watch mode
+    if (typeof tag === 'object' && tag !== null) {
+      return tag;
+    }
     return {
       name: tag,
       slug: slugify(tag),
