@@ -15,6 +15,7 @@ published: true
 featured: true
 tags:
   - L’avis Cayas
+featured_image: /assets/blog/Hero image blog.png
 ---
 Avec [l’outil Plan de vie](https://app.cayas.fr/tools/life-plan) de Cayas :
 
