@@ -30,9 +30,9 @@ Acheter quelques actions au feeling, croire qu’on a repéré "la pépite" : c�
 Le vrai danger, c’est de **ne pas savoir combien de risque vous prenez**. Il y a deux erreurs typiques :
 
 *   **Prendre trop de risque sans s’en rendre compte**, en visant des rendements irréalistes.
-    
+
 *   **Ne pas en prendre du tout**, et voir son épargne se faire grignoter par l’inflation.
-    
+
 
 Le bon niveau de risque dépend de votre situation, de vos objectifs, et de votre tempérament. Cayas vous aide à le définir de façon rationnelle, sans jargon inutile.
 
@@ -41,12 +41,12 @@ Le bon niveau de risque dépend de votre situation, de vos objectifs, et de votr
 # 3 principes simples pour investir intelligemment
 
 1.  **Faites simple** : les meilleures stratégies sont souvent les plus lisibles.
-    
+
 2.  **Répliquez le marché** plutôt que d’essayer de le battre.
-    
+
 3.  **Comprenez votre niveau de risque** avant de choisir un produit.
-    
+
 
 Et non, vous n’avez pas besoin d’écouter _BFM Business_ tous les matins pour ça. Capy vous en garde.
 
-<p style="text-align: center"><a href="https://app.cayas.fr/"><img src="/assets/blog/Bannie%CC%80re%20blog%20Capy.jpg"></a></p>
+<p style="text-align: center"><a href="https://app.cayas.fr/"><img src="/assets/blog/Banniere_blog_Capy.jpg"></a></p>
