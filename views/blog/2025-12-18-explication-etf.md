@@ -46,7 +46,7 @@ Investir en ETF, c’est investir en actions. Il y a de la volatilité et il y a
 
 On explique tout ça dans notre [parcours pédagogique, accessible et sans jargon](https://app.cayas.fr/lessons).
 
-<p style="text-align: center"><img src="/assets/blog/Banniere_blog_Capy.jpg" alt="Bannière Cayas"></p>
+<p style="text-align: center"><a href="app.cayas.fr"><img src="/assets/blog/Banniere_blog_Capy.jpg" alt="Bannière Cayas"></a></p>
 
 Et si vous voulez allez plus loin, on a fait une vidéo à ce sujet avec Marie-Ève Bussière, une experte des ETF :
 
