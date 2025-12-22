@@ -9,7 +9,7 @@ excerpt: Dans la galaxie des finances personnelles, certains réflexes sont si
   démarrer sa vie financière et pouvoir ensuite investir sereinement. On
   commence par la base.
 published: true
-featured: false
+featured: true
 seo:
   meta_title: Quels sont les meilleurs livrets bancaires ?
   meta_description: Dans la galaxie des finances personnelles, certains réflexes
@@ -17,6 +17,8 @@ seo:
     courant, le Livret A, le LDDS, le LEP... Ce sont les livrets indispensables
     pour bien démarrer sa vie financière et pouvoir ensuite investir
     sereinement. On commence par la base.
+tags:
+  - Apprentissage
 ---
 # Ouvrir un compte bancaire personnel : la base de votre indépendance financière
 
