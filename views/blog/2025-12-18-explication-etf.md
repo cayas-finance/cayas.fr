@@ -30,15 +30,15 @@ Et la beauté de la chose, c’est que cette approche vaut aussi bien pour les i
 # Quels sont les avantages des ETF ?
 
 *   **Diversification instantanée** : avec un seul achat, vous vous exposez à la performance de plein d’entreprises.
-
+    
 *   **Transparence** : vous pouvez savoir au jour le jour quelles entreprises sont suivies par votre ETF.
-
+    
 *   **Frais très bas** : comme il n’y a pas vraiment besoin de pilote à bord, les frais de gestion sont généralement bien inférieurs aux frais de fonds de gestion active, de l’ordre de 0,1 à 0,4 %.
-
+    
 *   **Liquidité** : à tout moment, on peut en acheter et en vendre, sur les horaires d’ouverture de la Bourse.
-
+    
 *   Et cerise sur le gâteau : vous pouvez y investir avec une **fiscalité allégée** grâce au Plan d’épargne en actions (PEA). Cocorico.
-
+    
 
 # Quels sont les risques des ETF ?
 
@@ -48,6 +48,6 @@ On explique tout ça dans notre [parcours pédagogique, accessible et sans jargo
 
 <p style="text-align: center"><a href="app.cayas.fr"><img src="/assets/blog/Banniere_blog_Capy.jpg" alt="Bannière Cayas"></a></p>
 
-Et si vous voulez allez plus loin, on a fait une vidéo à ce sujet avec Marie-Ève Bussière, une experte des ETF :
+Et si vous voulez allez plus loin, on a fait une vidéo à ce sujet avec Ève-Marie Bussière, une experte des ETF :
 
-https://www.youtube.com/watch?v=keppoZ7_VSU
+[https://youtu.be/xqh1YtQyouk](https://youtu.be/xqh1YtQyouk)
