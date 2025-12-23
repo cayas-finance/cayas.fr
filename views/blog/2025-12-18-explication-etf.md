@@ -17,7 +17,6 @@ tags:
   - Apprentissage
 published: true
 featured: false
-featured_image: /assets/blog/Hero image blog (1).png
 ---
 Les **ETF (Exchange Traded Fund)** sont des fonds qui s’achètent et se vendent en Bourse facilement. Ils suivent des **indices**. Vous pouvez visualiser un indice comme une palanquée d’actions d’entreprises différentes, regroupées selon un découpage maison, en fonction de la géographie ou de la taille des entreprises.
 
@@ -30,15 +29,15 @@ Et la beauté de la chose, c’est que cette approche vaut aussi bien pour les i
 # Quels sont les avantages des ETF ?
 
 *   **Diversification instantanée** : avec un seul achat, vous vous exposez à la performance de plein d’entreprises.
-    
+
 *   **Transparence** : vous pouvez savoir au jour le jour quelles entreprises sont suivies par votre ETF.
-    
+
 *   **Frais très bas** : comme il n’y a pas vraiment besoin de pilote à bord, les frais de gestion sont généralement bien inférieurs aux frais de fonds de gestion active, de l’ordre de 0,1 à 0,4 %.
-    
+
 *   **Liquidité** : à tout moment, on peut en acheter et en vendre, sur les horaires d’ouverture de la Bourse.
-    
+
 *   Et cerise sur le gâteau : vous pouvez y investir avec une **fiscalité allégée** grâce au Plan d’épargne en actions (PEA). Cocorico.
-    
+
 
 # Quels sont les risques des ETF ?
 

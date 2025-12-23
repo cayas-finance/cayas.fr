@@ -58,12 +58,11 @@ On explique tout ça dans notre [parcours pédagogique gratuit, accessible et sa
 # En résumé : comment battre l’inflation sans vous perdre
 
 *   L’inflation est un risque discret mais puissant.
-    
-*   L’épargne non investie est vulnérable sur le long terme.
-    
-*   Investir, même avec un peu de volatilité, est souvent indispensable.
-    
-*   Une stratégie bien pensée permet de **préserver votre pouvoir d’achat**.
-    
 
-<p style="text-align: center"><a href="app.cayas.fr"><img src="/assets/blog/Banniere_blog_Capy.jpg"></a></p>
+*   L’épargne non investie est vulnérable sur le long terme.
+
+*   Investir, même avec un peu de volatilité, est souvent indispensable.
+
+*   Une stratégie bien pensée permet de **préserver votre pouvoir d’achat**.
+
+<p style="text-align: center"><a href="app.cayas.fr"><img src="/assets/blog/Banniere_blog_Capy.jpg" alt="Bannière Cayas"></a></p>

@@ -15,7 +15,6 @@ published: true
 featured: true
 tags:
   - L’avis Cayas
-featured_image: /assets/blog/Hero image blog.png
 seo:
   meta_title: Comment marche le modèle de Cayas ?
   meta_description: Notre modèle calcule votre allocation optimisée, adaptée à vos
