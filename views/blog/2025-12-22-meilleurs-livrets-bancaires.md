@@ -19,6 +19,7 @@ seo:
     sereinement. On commence par la base.
 tags:
   - Apprentissage
+featured_image: /assets/blog/Galaxy.png
 ---
 # Ouvrir un compte bancaire personnel : la base de votre indépendance financière
 
