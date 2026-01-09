@@ -210,6 +210,6 @@ Et… 14 milliards d’euros qui dorment dans les poches « Espèces » des P
 
 Ça y est, vous avez l’endroit où garer vos actions. Tout est prêt pour l’achat.
 
-📍 [Station suivante sur Cayas : Passer son premier ordre](https://app.cayas.fr/lessons)
+📍 [Station suivante sur Cayas : Passer son premier ordre](https://app.cayas.fr/tools/practical-path/passage-dordre)
 
 [![](/assets/blog/vs_blog-link-01.jpg)](app.cayas.fr)
