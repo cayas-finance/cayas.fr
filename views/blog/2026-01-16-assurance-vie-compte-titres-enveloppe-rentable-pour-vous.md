@@ -193,8 +193,6 @@ C'est ici que le piège se referme. Pour économiser 9 700 € de taxes, vous av
 
 Regardez bien ce tableau de distribution de la richesse sur 40 ans (retraite + succession) : l'assurance-vie est un jeu où la seule gagnante est l'industrie financière.
 
-![](/assets/blog/Capture%20d%E2%80%99e%CC%81cran%202026-01-16%20a%CC%80%2018.25.27.png)
-
 Avec un contrat d’assurance-vie à 1 %, vous avez perdu 35 700 € en frais, et on peut même considérer que l'État a perdu 40 000 € de recettes fiscales parce que votre patrimoine a été tondu chaque année par l’assureur.
 
 Au final, vous et vos héritiers percevez **56 000 € de moins** qu'avec un simple CTO.
