@@ -2709,6 +2709,15 @@ header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__me
     border: none;
     box-shadow: none;
   }
+  header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > .toggle {
+    pointer-events: none;
+  }
+  header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > .toggle .svg-icon {
+    display: none;
+  }
+  header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul[aria-hidden=true] {
+    display: flex;
+  }
 }
 @media screen and (max-width: calc(580 / 16 * 1em)) {
   .header-nav__menus .header-nav__menu li {
