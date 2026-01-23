@@ -1,7 +1,7 @@
 <nav role="navigation" aria-label="Accès rapide">
   <ul class="list-skip smallest-font">
     <li><a href="#main-content">Aller au contenu</a></li>
-    <li><a href="#main-nav">Aller à la navigation</a></li>
+    <li><a href="#header-nav">Aller à la navigation</a></li>
   </ul>
 </nav>
 
@@ -11,6 +11,7 @@
   class="header--website header--sticky sticky-watch"
 >
   <div class="wrapper wrapper--wide">
+
     <h1 class="cayas-logo">
       <a href="/">
         <span class="sr-only">Cayas</span>
@@ -18,39 +19,112 @@
       </a>
     </h1>
 
-    <nav
-      role="navigation"
-      class="header-nav__menus"
-      aria-label="Menu principal"
-      tabindex="-1"
-    >
-      <!-- À décommenter quand on aura l'offre en ligne -->
-      <!-- <ul class="header-nav__menu">
-        <li class="smaller-font">
-          <a href="/offre/" class="link--picto">
-            <svg class="svg-icon no-xxsmall" aria-hidden="true"><use xlink:href="{{ '/assets/sprites.svg#icon--rocket' | url }}"></use></svg>
-            <span><span class="no-xxsmall">Découvrez</span> nos offres !</span>
-          </a>
-        </li>
-      </ul> -->
+    <div class="header-content">
 
-      <div>
-        <a
-          href="https://app.cayas.fr/login"
-          class="button button--secondary smallest-font"
-        >
-          <strong>Se connecter</strong>
-        </a>
-        &nbsp;
-        <a
-          href="https://app.cayas.fr/"
-          class="button button--primary smallest-font"
-        >
-          <strong>Démarrer <span class="no-xxsmall">gratuitement</span></strong>
-        </a>
-      </div>
-    </nav>
-    <!-- /.header-nav__menu -->
+      <nav role="navigation" aria-label="Menu secondaire pour le mobile" class="no-medium no-large no-xlarge no-default">
+
+        <ul class="list-inline smallest-font">
+          <li>
+            <a href="https://app.cayas.fr/login" class="button button--secondary smallest-font">
+              <strong>Se connecter</strong>
+            </a>
+          </li>
+          <li class="no-xxsmall">
+            <a href="https://app.cayas.fr/" class="button button--primary smallest-font">
+              <strong>Démarrer</strong>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div id="header-nav" class="header-nav">
+
+        <button class="header-nav__burger toggle" aria-expanded="false" data-trap="true" data-freeze="true" data-echap="true" data-burger="true">
+          <span aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <strong class="sr-only">Menu</strong>
+        </button>
+
+        <div class="header-nav__burger-target" aria-hidden="true">
+
+          <div class="toggle-overlay header-nav__overlay" aria-hidden="true"></div>
+
+          <!-- tabindex -1 because it sometimes takes focus for reasons -->
+          <div class="header-nav__menus" tabindex="-1">
+
+              <nav role="navigation" aria-label="Menu principal">
+
+                <ul class="header-nav__menu smaller-font" data-toggle-collection-parent="true">
+                  <li><a href="/offre"><span>Offre</span></a></li>
+                  <li><a href="https://forum.cayas.fr" target="_blank"><span>Forum</span></a></li>
+                  <li><a href="/le-journal"><span>Articles</span></a></li>
+                  <li aria-current="page" data-toggle-collection="true">
+                    <button class="toggle" aria-expanded="false" aria-controls="subnav-1" data-collection="true" data-echap="true">
+                      <span>Boîte à outils</span>
+                      <svg class="svg-icon" aria-hidden="true"><use xlink:href="{{ '/assets/sprites.svg#ui_arrow-1--bottom' | url }}"></use></svg>
+                    </button>
+                    <ul id="subnav-1" aria-hidden="true">
+                      <!--<li aria-current="page" class="block-mirror block-mirror&#45;&#45;nowrap">-->
+                        <!--<svg class="svg-icon" aria-hidden="true"><use xlink:href="{{ '/assets/sprites.svg#deco_battle' | url }}"></use></svg>-->
+                        <!--<a href="https://app.cayas.fr/tools/cto-vs-av" aria-disabled="true">-->
+                          <!--<div class="smallest-font color-gray">Comparateur AV / CTO</div>-->
+                          <!--<strong>Quelle enveloppe est la plus rentable pour vous ?</strong>-->
+                        <!--</a>-->
+                      <!--</li>-->
+                      <li class="block-mirror block-mirror--nowrap">
+                        <svg class="svg-icon" aria-hidden="true"><use xlink:href="{{ '/assets/sprites.svg#deco_coins' | url }}"></use></svg>
+                        <a href="https://app.cayas.fr/tools/fees-simulator">
+                          <div class="smallest-font color-gray">Calculateur de frais</div>
+                          <strong>Combien allez-vous laisser sur la table ?</strong>
+                        </a>
+                      </li>
+                      <li class="block-mirror block-mirror--nowrap">
+                        <svg class="svg-icon" aria-hidden="true"><use xlink:href="{{ '/assets/sprites.svg#deco_search' | url }}"></use></svg>
+                        <a href="https://app.cayas.fr/investoscope/intro">
+                          <div class="smallest-font color-gray">Investoscope</div>
+                          <strong>Quel profil investisseur êtes-vous ?</strong>
+                        </a>
+                      </li>
+                      <li class="block-mirror block-mirror--nowrap">
+                        <svg class="svg-icon" aria-hidden="true"><use xlink:href="{{ '/assets/sprites.svg#deco_chart' | url }}"></use></svg>
+                        <a href="https://app.cayas.fr/tools/merton">
+                          <div class="smallest-font color-gray">Simulateur de Merton</div>
+                          <strong>Quel impact a votre profil de risque sur votre allocation ?</strong>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+              </nav>
+
+              <nav role="navigation" aria-label="Menu secondaire" class="no-small no-xsmall">
+
+                <ul class="list-inline smallest-font">
+                  <li class="no-xxsmall">
+                    <a href="https://app.cayas.fr/login" class="button button--secondary smallest-font">
+                      <strong>Se connecter</strong>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://app.cayas.fr/" class="button button--primary smallest-font">
+                      <strong>Démarrer</strong>
+                    </a>
+                  </li>
+                </ul>
+
+              </nav>
+
+            </div><!-- /.main-search -->
+
+          </div><!-- /.header-nav__menus -->
+
+        </div><!-- /.header-nav__burger-target -->
+
+      </div><!-- /.header-nav -->
+
+  </div>
+
   </div>
   <!-- /.wrapper -->
 </header>

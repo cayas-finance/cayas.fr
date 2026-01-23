@@ -2461,115 +2461,175 @@ header .wrapper {
   align-items: center;
   gap: 1em;
 }
-header .cayas-logo {
-  width: 30%;
-}
-
-.header-nav__menus {
+header .header-content {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  gap: 4em;
 }
-.header-nav__menus .header-nav__menu {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 2em;
-  margin: 0;
+header .header-content > nav {
+  margin-right: 2.5em;
 }
-.header-nav__menus .header-nav__menu li {
-  margin-top: 0.5rem;
+header .header-nav {
+  position: relative;
+  z-index: 1;
 }
-.header-nav__menus .header-nav__menu a:hover, .header-nav__menus .header-nav__menu a:focus {
-  color: var(--brand-fuschia);
-}
-
-.header-burger {
+header .header-nav .header-nav__burger {
   display: none;
   position: fixed;
-  top: 0;
+  top: 0.35rem;
   right: 0;
   z-index: 1;
-  padding: 0.25em;
-  font-size: 3.5rem;
+  padding: 1rem;
 }
-.header-burger > span {
+header .header-nav .header-nav__burger > span {
   position: relative;
   display: block;
-  width: 1em;
-  height: 1em;
+  width: 2rem;
+  height: 2rem;
   margin: 0 auto;
 }
-.header-burger > span span {
+header .header-nav .header-nav__burger > span span {
   position: absolute;
   display: block;
-  border-top: 0.15em solid var(--ui-black);
+  border-top: 0.3rem solid var(--ui-black);
   width: 100%;
-  border-radius: 0.15em;
   left: 0;
   opacity: 1;
   transition: all 400ms ease-in-out;
 }
-.header-burger > span span:nth-child(1) {
+header .header-nav .header-nav__burger > span span:nth-child(1) {
   top: 0;
-  transform: rotate(-2deg);
 }
-.header-burger > span span:nth-child(2), .header-burger > span span:nth-child(3) {
-  top: 0.35em;
-  transform: rotate(3deg);
+header .header-nav .header-nav__burger > span span:nth-child(2), header .header-nav .header-nav__burger > span span:nth-child(3) {
+  top: 0.75rem;
 }
-.header-burger > span span:nth-child(4) {
-  top: 0.7em;
-  transform: rotate(-3deg);
+header .header-nav .header-nav__burger > span span:nth-child(4) {
+  top: 1.5rem;
 }
-.header-burger strong {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-transform: uppercase;
-  font-weight: normal;
+header .header-nav .header-nav__burger[aria-expanded=true] > span span {
+  border-color: var(--color-gold-2);
 }
-.header-burger[aria-expanded=true] > span span {
-  border-color: var(--ui-gray-4);
-}
-.header-burger[aria-expanded=true] > span span:nth-child(1), .header-burger[aria-expanded=true] > span span:nth-child(4) {
+header .header-nav .header-nav__burger[aria-expanded=true] > span span:nth-child(1), header .header-nav .header-nav__burger[aria-expanded=true] > span span:nth-child(4) {
   top: 0.75rem;
   width: 0;
   left: 50%;
 }
-.header-burger[aria-expanded=true] > span span:nth-child(2) {
+header .header-nav .header-nav__burger[aria-expanded=true] > span span:nth-child(2) {
   transform: rotate(45deg);
 }
-.header-burger[aria-expanded=true] > span span:nth-child(3) {
+header .header-nav .header-nav__burger[aria-expanded=true] > span span:nth-child(3) {
   transform: rotate(-45deg);
 }
-.header-burger[aria-expanded=true]:hover > span span, .header-burger[aria-expanded=true]:focus > span span {
-  border-color: var(--ui-white);
+header .header-nav .header-nav__burger[aria-expanded=true]:hover > span span, header .header-nav .header-nav__burger[aria-expanded=true]:focus > span span {
+  border-color: var(--color-black);
 }
-
-.header-nav {
-  position: relative;
-  z-index: 1;
+header .header-nav .header-nav__burger:hover > span span, header .header-nav .header-nav__burger:focus > span span {
+  border-color: var(--color-gold-2);
 }
-.header-nav .header-burger-target .header-nav__overlay {
+header .header-nav .header-nav__burger-target .header-nav__overlay {
   display: none;
 }
-.header-nav .header-burger-target .header-nav__menus {
+header .header-nav .header-nav__burger-target .header-nav__menus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4em;
 }
-.header-nav .header-burger-target .header-nav__menus .header-nav__menu {
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 2em;
+  gap: 1em;
   margin: 0;
+  padding-right: 1em;
 }
-.header-nav .header-burger-target .header-nav__menus .header-nav__menu a:hover, .header-nav .header-burger-target .header-nav__menus .header-nav__menu a:focus {
-  color: var(--brand-pink);
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li {
+  position: relative;
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > button, header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35em 0.75em;
+  border: 1px solid transparent;
+  text-decoration: none;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.15;
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > button .svg-icon, header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > a .svg-icon {
+  margin-left: 0.5rem;
+  color: var(--ui-gray-2);
+  transform: rotate(0);
+  transition: transform 150ms ease-in-out;
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > button span:not(.svg-icon), header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > a span:not(.svg-icon) {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 400ms ease-out;
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > button:hover, header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > a:hover {
+  background: var(--brand-fuschia-4);
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > button:focus, header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > a:focus {
+  border-color: var(--brand-fuschia-3);
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > button[aria-expanded=true], header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > a[aria-expanded=true] {
+  color: var(--brand-fuschia);
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > button[aria-expanded=true] .svg-icon, header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > a[aria-expanded=true] .svg-icon {
+  transform: rotate(-180deg);
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > button[aria-expanded=true]:hover span:not(.svg-icon), header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > button[aria-expanded=true]:focus span:not(.svg-icon), header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > a[aria-expanded=true]:hover span:not(.svg-icon), header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > a[aria-expanded=true]:focus span:not(.svg-icon) {
+  text-decoration-color: currentColor;
+  transition-duration: 50ms;
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter-small);
+  width: 40rem;
+  min-width: 10rem;
+  padding: var(--gutter-small);
+  background: var(--ui-white);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem var(--ui-gray-8);
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul > li {
+  position: relative;
+  justify-content: flex-start;
+  gap: var(--gutter-small);
+  padding: var(--gutter-small);
+  border: 1px solid var(--ui-gray-8);
+  border-radius: 0.5rem;
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul > li > .svg-icon {
+  font-size: 3em;
+  flex: 0 0 auto;
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul > li > a, header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul > li > button {
+  text-decoration: none;
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul > li > a::before, header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul > li > button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul > li > a > strong, header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul > li > button > strong {
+  line-height: 1.15;
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul > li:has(*:hover) {
+  background: var(--brand-fuschia-4);
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul > li:has(*:focus) {
+  border-color: var(--brand-fuschia-3);
+}
+header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul[aria-hidden=true] {
+  display: none;
 }
 
 @media screen and (max-width: calc(730 / 16 * 1em)) {
@@ -2577,13 +2637,10 @@ header .cayas-logo {
     padding-bottom: var(--gutter-small);
     padding-top: var(--gutter-small);
   }
-  .header-nav__menus {
-    gap: 1em;
-  }
-  .header-nav .header-burger {
+  header .header-nav .header-nav__burger {
     display: block;
   }
-  .header-nav .header-burger-target {
+  header .header-nav .header-nav__burger-target {
     position: fixed;
     top: 0;
     right: 0;
@@ -2594,27 +2651,27 @@ header .cayas-logo {
     justify-content: center;
     align-items: flex-start;
   }
-  .header-nav .header-burger-target[aria-hidden=true] {
+  header .header-nav .header-nav__burger-target[aria-hidden=true] {
     visibility: hidden;
   }
-  .header-nav .header-burger-target[aria-hidden=true] .header-nav__overlay {
+  header .header-nav .header-nav__burger-target[aria-hidden=true] .header-nav__overlay {
     background-color: transparent;
   }
-  .header-nav .header-burger-target[aria-hidden=true] .header-nav__menus {
+  header .header-nav .header-nav__burger-target[aria-hidden=true] .header-nav__menus {
     opacity: 0;
   }
-  .header-nav .header-burger-target .header-nav__overlay {
+  header .header-nav .header-nav__burger-target .header-nav__overlay {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     display: block;
-    background-color: rgba(0, 0, 0, 0.925);
+    background-color: var(--ui-white);
     transition: background-color 400ms ease-in-out;
   }
-  .header-nav .header-burger-target .header-nav__menus {
-    flex-direction: column;
+  header .header-nav .header-nav__burger-target .header-nav__menus {
+    display: block;
     width: 100%;
     max-height: 100%;
     overflow: auto;
@@ -2623,14 +2680,34 @@ header .cayas-logo {
     opacity: 0.9999;
     transition: opacity 400ms ease-in-out;
   }
-  .header-nav .header-burger-target .header-nav__menus .header-nav__menu {
-    flex-direction: column;
-    gap: 1em;
-    color: var(--ui-always-white);
-    font-size: 1.5em;
-  }
-  .header-nav .header-burger-target .header-nav__menus .header-nav__menu li {
+  header .header-nav .header-nav__burger-target .header-nav__menus nav:last-child {
+    position: absolute;
     display: block;
+    max-width: 40rem;
+    margin: 2em auto;
+    padding: 0 2em;
+  }
+  header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu {
+    position: relative;
+    flex-direction: column;
+    max-width: 40rem;
+    margin: auto;
+    padding: 0 2em;
+  }
+  header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li {
+    width: 100%;
+  }
+  header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > a, header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > button {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  header .header-nav .header-nav__burger-target .header-nav__menus .header-nav__menu > li > ul {
+    position: relative;
+    left: inherit;
+    min-width: 0;
+    width: 100%;
+    border: none;
+    box-shadow: none;
   }
 }
 @media screen and (max-width: calc(580 / 16 * 1em)) {
