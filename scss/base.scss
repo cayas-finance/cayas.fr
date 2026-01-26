@@ -545,7 +545,6 @@ a .status-alt{
 // ---------------------------------
 // dark theme
 .home-hero {
-  overflow: hidden;
   position: relative;
   padding-top: calc(var(--gutter-xlarge) * 1.5);
   padding-bottom: calc(var(--gutter-xlarge) * 1.5);
@@ -581,7 +580,7 @@ a .status-alt{
 
     &.home-hero__deco--4 {
       top: 0;
-      right: 0;
+      right: 1px; // not 0, Webkit overflow bug
       width: 16%;
       max-width: 12.5em;
       height: auto;
