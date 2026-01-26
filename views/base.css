@@ -3366,6 +3366,7 @@ a .status-alt:hover, a .status-alt:focus {
 }
 
 .home-hero {
+  overflow: hidden;
   position: relative;
   padding-top: calc(var(--gutter-xlarge) * 1.5);
   padding-bottom: calc(var(--gutter-xlarge) * 1.5);
