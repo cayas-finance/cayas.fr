@@ -39,6 +39,8 @@ seo:
     sans chercher à prédire l’avenir.
   og_image: /assets/blog/cayas.png
 ---
+_Cet article est une reproduction autorisée de la troisième leçon du_ [_parcours pédagogique Cayas_](https://app.cayas.fr/signup)_._
+
 Pas besoin d'être prix Nobel d'économie pour gérer ses finances personnelles.
 
 Faire de bons investissements nécessite quelques bons réflexes qui sont plus simples à acquérir que vous ne le pensez. Pas besoin non plus d’écouter en boucle BFM Business, de feuilleter le _Financial Times_ ou de disséquer le _Wall Street Journal_ pour savoir si la Fed (petit nom donné à la banque centrale américaine) augmentera ses taux directeurs de 0,25 % en janvier plutôt qu’en mars.
