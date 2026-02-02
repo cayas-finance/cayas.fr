@@ -104,7 +104,9 @@ On représente ensuite le portefeuille risqué avec trois courbes correspondant 
 *   La courbe verte du milieu correspond au résultat médian, c’est-à-dire qu’on a 50 % de chances d’avoir moins et 50 % de chances d’avoir plus.
     
 
-<p style="text-align: center"><img src="/assets/blog/patience-et-longueur-de-temps.png"></p><p style="text-align: center">Patience et longueur de temps...</p>
+![](/assets/blog/patience-et-longueur-de-temps.png)
+
+<p style="text-align: center">Patience et longueur de temps...</p>
 
 Si l’on a besoin de son argent dans deux ou trois ans, le portefeuille risqué n’est pas une bonne idée. Mais si l’on a suffisamment de temps, le portefeuille risqué aura une valeur supérieure à celle qu’on peut attendre du portefeuille peu risqué, **même si l’on n’a pas de chance** et que le risque se réalise.
 
