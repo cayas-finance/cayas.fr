@@ -61,8 +61,6 @@ Leur jackpot, c’est la **rétrocommission** : un pourcentage du capital que 
 
 Imaginons : votre conseiller vous recommande d’investir 100 000 € sur le fonds Jackpot Plus, un joli fonds d’actions technologiques. Il a négocié 1 % de rétrocommission avec le gérant, ce qui signifie qu’il touchera 1 000 € par an, tant que vous y restez. Mais voilà : un autre fonds, Miraculo 3000, a de meilleures chances de faire grossir votre épargne, mais ne lui rapporte que 0,5 % de rétrocommission. Va-t-il céder à la tentation ?
 
-[<img src="https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-yjdwrcabtcag1.png?width=800&amp;format=png&amp;auto=webp&amp;s=6fddb319df383ed3fc010df56f33b6400b0b6b2a" alt="r/Cayas - Les frais financiers, ce &quot;détail&quot; qui vous coûte une fortune" class="mb-0 block w-fit my-0 mx-auto max-w-[100%] non-lightboxed-content" style="margin: 0px auto; max-width: 100%; display: block; width: auto; aspect-ratio: 750 / 56.25;" width="750" height="auto">](https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-yjdwrcabtcag1.png?width=800&format=png&auto=webp&s=6fddb319df383ed3fc010df56f33b6400b0b6b2a)
-
 Imaginez un médecin payé en pourcentage du prix des médicaments qu’il vous prescrit. Ça paraîtrait louche. Pourtant, c’est généralement comme ça que fonctionne le conseil financier.
 
 On ne dit pas que tous les conseillers sont des grigous ou qu’ils sont nécessairement biaisés. Mais il faut tout de même avoir conscience de ce potentiel **conflit d’intérêts**.
@@ -75,8 +73,6 @@ Ce mode de rémunération pose deux problèmes :
     
 *   La facture est invisible, mais c’est bien votre argent qui file. Vous ne faites ni chèque ni virement à votre conseiller. Son salaire provient des rétrocommissions : le gérant du fonds ponctionne des frais sur votre investissement, en reverse une partie au conseiller… ce qui sabote au passage la performance du fonds. C’est exactement la raison pour laquelle beaucoup de fonds **sous-performent** de 2 à 3 % par an par rapport au marché dans lequel ils investissent.
     
-
-[<img src="https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-kg2iv00htcag1.png?width=800&amp;format=png&amp;auto=webp&amp;s=2222dd9e56b24a7cad66559a145dca9b75482c6e" alt="r/Cayas - Les frais financiers, ce &quot;détail&quot; qui vous coûte une fortune" class="mb-0 block w-fit my-0 mx-auto max-w-[100%] non-lightboxed-content" style="margin: 0px auto; max-width: 100%; display: block; width: auto; aspect-ratio: 750 / 56.25;" width="750" height="auto">](https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-kg2iv00htcag1.png?width=800&format=png&auto=webp&s=2222dd9e56b24a7cad66559a145dca9b75482c6e)
 
 Reprenons notre fameux fonds Jackpot Plus. Sur le papier, il affiche 10 % de rendement brut. Mais une fois les frais et rétrocommissions prélevés, il vous restera 7 % net.   
 _Desquels il faudra ensuite déduire l’inflation, les impôts et les cotisations sociales. Normal._
@@ -92,7 +88,7 @@ Si on vous avait envoyé une facture de 3 000 € de frais à payer, vous auri
 
 Vous ne faites pas très attention aux relevés de frais que vous recevez une fois par an, n’est-ce pas ?
 
-[<img src="https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-o5szyd0xtcag1.png?width=800&amp;format=png&amp;auto=webp&amp;s=f8586f7a3970d7406ddb56b0e0853c0f1b150a9d" alt="r/Cayas - Les frais financiers, ce &quot;détail&quot; qui vous coûte une fortune" class="mb-0 block w-fit my-0 mx-auto max-w-[100%] non-lightboxed-content" style="margin: 0px auto; max-width: 100%; display: block; width: auto; aspect-ratio: 750 / 56.25;" width="750" height="auto">](https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-o5szyd0xtcag1.png?width=800&format=png&auto=webp&s=f8586f7a3970d7406ddb56b0e0853c0f1b150a9d)
+\_\_\_
 
 Si les intermédiaires financiers ne travaillent pas tous pour votre bien, ils ne vous veulent pas forcément du mal non plus ! Ils défendent leurs propres intérêts, car s’ils ne le font pas, ils ne graillent pas.
 
@@ -104,7 +100,7 @@ Regardez de plus près vos contrats d’assurance-vie, de comptes-titres, de 
 
 Ici non plus, vous ne voyez jamais l’argent partir. C’est plus sournois : les frais sont prélevés directement sur votre épargne, discrètement, sans notification préalable. C’est de l’argent qui aurait dû être dans votre poche, mais qui a été intercepté avant même qu’il n’y parvienne.
 
-[<img src="https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-4tb49qu3ucag1.png?width=800&amp;format=png&amp;auto=webp&amp;s=a5e477a16df6b5ff854cace5b836db6568df7621" alt="r/Cayas - Les frais financiers, ce &quot;détail&quot; qui vous coûte une fortune" class="mb-0 block w-fit my-0 mx-auto max-w-[100%] non-lightboxed-content" style="margin: 0px auto; max-width: 100%; display: block; width: auto; aspect-ratio: 750 / 56.25;" width="750" height="auto">](https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-4tb49qu3ucag1.png?width=800&format=png&auto=webp&s=a5e477a16df6b5ff854cace5b836db6568df7621)
+\_\_\_
 
 Supposons qu’un placement modérément risqué rapporte cette année autour de 4 %. Si vous ne contrôlez pas les frais, 3 % s’envolent dans la poche d’un autre et votre rendement net s’aplatit sévèrement. Dans cet exemple, les intermédiaires profiteraient plus que vous des fruits de votre épargne. 
 
@@ -118,7 +114,7 @@ _(Pour que le graphique soit plus lisible, nous avons considéré que son invest
 
 Au bout de trente-cinq ans, Camille aurait cumulé 1 325 800 € de capital sans frais au lieu de 583 700 € avec frais, soit un écart de **742 100 €**.
 
-[<img src="https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-gj8dldskucag1.png?width=1518&amp;format=png&amp;auto=webp&amp;s=d03236422ab9b279db3b355cf57d9574585414b2" alt="r/Cayas - La part du lion" class="mb-0 block w-fit my-0 mx-auto max-w-[100%] non-lightboxed-content" style="margin: 0px auto; max-width: 100%; display: block; width: auto; aspect-ratio: 750 / 444.664;" width="750" height="auto">](https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-gj8dldskucag1.png?width=1518&format=png&auto=webp&s=d03236422ab9b279db3b355cf57d9574585414b2)
+![](/assets/blog/la-part-du-lion.png)
 
 <p style="text-align: center">La part du lion</p>
 
@@ -137,7 +133,7 @@ En gérant directement votre argent, c’est vous qui capterez l’essentiel de 
 Et si l’on estimait les sommes que vous allez laisser sur la table tout au long de votre vie d’épargnant ?  
 Calculons ça, avec une hypothèse de **4 %** de rendement par an
 
-[<img src="https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-q4ar7lg3wcag1.png?width=2798&amp;format=png&amp;auto=webp&amp;s=530013cbbd03aa27dfa36a1f645086e8b1719099" alt="r/Cayas - Capture d'écran du simulateur de frais" class="mb-0 block w-fit my-0 mx-auto max-w-[100%] non-lightboxed-content" style="margin: 0px auto; max-width: 100%; display: block; width: auto; aspect-ratio: 750 / 368.299;" width="750" height="auto">](https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-q4ar7lg3wcag1.png?width=2798&format=png&auto=webp&s=530013cbbd03aa27dfa36a1f645086e8b1719099)
+![](/assets/blog/simulateur-de-frais.png)
 
 <p style="text-align: center">Capture d'écran du simulateur de frais</p>
 
@@ -161,15 +157,13 @@ La fiscalité est un sujet obsessionnel pour certains épargnants. Les interméd
 
 Il n’est pas rare que la performance du produit, même après prise en compte de l’avantage fiscal, soit inférieure à celle d’un produit « non défiscalisant » similaire. En définitive, c’est l’intermédiaire qui capte la valeur, en utilisant la carotte fiscale pour vous faire payer l’actif vendu plus cher que nécessaire.
 
-[<img src="https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-aaf3pr7ivcag1.png?width=800&amp;format=png&amp;auto=webp&amp;s=ce7b8538cfaf98b858ab759354e34975935c0e3c" alt="r/Cayas - Les frais financiers, ce &quot;détail&quot; qui vous coûte une fortune" class="mb-0 block w-fit my-0 mx-auto max-w-[100%] non-lightboxed-content" style="margin: 0px auto; max-width: 100%; display: block; width: auto; aspect-ratio: 750 / 56.25;" width="750" height="auto">](https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-aaf3pr7ivcag1.png?width=800&format=png&auto=webp&s=ce7b8538cfaf98b858ab759354e34975935c0e3c)
+\_\_\_
 
 On ne compte plus les programmes immobiliers où la majorité des acquéreurs sont des investisseurs débutants, attirés comme des mouches par l’économie d’impôt, mais dont la rentabilité locative et la valeur à la revente sont désastreuses.
 
 Dans certains cas, les promoteurs de ces produits ne respectent même pas les règles. Les épargnants voient alors leurs investissements requalifiés quelques années plus tard par l’administration fiscale. Avec à la sortie, des actifs qui ont perdu de la valeur et en prime un redressement fiscal.
 
 Dès qu’on essaye de vous vendre un **produit défiscalisant**, prudence donc. Cela n’empêche pas bien sûr d’utiliser les enveloppes fiscales intelligemment. Le PEA en est un bel exemple, nous en reparlerons.
-
-[<img src="https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-1l832tyawcag1.png?width=800&amp;format=png&amp;auto=webp&amp;s=15eafa542f9d9202fb66fff66f24231896d06a43" alt="r/Cayas - Les frais financiers, ce &quot;détail&quot; qui vous coûte une fortune" class="mb-0 block w-fit my-0 mx-auto max-w-[100%] non-lightboxed-content" style="margin: 0px auto; max-width: 100%; display: block; width: auto; aspect-ratio: 750 / 56.25;" width="750" height="auto">](https://preview.redd.it/les-frais-financiers-ce-d%C3%A9tail-qui-vous-co%C3%BBte-une-fortune-v0-1l832tyawcag1.png?width=800&format=png&auto=webp&s=15eafa542f9d9202fb66fff66f24231896d06a43)
 
 \_\_\_
 
