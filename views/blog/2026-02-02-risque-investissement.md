@@ -104,9 +104,7 @@ On représente ensuite le portefeuille risqué avec trois courbes correspondant 
 *   La courbe verte du milieu correspond au résultat médian, c’est-à-dire qu’on a 50 % de chances d’avoir moins et 50 % de chances d’avoir plus.
     
 
-[<img src="https://preview.redd.it/le-vrai-risque-en-investissement-v0-j6wucen5ipfg1.png?width=756&amp;format=png&amp;auto=webp&amp;s=26be8f69c280e3dda6027c8eddd8d346d92222fa" alt="r/Cayas - Le vrai risque en investissement" class="mb-0 block w-fit my-0 mx-auto max-w-[100%] non-lightboxed-content" style="margin: 0px auto; max-width: 100%; display: block; width: auto; aspect-ratio: 750 / 443.452;" width="750" height="auto">](https://preview.redd.it/le-vrai-risque-en-investissement-v0-j6wucen5ipfg1.png?width=756&format=png&auto=webp&s=26be8f69c280e3dda6027c8eddd8d346d92222fa)
-
-<p style="text-align: center">Patience et longueur de temps...</p>
+<p style="text-align: center"><img src="/assets/blog/patience-et-longueur-de-temps.png"></p><p style="text-align: center">Patience et longueur de temps...</p>
 
 Si l’on a besoin de son argent dans deux ou trois ans, le portefeuille risqué n’est pas une bonne idée. Mais si l’on a suffisamment de temps, le portefeuille risqué aura une valeur supérieure à celle qu’on peut attendre du portefeuille peu risqué, **même si l’on n’a pas de chance** et que le risque se réalise.
 
