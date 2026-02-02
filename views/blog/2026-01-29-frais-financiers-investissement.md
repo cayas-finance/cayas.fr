@@ -173,8 +173,10 @@ Dès qu’on essaye de vous vendre un **produit défiscalisant**, prudence donc
 
 \_\_\_
 
-_Ce chapitre est le deuxième sur vingt-quatre du_ [_parcours Cayas_](https://app.cayas.fr/)_._
+_Cette leçon est la deuxième sur vingt-quatre du_ [_parcours pédagogique Cayas_](https://app.cayas.fr/signup)_._
 
 _Le parcours est gratuit. Il aborde les concepts essentiels de l’épargne et de l’investissement de manière ludique : des leçons de 10 minutes, des mini-jeux, sans jargon._
+
+_Son objectif est de permettre à chacun de progresser à son rythme avant de passer à l’action._
 
 [![](/assets/blog/vs_blog-link-01.jpg)](app.cayas.fr)
