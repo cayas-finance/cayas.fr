@@ -43,6 +43,8 @@ seo:
     comprenant où va réellement la valeur créée par leurs investissements.
   og_image: /assets/blog/cayas.png
 ---
+_Cet article est une reproduction autorisée de la deuxième leçon du_ [_parcours pédagogique Cayas_](https://app.cayas.fr/signup)_._
+
 # Pourquoi les conseils financiers "gratuits” ne le sont jamais
 
 « Si c’est gratuit, c’est vous le produit. » 
