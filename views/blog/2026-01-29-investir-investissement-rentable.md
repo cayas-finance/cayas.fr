@@ -81,7 +81,7 @@ Avec les **intérêts composés**, les gains ne s’additionnent pas : ils «�
 
 Plus le temps passe, plus l’écart se creuse entre intérêts simples et intérêts composés :
 
-[<img src="https://preview.redd.it/apprendre-%C3%A0-investir-est-probablement-linvestissement-le-v0-64tkqvcqe6ag1.png?width=1554&amp;format=png&amp;auto=webp&amp;s=e2765a36ac5f12612c7927d15da1ca56cfef1eef" alt="r/Cayas - L'effet boule de neige" class="mb-0 block w-fit my-0 mx-auto max-w-[100%] non-lightboxed-content" style="margin: 0px auto; max-width: 100%; display: block; width: auto; aspect-ratio: 750 / 514.479;" width="750" height="auto">](https://preview.redd.it/apprendre-%C3%A0-investir-est-probablement-linvestissement-le-v0-64tkqvcqe6ag1.png?width=1554&format=png&auto=webp&s=e2765a36ac5f12612c7927d15da1ca56cfef1eef)
+![](/assets/blog/effet-boule-de-neige.webp)
 
 <p style="text-align: center">L'effet boule de neige</p>
 
@@ -100,7 +100,7 @@ Clamons-le haut et fort : 5 % sans risque en 2026, **ça n’existe pas.** _S
 
 En réalité, au lieu d’une seule belle courbe ascendante de plus en plus raide, la valeur de votre investissement se situera dans un éventail de probabilités :
 
-[<img src="https://preview.redd.it/apprendre-%C3%A0-investir-est-probablement-linvestissement-le-v0-izdb6owof6ag1.png?width=1522&amp;format=png&amp;auto=webp&amp;s=19c6d44dc8544679b349f7444717e24a065a8ad3" alt="r/Cayas - Un bel éventail" class="mb-0 block w-fit my-0 mx-auto max-w-[100%] non-lightboxed-content" style="margin: 0px auto; max-width: 100%; display: block; width: auto; aspect-ratio: 750 / 444.481;" width="750" height="auto">](https://preview.redd.it/apprendre-%C3%A0-investir-est-probablement-linvestissement-le-v0-izdb6owof6ag1.png?width=1522&format=png&auto=webp&s=19c6d44dc8544679b349f7444717e24a065a8ad3)
+![](/assets/blog/un-bel-eventail.webp)
 
 <p style="text-align: center">Un bel éventail</p>
 
