@@ -37,6 +37,7 @@ seo:
     boursiers (MSCI World) apparaît comme une approche robuste, simple et peu
     coûteuse pour capter la performance globale des marchés sur le long terme,
     sans chercher à prédire l’avenir.
+  og_image: /assets/blog/cayas.png
 ---
 Pas besoin d'être prix Nobel d'économie pour gérer ses finances personnelles.
 
@@ -51,7 +52,6 @@ Privilégier la simplicité dans les investissements, c’est aussi faciliter **
 Dans la pratique, les plus grandes erreurs commises par les investisseurs débutants concernent la prise de risque :
 
 *   Soit ils en prennent **trop** sans en avoir conscience. Le manque de connaissances conduit à surestimer ses capacités et sous-estimer les risques. Certains néo-investisseurs malchanceux expérimentent alors le passage dans la machine à laver du marché, option essorage complet.
-    
 
 Connaître les risques, c'est pouvoir s'y préparer pour mieux les encaisser. L’histoire nous apprend que les risques se matérialisent tôt ou tard : ce n'est pas « si » , c'est « quand ».
 
@@ -64,7 +64,6 @@ Le premier risque, c’est de s’inventer cuisinier lorsqu’on ne l’est pas.
 Soyons clairs tout de suite : on ne vous dira jamais d’acheter l’action Machin plutôt que l’action Bidule. Pourquoi ?
 
 *   Principalement, parce que la **théorie financière** nous apprend que piocher un investissement précis de-ci, de-là est la plupart du temps moins efficace que d’acheter tout le marché.
-    
 
 > À moins d’avoir un avantage compétitif marqué. Mais pour l’instant, on ne vous met pas dans cette case.
 
@@ -171,12 +170,10 @@ L’exemple le plus parlant, ce sont les usines à gaz vendues sous le nom de **
 Un produit structuré est un placement financier qui mixe plusieurs ingrédients (actions, obligations, options) pour obtenir un rendement conditionné à certaines règles. Par exemple :
 
 *   Si l'indice de référence ne baisse pas sous un certain seuil pendant cinq ans, vous touchez un rendement défini à l'avance.
-    
 
 _Parce que les choses n’étaient pas suffisamment complexes, l’indice de référence n’est pas toujours un classique comme le CAC 40, mais plutôt un bidule artificiel du style « CAC 40 moins 0,5 % par an, divisé par l’âge du capybara les années bissextiles »._
 
 *   Si ce seuil est franchi à la baisse, vous récupérez moins, voire vous perdez une partie de votre capital.
-    
 
 En clair, la performance dépend d'une série de paramètres parfois un peu tordus et totalement hors de votre contrôle. Vous ne pouvez pas non plus revendre le produit avant échéance sans y laisser des plumes. Et noix de coco sur le cheesecake : les produits structurés coûtent généralement une blinde.
 
