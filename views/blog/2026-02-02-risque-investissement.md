@@ -1,7 +1,7 @@
 ---
 title: Le vrai risque en investissement
 slug: risque-investissement
-date: 2026-01-30
+date: 2026-01-31
 author: L’équipe Cayas
 excerpt: >-
   En investissement, le véritable risque n’est pas seulement la perte en
@@ -51,9 +51,13 @@ Parfait ? Dommage, mais non : dans l’intervalle, la valeur de la maison de m
 
 Mon épargne a fructifié, mais mon **objectif** s’est éloigné.
 
-\_
+![](/assets/blog/Maison.png)
+
+# Construire une stratégie financière alignée avec ses objectifs de vie
 
 Une **stratégie financière** bien construite consiste à choisir des investissements qui vous rapprochent de vos objectifs. 
+
+![](/assets/blog/Maison%20viseur.png)
 
 L’éducation financière aide à identifier les **risques réels**. Une fois que vous avez une vision claire du risque, vous pouvez ensuite librement décider de vous y exposer – ou pas.
 
@@ -66,11 +70,13 @@ On peut évaluer le risque sous trois prismes :
 *   Le risque qui vaut la peine d’être pris.
     
 
-\_
+# Risque et horizon d’investissement
 
 Le risque que l’on peut **se permettre**, c’est celui qui, lorsqu’il se matérialisera, ne nous forcera pas à trop chambouler nos projets de vie.
 
 Le principe est simple : plus votre **horizon d’investissement** est lointain, plus vous pouvez prendre des risques. Pourquoi ? Parce que l’histoire montre que les crises sur les actifs risqués sont fréquentes, mais passagères.
+
+![](/assets/blog/Pickup.png)
 
 Si une crise survient mais que j’ai plus d’une dizaine d’années devant moi, pas de panique : j’attends des jours meilleurs pour récupérer les liquidités dont je n’ai pas besoin dans l’immédiat. Mais attention : avec le temps qui passe, il faudra réajuster. Si mon horizon d’investissement est de quinze ans, cela signifie que dans cinq ans, il ne sera plus que de dix ans. Je réduirai alors progressivement mon exposition aux actifs les plus risqués.
 
@@ -78,7 +84,9 @@ Déterminer son horizon d’investissement, sur le papier, ça paraît évident.
 
 > C’est le risque que « futur moi » n’ait pas le même avis que le moi de maintenant.
 
-\_
+[![](/assets/blog/Banniere_blanche_simple.jpg)](app.cayas.fr)
+
+# Pourquoi le temps réduit le risque des investissements risqués
 
 Ce graphique illustre l’importance de **l’horizon d’investissement** avec deux portefeuilles :
 
@@ -102,7 +110,7 @@ On représente ensuite le portefeuille risqué avec trois courbes correspondant 
 
 Si l’on a besoin de son argent dans deux ou trois ans, le portefeuille risqué n’est pas une bonne idée. Mais si l’on a suffisamment de temps, le portefeuille risqué aura une valeur supérieure à celle qu’on peut attendre du portefeuille peu risqué, **même si l’on n’a pas de chance** et que le risque se réalise.
 
-\_
+# Tolérance au risque : trouver le bon équilibre entre rendement et sérénité
 
 Une fois définie votre capacité à prendre des risques, il faut aussi prendre en compte votre tolérance au risque.
 
@@ -114,17 +122,19 @@ Le bonheur que procure la richesse n’est pas symétrique : gagner 10 000 �
 
 C’est le fondement de **l’aversion au risque**. C’est pour cela que l’objectif n’est pas de chercher le maximum de rendement à tout prix, mais de trouver le niveau de risque qui permet de **maximiser la satisfaction** que l’on retirera réellement de son épargne.
 
-\_
+# La bonne prise de risque
 
 Il n’y a aucun intérêt à prendre du risque pour le plaisir. On prend plus de risque parce qu’on escompte une **récompense supérieure**. Cela se constate en finance : les actifs risqués, comme les actions d’entreprises, permettent d’espérer un rendement supérieur à celui d’actifs réputés moins risqués, tels que les obligations d’États.
 
 Cet écart **varie** dans le temps. Parfois, le rendement que l’on peut attendre des actifs risqués n’est pas très supérieur à celui des actifs moins risqués. Dans ce cas, il est raisonnable d’avoir moins d’appétit pour les actifs risqués, surtout si l’on possède déjà le nécessaire pour financer les projets qui nous tiennent à cœur.
 
+![](/assets/blog/Capy%20Irma.jpg)
+
 Comme toujours en finance, on n’a pas de boule de cristal. Estimer le rendement futur des investissements n’est pas très fiable. Néanmoins, on peut faire des estimations raisonnables et une estimation imparfaite vaut mieux que pas d’estimation du tout.
 
 La prise de risque **se pilote** donc tout au long de la vie.
 
-\_
+# Les principes fondamentaux de la gestion du risque
 
 Avec tout ça, quelle est l’approche la plus **raisonnable** pour les investisseurs individuels ?
 
@@ -141,7 +151,7 @@ Elle ressemble étrangement à des aphorismes de grand-mère pleine de sagesse 
 *   On ne dompte pas la tempête, on ajuste ses voiles. La personne avisée en investissement se concentre sur ce qu’elle peut influencer : les frais qu’elle paye et les risques qu’elle prend.
     
 
-\_
+# L'approche scientifique et pragmatique de Cayas
 
 Ces maximes sont utiles, mais elles ne nous disent pas quoi faire concrètement. C’est là que nous intervenons.
 
