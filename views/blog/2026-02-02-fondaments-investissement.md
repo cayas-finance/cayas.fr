@@ -41,13 +41,15 @@ seo:
 ---
 _Cet article est une reproduction autorisée de la troisième leçon du_ [_parcours pédagogique Cayas_](https://app.cayas.fr/signup)_._
 
+# Investir sans être expert : les fondamentaux de la finance personnelle
+
 Pas besoin d'être prix Nobel d'économie pour gérer ses finances personnelles.
 
 Faire de bons investissements nécessite quelques bons réflexes qui sont plus simples à acquérir que vous ne le pensez. Pas besoin non plus d’écouter en boucle BFM Business, de feuilleter le _Financial Times_ ou de disséquer le _Wall Street Journal_ pour savoir si la Fed (petit nom donné à la banque centrale américaine) augmentera ses taux directeurs de 0,25 % en janvier plutôt qu’en mars.
 
 Notre vieil ami Vilfredo Pareto nous l’a bien appris : **20 %** des causes produisent **80 %** des effets. Concentrons-nous sur les décisions stratégiques qui généreront l’essentiel de l’impact.
 
-\_\_\_
+# Comprendre le risque
 
 Privilégier la simplicité dans les investissements, c’est aussi faciliter **l’appréhension du risque**.
 
@@ -58,7 +60,7 @@ Dans la pratique, les plus grandes erreurs commises par les investisseurs début
 
 Connaître les risques, c'est pouvoir s'y préparer pour mieux les encaisser. L’histoire nous apprend que les risques se matérialisent tôt ou tard : ce n'est pas « si » , c'est « quand ».
 
-\_\_\_
+# Stock picking : choisir ses actions soi-même est une mauvaise idée
 
 Le premier risque, c’est de s’inventer cuisinier lorsqu’on ne l’est pas. On peut gérer directement ses investissements et faire sa petite tambouille : 10 cL d’actions Machin Corp, 3 kg de Bidule SA, un zeste de Truc Inc.
 
@@ -76,7 +78,7 @@ Soyons clairs tout de suite : on ne vous dira jamais d’acheter l’action Mac
 *   Enfin, le conseil personnalisé en investissement est un métier réglementé, pour protéger les épargnants des pires prédateurs. Pour délivrer un conseil personnalisé, il faudrait vous faire signer un contrat, évaluer votre profil, etc.
     
 
-\_\_\_
+# Gestion active ou gestion passive : le grand débat de l'investissement
 
 L’alternative est de déléguer la sélection des investissements à des sociétés de gestion. On investit alors dans des fonds (SICAV, FCP…).
 
@@ -111,6 +113,8 @@ _C’est comme dans un jeu de dés : même si on pense qu’un pari est très p
 
 [![](/assets/blog/Banniere_blanche_simple.jpg)](app.cayas.fr)
 
+# Les marchés financiers sont-ils efficients ?
+
 Naturellement, personne ne prétend que les marchés sont parfaitement efficients.
 
 Le chercheur et financier Lasse Heje Pedersen emploie une expression élégante : le marché est « efficacement inefficace ». Assez efficient pour que le menu fretin y prospère sans compétences extraordinaires, mais suffisamment inefficient pour engraisser les requins malins.
@@ -123,7 +127,7 @@ Malheureusement, comme tous les bons plans, ces méthodes ont tendance à être 
 
 La seule exception, c’est quand elles nous obligent à passer par de longues périodes pénibles, c’est-à-dire qu’elles sont plus risquées que de suivre le marché.
 
-\_\_\_
+# Les convictions en investissement
 
 Concrètement, qu’est-ce que cela signifie pour vous ?
 
@@ -135,7 +139,7 @@ Cela veut dire que si le marché anticipe un meilleur rendement pour un investis
 
 Pas de martingale possible donc, ni de raccourci magique. Il n’existe pas de recette pour battre le marché à coup sûr sans prendre plus de risques. Parfois, on aura le nez plus creux que celui du voisin. Mais sur le long terme, c'est quasiment impossible d'être durablement meilleur.
 
-\_\_\_
+# Investir via des indices boursiers
 
 Si on croit à l’**efficience des marchés financiers**, payer un gestionnaire pour faire mieux que le marché… c’est comme payer quelqu’un pour jouer à pile ou face. Dès lors, pas besoin de dégotter un gérant de génie. L’objectif est juste de capter la performance globale du marché, sans chercher à faire mieux.
 
@@ -151,7 +155,7 @@ Moins de strass et de paillettes certes, mais surtout moins de **frais**. Notre 
 
 Dix fois moins cher qu’en gestion active, avec une bonne probabilité que ça rapporte plus !
 
-\_\_\_
+# Gestion active : frais élevés et sous-performance
 
 La **gestion active** part du principe que les marchés sont suffisamment **inefficients**. Un bon gérant pourrait alors trouver des pépites sous-évaluées, éviter les mauvais plans et battre le marché. Plus ambitieux, plus excitant ? Sur le papier, oui. Dans la réalité, les chiffres sont sans appel : **dans neuf cas sur dix, la gestion active fait moins bien que la** **gestion passive**, une fois les frais déduits.
 
@@ -169,6 +173,8 @@ _Oui, encore un truc que je vais vous rabâcher jusqu’à ce que ça devienne u
 
 Au-delà du schisme entre gestion active et passive, il y a aussi la problématique des produits financiers complexes. La complexité camoufle souvent des **risques non maîtrisés**.
 
+# Produits structurés : comprendre les promesses et les dangers
+
 L’exemple le plus parlant, ce sont les usines à gaz vendues sous le nom de **« produits structurés »**.
 
 Un produit structuré est un placement financier qui mixe plusieurs ingrédients (actions, obligations, options) pour obtenir un rendement conditionné à certaines règles. Par exemple :
@@ -185,7 +191,7 @@ En clair, la performance dépend d'une série de paramètres parfois un peu tord
 
 La complexité de certains produits peut flatter votre ego et donner le sentiment d’une grande sophistication. Mais l’orgueil est moins important que votre prospérité : **faites simple.**
 
-\_\_\_
+# "Les performances passées..."
 
 Il reste à parler de l'éléphant dans la pièce : prédire le futur est terriblement difficile.
 
@@ -199,7 +205,7 @@ C'est le moment de vous ressortir de nouveau l’adage de tatie AMF : **les perf
 AMF : Autorité des marchés financiers, c'est la surveillante générale de la cour de récré des marchés financiers où l'on fait appel à l'épargne du grand public. Elle ne vous empêche pas de tomber, mais elle veille à ce que personne ne triche ou ne pique votre goûter. Son rôle est de protéger les investisseurs, même ceux qui n’ont pas lu la notice.
 ```
 
-\_\_\_
+# Les cycles des marchés financiers
 
 L’évolution des marchés financiers à long terme ne suit pas une ligne droite : elle est ponctuée de hausses et de baisses, même s’il y a des tendances de fond. Les périodes de récessions et de crises sont suivies de rebonds, puis de périodes d’euphorie, auxquelles succèdent d’autres crises.
 
