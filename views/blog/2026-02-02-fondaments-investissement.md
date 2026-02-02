@@ -59,6 +59,8 @@ Connaître les risques, c'est pouvoir s'y préparer pour mieux les encaisser. L�
 
 Le premier risque, c’est de s’inventer cuisinier lorsqu’on ne l’est pas. On peut gérer directement ses investissements et faire sa petite tambouille : 10 cL d’actions Machin Corp, 3 kg de Bidule SA, un zeste de Truc Inc.
 
+![](/assets/blog/Capy%20cook.jpg)
+
 Soyons clairs tout de suite : on ne vous dira jamais d’acheter l’action Machin plutôt que l’action Bidule. Pourquoi ?
 
 *   Principalement, parce que la **théorie financière** nous apprend que piocher un investissement précis de-ci, de-là est la plupart du temps moins efficace que d’acheter tout le marché.
