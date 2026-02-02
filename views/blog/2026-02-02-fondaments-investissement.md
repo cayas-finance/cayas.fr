@@ -62,7 +62,7 @@ Connaître les risques, c'est pouvoir s'y préparer pour mieux les encaisser. L�
 
 # Stock picking : choisir ses actions soi-même est une mauvaise idée
 
-Le premier risque, c’est de s’inventer cuisinier lorsqu’on ne l’est pas. On peut gérer directement ses investissements et faire sa petite tambouille : 10 cL d’actions Machin Corp, 3 kg de Bidule SA, un zeste de Truc Inc.![](/assets/blog/Capy%20cook.jpg)
+Le premier risque, c’est de s’inventer cuisinier lorsqu’on ne l’est pas. On peut gérer directement ses investissements et faire sa petite tambouille : 10 cL d’actions Machin Corp, 3 kg de Bidule SA, un zeste de Truc Inc.
 
 ![](/assets/blog/capy-cook.jpg)
 
