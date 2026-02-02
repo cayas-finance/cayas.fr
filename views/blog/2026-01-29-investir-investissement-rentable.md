@@ -81,7 +81,7 @@ Avec les **intérêts composés**, les gains ne s’additionnent pas : ils «�
 
 Plus le temps passe, plus l’écart se creuse entre intérêts simples et intérêts composés :
 
-![](/assets/blog/effet-boule-de-neige.webp)
+![](/assets/blog/effet-boule-de-neige.png)
 
 <p style="text-align: center">L'effet boule de neige</p>
 
@@ -100,7 +100,7 @@ Clamons-le haut et fort : 5 % sans risque en 2026, **ça n’existe pas.** _S
 
 En réalité, au lieu d’une seule belle courbe ascendante de plus en plus raide, la valeur de votre investissement se situera dans un éventail de probabilités :
 
-![](/assets/blog/un-bel-eventail.webp)
+![](/assets/blog/un-bel-eventail.png)
 
 <p style="text-align: center">Un bel éventail</p>
 
