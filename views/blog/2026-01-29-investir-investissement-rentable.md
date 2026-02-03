@@ -2,7 +2,7 @@
 title: Apprendre à investir est probablement l'investissement le plus rentable
   d'une vie
 slug: investir-investissement-rentable
-date: 2026-01-29
+date: 2026-01-28
 author: L’équipe Cayas
 excerpt: Apprendre à gérer son argent et à investir est une compétence
   essentielle, rarement enseignée, mais déterminante dans la vie. Cette première
