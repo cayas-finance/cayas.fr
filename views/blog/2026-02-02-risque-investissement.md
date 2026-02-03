@@ -82,7 +82,7 @@ Si une crise survient mais que j’ai plus d’une dizaine d’années devant mo
 
 Déterminer son horizon d’investissement, sur le papier, ça paraît évident. Dans la vraie vie, ça l’est beaucoup moins. Estimer ses besoins et ses envies à long terme est complexe. Les événements de votre vie peuvent bouleverser vos plans d’investissement plus vite que prévu. 
 
-> C’est le risque que « futur moi » n’ait pas le même avis que le moi de maintenant.
+_C’est le risque que « futur moi » n’ait pas le même avis que le moi de maintenant._
 
 [![](/assets/blog/Banniere_blanche_simple.jpg)](app.cayas.fr)
 
