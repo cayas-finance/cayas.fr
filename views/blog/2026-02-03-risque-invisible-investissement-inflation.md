@@ -65,6 +65,12 @@ Le risque n’est pas qu’une abstraction : on parle d’argent qui a un impact
 
 Le risque ne peut jamais être éliminé. Il existe toutefois des outils pour mieux le maîtriser afin d’augmenter votre bien-être financier, tout au long de votre vie.
 
+Cayas, c’est la **pilule rouge**. À vous de voir si vous l’avalez. 
+
+_J'espère que vous avez entendu parler de_ Matrix_. Version courte : les héros font le choix d’avaler la pilule rouge, ils souffrent, mais à la fin, ils gagnent. Sauf le personnage principal, à qui il arrive des bricoles. Ceux qui se contentent de l’autre pilule, la bleue, se font tous avoir. Parfois sans le savoir._
+
+_C’est pareil avec vos finances perso._
+
 # Les différents types de risque financiers
 
 Le risque a de multiples parfums :
@@ -88,6 +94,8 @@ Ces risques-là, les investisseurs aguerris les connaissent bien et on peut (en 
 
 Ils ont des cousins sauvages, contre lesquels l’individu est impuissant : guerres, inondations, pollution, criminalité... C’est à l’échelle de la société que se construit la protection et c’est sensiblement plus compliqué que de gérer le risque de vos actifs financiers.
 
+_Vous avez tout mon soutien moral si vous contribuez à résoudre ces challenges !_
+
 Nous allons nous concentrer sur les risques qu’on peut maîtriser. Pour cela, il faut les comprendre.
 
 Commençons par le premier : **l’inflation**.
@@ -96,7 +104,7 @@ Commençons par le premier : **l’inflation**.
 
 On oppose souvent épargne et investissement. En réalité, la frontière est floue.
 
-*   L’épargne consiste à **mettre de l’argent de côté** pour financer un projet à un horizon d’une ou deux années, pour gérer les fluctuations de sa consommation courante ou répondre à des imprévus _(la fameuse injonction à garder trois à six mois de dépenses. - (On fera la peau à cette grossière approximation plus tard, mais sachez qu’elle vous coûte probablement cher en coût d’opportunité) -_ Pour cela, on utilise des placements qui présentent très peu de risque de chuter significativement à court terme. On dit que ces placements ont une **faible volatilité.** _Un placement risqué est dit volatil lorsque son résultat peut fortement varier. Un placement volatile, c’est uniquement lorsqu’on investit dans un élevage de poulets._
+*   L’épargne consiste à **mettre de l’argent de côté** pour financer un projet à un horizon d’une ou deux années, pour gérer les fluctuations de sa consommation courante ou répondre à des imprévus _(la fameuse injonction à garder trois à six mois de dépenses – On fera la peau à cette grossière approximation plus tard, mais sachez qu’elle vous coûte probablement cher en coût d’opportunité)._ Pour cela, on utilise des placements qui présentent très peu de risque de chuter significativement à court terme. On dit que ces placements ont une **faible volatilité.** (_Un placement risqué est dit volatil lorsque son résultat peut fortement varier. Un placement_ volatile_, c’est uniquement lorsqu’on investit dans un élevage de poulets.)_
     
 *   L’investissement consiste à **acquérir des actifs risqués** qui ont de bonnes chances d’augmenter en valeur, tels que des parts d’entreprises (les actions), ou à prêter notre argent contre des intérêts, par exemple en achetant des obligations. En revanche, ces actifs peuvent aussi perdre beaucoup de valeur, parfois sur plusieurs décennies.
     
@@ -121,7 +129,7 @@ Dans les pays développés, l’inflation a été relativement **faible** depu
 
 Entre 2001 et 2021, l’inflation a été suffisamment douce pour que la rémunération du Livret A la couvre (tout juste) la plupart des années. Réussir à étaler l’inflation semblait plutôt facile.
 
-Le **taux d’inflation officiel** ne reflète pas toujours les réalités individuelles. _Nous avons tous des habitudes de consommation différentes : le pouvoir d’achat d’un rural qui se déplace beaucoup en voiture thermique et se chauffe au fioul sera plus sensible aux variations du prix de l’énergie que celui du consommateur moyen._ Il reste toutefois un bon point de référence. Nous évaluons les variations des montants réels avec cette statistique fournie par l’Insee.
+Le **taux d’inflation officiel** ne reflète pas toujours les réalités individuelles. (_Nous avons tous des habitudes de consommation différentes : le pouvoir d’achat d’un rural qui se déplace beaucoup en voiture thermique et se chauffe au fioul sera plus sensible aux variations du prix de l’énergie que celui du consommateur moyen.)_ Il reste toutefois un bon point de référence. Nous évaluons les variations des montants réels avec cette statistique fournie par l’Insee.
 
 <p style="text-align: center"><img src="/assets/blog/5-livret-a-inflation.png"></p><p style="text-align: center">Livret A vs. Inflation</p>
 
@@ -155,9 +163,7 @@ En tenant compte de l’inflation, la valeur réelle de vos 1 000 € placés 
 
 <p style="text-align: center"><img src="/assets/blog/5-moonwalk-livret-a.png"></p><p style="text-align: center">L'art du Moonwalk : la valeur réelle du Livret A dans le temps</p>
 
-Ce niveau de pertes n’a rien de dramatique, mais sur le long terme, votre capital s’érode progressivement.
-
-_Ce niveau de pertes peut arriver en une seule journée sur les marchés actions._
+Ce niveau de pertes n’a rien de dramatique, mais sur le long terme, votre capital s’érode progressivement. (_Ce niveau de pertes peut arriver en une seule journée sur les marchés actions.)_
 
 Il est frustrant d’épargner et d’avoir l’impression de faire du surplace.
 
