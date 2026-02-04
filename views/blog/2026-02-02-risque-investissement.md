@@ -43,6 +43,8 @@ seo:
 ---
 _Cet article est une reproduction autorisée de la leçon 4 du_ [_parcours pédagogique Cayas_](https://app.cayas.fr/signup)_._
 
+# Comprendre le vrai risque
+
 Quand on débute en investissement, on a tendance à penser que le risque majeur, c’est la perte en capital. Or le **vrai risque** de l’investissement, c’est que notre épargne ne suive pas **nos projets**. En clair, c’est de ne pas disposer de l’argent dont on a besoin, au moment où on en a besoin.
 
 Par exemple, imaginons que j’aie trouvé la maison de mes rêves. Elle coûte 200 000 € mais je n’ai que 120 000 € d’épargne. Il me manque donc 80 000 € pour atteindre mon objectif. Je place mon argent et j’épargne pendant plusieurs années, jusqu’à ce que mon épargne totalise 200 000 €.
