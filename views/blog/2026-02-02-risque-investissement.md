@@ -153,6 +153,8 @@ Elle ressemble étrangement à des aphorismes de grand-mère pleine de sagesse 
 *   On ne dompte pas la tempête, on ajuste ses voiles. La personne avisée en investissement se concentre sur ce qu’elle peut influencer : les frais qu’elle paye et les risques qu’elle prend.
     
 
+![](/assets/blog/5-mamie-capy.jpg)
+
 # L'approche scientifique et pragmatique de Cayas
 
 Ces maximes sont utiles, mais elles ne nous disent pas quoi faire concrètement. C’est là que nous intervenons.
