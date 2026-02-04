@@ -45,9 +45,11 @@ _Cet article est une reproduction autorisée de la troisième leçon du_ [_parco
 
 Pas besoin d'être prix Nobel d'économie pour gérer ses finances personnelles.
 
+_Mais je compte bien vous apprendre à investir en suivant des principes étudiés par des prix Nobel ! Laissez votre aspirine au placard, je vous ai débroussaillé le chemin à la machette._
+
 Faire de bons investissements nécessite quelques bons réflexes qui sont plus simples à acquérir que vous ne le pensez. Pas besoin non plus d’écouter en boucle BFM Business, de feuilleter le _Financial Times_ ou de disséquer le _Wall Street Journal_ pour savoir si la Fed (petit nom donné à la banque centrale américaine) augmentera ses taux directeurs de 0,25 % en janvier plutôt qu’en mars.
 
-Notre vieil ami Vilfredo Pareto nous l’a bien appris : **20 %** des causes produisent **80 %** des effets. Concentrons-nous sur les décisions stratégiques qui généreront l’essentiel de l’impact.
+Notre vieil ami Vilfredo Pareto nous l’a bien appris : **20 %** des causes produisent **80 %** des effets. _(Les capybaras ont bien intégré la règle de Pareto. 20 % du temps à brouter, les 80 % restants à chiller au bord de l’eau.)_ Concentrons-nous sur les décisions stratégiques qui généreront l’essentiel de l’impact.
 
 # Comprendre le risque
 
@@ -68,11 +70,8 @@ Le premier risque, c’est de s’inventer cuisinier lorsqu’on ne l’est pas.
 
 Soyons clairs tout de suite : on ne vous dira jamais d’acheter l’action Machin plutôt que l’action Bidule. Pourquoi ?
 
-*   Principalement, parce que la **théorie financière** nous apprend que piocher un investissement précis de-ci, de-là est la plupart du temps moins efficace que d’acheter tout le marché.
+*   Principalement, parce que la **théorie financière** nous apprend que piocher un investissement précis de-ci, de-là est la plupart du temps moins efficace que d’acheter tout le marché. _(À moins d’avoir un avantage compétitif marqué. Mais pour l’instant, on ne vous met pas dans cette case.)_
     
-
-> À moins d’avoir un avantage compétitif marqué. Mais pour l’instant, on ne vous met pas dans cette case.
-
 *   Ensuite, parce que parier sur des performances boursières d’une seule entreprise implique un talent rare et de se cogner des analyses que la plupart des gens trouvent aussi passionnantes que de regarder l’herbe pousser – j’en fais partie.
     
 *   Enfin, le conseil personnalisé en investissement est un métier réglementé, pour protéger les épargnants des pires prédateurs. Pour délivrer un conseil personnalisé, il faudrait vous faire signer un contrat, évaluer votre profil, etc.
@@ -84,19 +83,13 @@ L’alternative est de déléguer la sélection des investissements à des soci�
 
 Vient ensuite le choix de déléguer la gestion à une société qui pratique une gestion **active** ou **passive**. C’est un choix de première importance, qui commence par une question de foi : croyez-vous que les marchés financiers sont efficients ?
 
-_Sur cette question ô combien sensible, imaginez-vous des guerres de religion dans les couloirs d’universités prestigieuses et des passes d’armes vicieuses entre gestionnaires de fonds d’investissement milliardaires._
-
-_Je ne sais pas si on peut assassiner quelqu’un à coup de statistiques, mais ils essaient._
+_Sur cette question ô combien sensible, imaginez-vous des guerres de religion dans les couloirs d’universités prestigieuses et des passes d’armes vicieuses entre gestionnaires de fonds d’investissement milliardaires. Je ne sais pas si on peut assassiner quelqu’un à coup de statistiques, mais ils essaient._
 
 L’hypothèse des marchés efficients, c’est la croyance que le prix des investissements reflète toujours correctement les informations disponibles. Autrement dit, c’est la croyance que le prix sur l’étiquette n’est ni exagéré, ni sous-évalué.
 
 \_\_\_
 
-Les gestionnaires actifs évaluent constamment si le prix actuel d’un investissement est cohérent avec leur estimation du futur.
-
-_Les gestionnaires actifs sont ceux qui pensent qu’ils sont plus malinous que les autres. Gardez à l’esprit cette logique implacable : si quelqu’un fait mieux que la moyenne, il faut nécessairement que quelqu’un d’autre fasse moins bien que la moyenne !_
-
-_Je l’ai déjà dit ? Oui, et je le rabâcherai jusqu’à ce que ça rentre._
+Les gestionnaires actifs évaluent constamment si le prix actuel d’un investissement est cohérent avec leur estimation du futur. _(Les gestionnaires actifs sont ceux qui pensent qu’ils sont plus malinous que les autres. Gardez à l’esprit cette logique implacable : si quelqu’un fait mieux que la moyenne, il faut nécessairement que quelqu’un d’autre fasse moins bien que la moyenne ! Je l’ai déjà dit ? Oui, et je le rabâcherai jusqu’à ce que ça rentre.)_
 
 Ils votent alors avec leur argent :
 
@@ -117,7 +110,7 @@ _C’est comme dans un jeu de dés : même si on pense qu’un pari est très p
 
 Naturellement, personne ne prétend que les marchés sont parfaitement efficients.
 
-Le chercheur et financier Lasse Heje Pedersen emploie une expression élégante : le marché est « efficacement inefficace ». Assez efficient pour que le menu fretin y prospère sans compétences extraordinaires, mais suffisamment inefficient pour engraisser les requins malins.
+_Le chercheur et financier Lasse Heje Pedersen emploie une expression élégante : le marché est « efficacement inefficace ». Assez efficient pour que le menu fretin y prospère sans compétences extraordinaires, mais suffisamment inefficient pour engraisser les requins malins._
 
 Les informations qui ont un effet sur le prix prennent du temps à se propager, les hypothèses ne sont pas des vérités et les investisseurs sont perclus de **biais comportementaux**.
 
@@ -145,9 +138,7 @@ Si on croit à l’**efficience des marchés financiers**, payer un gestionnaire
 
 Comment ? En construisant des portefeuilles **diversifiés** qui répliquent des **indices**.
 
-```
-Un indice est un outil de mesure qui reflète l’évolution d’un groupe d’actifs financiers, souvent des actions ou obligations d’un pays, d’un secteur ou d’un type d’entreprise. L’indice permet de suivre facilement leur performance et sert en quelque sorte de « thermomètre » des marchés financiers. L’indice mondial le plus connu est le MSCI World : il suit les performances d’environ 1300 grandes entreprises de 23 pays développés. L’indice français le plus connu est le CAC 40 : il suit les performances de 40 grandes entreprises françaises. L’indice américain le plus connu est le S&P 500.
-```
+_Un indice est un outil de mesure qui reflète l’évolution d’un groupe d’actifs financiers, souvent des actions ou obligations d’un pays, d’un secteur ou d’un type d’entreprise. L’indice permet de suivre facilement leur performance et sert en quelque sorte de « thermomètre » des marchés financiers. L’indice mondial le plus connu est le MSCI World : il suit les performances d’environ 1300 grandes entreprises de 23 pays développés. L’indice français le plus connu est le CAC 40 : il suit les performances de 40 grandes entreprises françaises. L’indice américain le plus connu est le S&P 500._
 
 Une gérante passive qui investit sur les actions françaises ne va pas tenter des paris fous. Elle va tout bonnement acheter les actions de toutes les entreprises françaises, dans les mêmes proportions que le marché. Pas de dilemme pour savoir s’il faut surpondérer LVMH ou sous-pondérer Air Liquide.
 
@@ -179,11 +170,8 @@ L’exemple le plus parlant, ce sont les usines à gaz vendues sous le nom de **
 
 Un produit structuré est un placement financier qui mixe plusieurs ingrédients (actions, obligations, options) pour obtenir un rendement conditionné à certaines règles. Par exemple :
 
-*   Si l'indice de référence ne baisse pas sous un certain seuil pendant cinq ans, vous touchez un rendement défini à l'avance.
+*   Si l'indice de référence ne baisse pas sous un certain seuil pendant cinq ans, vous touchez un rendement défini à l'avance. (_Parce que les choses n’étaient pas suffisamment complexes, l’indice de référence n’est pas toujours un classique comme le CAC 40, mais plutôt un bidule artificiel du style « CAC 40 moins 0,5 % par an, divisé par l’âge du capybara les années bissextiles ».)_
     
-
-_Parce que les choses n’étaient pas suffisamment complexes, l’indice de référence n’est pas toujours un classique comme le CAC 40, mais plutôt un bidule artificiel du style « CAC 40 moins 0,5 % par an, divisé par l’âge du capybara les années bissextiles »._
-
 *   Si ce seuil est franchi à la baisse, vous récupérez moins, voire vous perdez une partie de votre capital.
     
 
@@ -193,7 +181,9 @@ La complexité de certains produits peut flatter votre ego et donner le sentimen
 
 # "Les performances passées..."
 
-Il reste à parler de l'éléphant dans la pièce : prédire le futur est terriblement difficile.
+Il reste à parler du capybara dans la baignoire _(parce qu'un capybara adulte remplit aussi bien votre baignoire qu’un éléphant votre salon)_ : prédire le futur est terriblement difficile.
+
+![](/assets/blog/3-capy-baignoire.jpg)
 
 Lorsqu’on vous parle de rendement d’un placement, on vous parle souvent de **rendement passé**. Savoir que vous seriez riche si vous aviez investi il y a dix ans vous fait une belle jambe : les rendements passés ne rempliront pas votre gamelle dans le futur.
 
@@ -201,9 +191,7 @@ La tentation est forte d’investir uniquement dans ce qui a eu de bonnes perfor
 
 C'est le moment de vous ressortir de nouveau l’adage de tatie AMF : **les performances passées ne préjugent pas des performances futures.** Ce n’est pas une mention réglementaire en l’air, c’est le consensus scientifique !
 
-```
-AMF : Autorité des marchés financiers, c'est la surveillante générale de la cour de récré des marchés financiers où l'on fait appel à l'épargne du grand public. Elle ne vous empêche pas de tomber, mais elle veille à ce que personne ne triche ou ne pique votre goûter. Son rôle est de protéger les investisseurs, même ceux qui n’ont pas lu la notice.
-```
+_AMF : Autorité des marchés financiers, c'est la surveillante générale de la cour de récré des marchés financiers où l'on fait appel à l'épargne du grand public. Elle ne vous empêche pas de tomber, mais elle veille à ce que personne ne triche ou ne pique votre goûter. Son rôle est de protéger les investisseurs, même ceux qui n’ont pas lu la notice._
 
 # Les cycles des marchés financiers
 
