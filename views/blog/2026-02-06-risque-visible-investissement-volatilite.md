@@ -48,6 +48,8 @@ En investissant en actions, on espère que le prix de l’action va augmenter, v
 
 Historiquement, les actions ont été un investissement **très performant**, mais également **très risqué**.
 
+[![](/assets/blog/Banniere_blog_Capy.jpg)](app.cayas.fr)
+
 # Investissement en actions : rendement élevé, risque élevé
 
 Investir dans une seule entreprise, donc acheter une seule action, est **risqué**.
@@ -177,3 +179,5 @@ _Cette leçon est la sixième sur vingt-quatre du_ [_parcours pédagogique Caya
 _Le parcours est gratuit. Il aborde les concepts essentiels de l’épargne et de l’investissement de manière ludique : des leçons de 10 minutes, des mini-jeux, sans jargon._
 
 _Son objectif est de permettre à chacun de progresser à son rythme avant de passer à l’action._
+
+[![](/assets/blog/vs_blog-link-01.jpg)](app.cayas.fr)
