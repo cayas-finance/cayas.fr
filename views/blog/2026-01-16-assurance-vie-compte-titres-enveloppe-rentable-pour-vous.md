@@ -43,11 +43,9 @@ En épargne, les idées reçues coûtent cher.
 
 Alors on vous a fignolé un simulateur qui pose les calculs calmement pour vous permettre de prendre la bonne décision.
 
-À partir de **votre** **projet** et de **vos** **contraintes**, le simulateur de Cayas compare les trajectoires d’un même investissement en assurance-vie ou en compte-titres, jusqu’à la retraite, puis la succession, et identifie celle qui maximise votre avantage.
+À partir de **votre** **projet** et de **vos** **contraintes**, le simulateur de Cayas compare les trajectoires d’un même investissement en assurance-vie ou en compte-titres, jusqu’à la retraite, puis la succession, et identifie celle qui maximise votre avantage :
 
-Alors assurance-vie ou compte-titres : quelle enveloppe gagnera le match ?
-
-En garde ! Et que les chiffres parlent.
+[![](/assets/blog/av-cto-banniere-match.png)](https://app.cayas.fr/tools/cto-vs-av)
 
 # L’assurance-vie : la chouchoute des épargnants français
 
@@ -218,6 +216,6 @@ L'assurance-vie ne redevient intéressante que dans des situations très spécif
 
 En dehors de ces cas, la réalité est mathématique : le vrai moteur de votre richesse n'est pas la carotte fiscale, c'est l'absence de frais.
 
-Utilisez le **simulateur Cayas** pour faire les calculs correspondants à votre propre situation, et reprenez le contrôle de votre épargne, pour ne plus payer un avantage qui n'en est pas un.
+Utilisez le **simulateur Cayas** pour faire les calculs correspondants à votre propre situation, et reprenez le contrôle de votre épargne, pour ne plus payer un avantage qui n'en est pas un :
 
-[![](/assets/blog/vs_blog-link-01.jpg)](app.cayas.fr)
+[![](/assets/blog/av-cto-banniere-match.png)](https://app.cayas.fr/tools/cto-vs-av)
