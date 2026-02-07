@@ -53,6 +53,8 @@ Parfait ? Dommage, mais non : dans l’intervalle, la valeur de la maison de m
 
 Mon épargne a fructifié, mais mon **objectif** s’est éloigné.
 
+![](/assets/blog/4-maison.png)
+
 # Construire une stratégie financière alignée avec ses objectifs de vie
 
 Une **stratégie financière** bien construite consiste à choisir des investissements qui vous rapprochent de vos objectifs.
