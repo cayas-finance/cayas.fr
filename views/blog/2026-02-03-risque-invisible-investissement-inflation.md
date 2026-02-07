@@ -131,7 +131,8 @@ Entre 2001 et 2021, l’inflation a été suffisamment douce pour que la rémun�
 
 Le **taux d’inflation officiel** ne reflète pas toujours les réalités individuelles. (_Nous avons tous des habitudes de consommation différentes : le pouvoir d’achat d’un rural qui se déplace beaucoup en voiture thermique et se chauffe au fioul sera plus sensible aux variations du prix de l’énergie que celui du consommateur moyen.)_ Il reste toutefois un bon point de référence. Nous évaluons les variations des montants réels avec cette statistique fournie par l’Insee.
 
-<p style="text-align: center"><img src="/assets/blog/5-livret-a-inflation.png" alt="Livret A vs. Inflation"></p><p style="text-align: center">Livret A vs. Inflation</p>
+![](/assets/blog/5-livret-a-inflation.png)
+<p style="text-align: center">Livret A vs. Inflation</p>
 
 # Quand l'inflation devient forte
 
@@ -139,7 +140,8 @@ Malheureusement, comme tous les indicateurs économiques, l’inflation est diff
 
 Cela a été le cas en 2022 et 2023, lorsque l’inflation a fait perdre plus de 10 % de la valeur de l’argent en France. C’est rude, mais nous avons été parmi les moins durement touchés en Europe. On ne vous parle même pas de certains pays émergents.
 
-<p style="text-align: center"><img src="/assets/blog/5-tableau-perte-pouvoir-achat.png"></p><p style="text-align: center">Perte de pouvoir d'achat par pays en 2022 et 2023</p>
+![](/assets/blog/5-tableau-perte-pouvoir-achat.png)>
+<p style="text-align: center">Perte de pouvoir d'achat par pays en 2022 et 2023</p>
 
 L’inflation grignote lentement mais férocement votre bas de laine.
 
@@ -161,7 +163,8 @@ Entre 2014 et 2024, vous avez donc perdu du pouvoir d’achat : votre épargne 
 
 En tenant compte de l’inflation, la valeur réelle de vos 1 000 € placés sur Livret A n’a pas la même allure ! Regardez la courbe verte :
 
-<p style="text-align: center"><img src="/assets/blog/5-moonwalk-livret-a.png" alt="L'art du Moonwalk : la valeur réelle du Livret A dans le temps"></p><p style="text-align: center">L'art du Moonwalk : la valeur réelle du Livret A dans le temps</p>
+![](/assets/blog/5-moonwalk-livret-a.png) 
+<p style="text-align: center">L'art du Moonwalk : la valeur réelle du Livret A dans le temps</p>
 
 Ce niveau de pertes n’a rien de dramatique, mais sur le long terme, votre capital s’érode progressivement. (_Ce niveau de pertes peut arriver en une seule journée sur les marchés actions.)_
 
