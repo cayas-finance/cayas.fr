@@ -20,7 +20,7 @@ excerpt: >-
   maximisant ses chances de réussite à long terme.
 tags:
   - Apprentissage
-published: false
+published: true
 featured: false
 seo:
   meta_title: Le vrai risque en investissement
