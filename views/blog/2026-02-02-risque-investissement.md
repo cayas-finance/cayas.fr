@@ -53,13 +53,13 @@ Parfait ? Dommage, mais non : dans l’intervalle, la valeur de la maison de m
 
 Mon épargne a fructifié, mais mon **objectif** s’est éloigné.
 
-![](/assets/blog/maison.png)
+![](/assets/blog/4-maison.png)
 
 # Construire une stratégie financière alignée avec ses objectifs de vie
 
 Une **stratégie financière** bien construite consiste à choisir des investissements qui vous rapprochent de vos objectifs.
 
-![](/assets/blog/maison-viseur.png)
+![](/assets/blog/4-maison-viseur.png)
 
 L’éducation financière aide à identifier les **risques réels**. Une fois que vous avez une vision claire du risque, vous pouvez ensuite librement décider de vous y exposer – ou pas.
 
@@ -78,7 +78,7 @@ Le risque que l’on peut **se permettre**, c’est celui qui, lorsqu’il se m
 
 Le principe est simple : plus votre **horizon d’investissement** est lointain, plus vous pouvez prendre des risques. Pourquoi ? Parce que l’histoire montre que les crises sur les actifs risqués sont fréquentes, mais passagères.
 
-![](/assets/blog/pickup.png)
+![](/assets/blog/4-pickup.png)
 
 Si une crise survient mais que j’ai plus d’une dizaine d’années devant moi, pas de panique : j’attends des jours meilleurs pour récupérer les liquidités dont je n’ai pas besoin dans l’immédiat. Mais attention : avec le temps qui passe, il faudra réajuster. Si mon horizon d’investissement est de quinze ans, cela signifie que dans cinq ans, il ne sera plus que de dix ans. Je réduirai alors progressivement mon exposition aux actifs les plus risqués.
 
@@ -106,9 +106,7 @@ On représente ensuite le portefeuille risqué avec trois courbes correspondant 
 *   La courbe verte du milieu correspond au résultat médian, c’est-à-dire qu’on a 50 % de chances d’avoir moins et 50 % de chances d’avoir plus.
     
 
-![](/assets/blog/patience-et-longueur-de-temps.png)
-
-<p style="text-align: center">Patience et longueur de temps...</p>
+<p style="text-align: center"><img src="/assets/blog/4-patience-et-longueur-de-temps.png"></p>
 
 Si l’on a besoin de son argent dans deux ou trois ans, le portefeuille risqué n’est pas une bonne idée. Mais si l’on a suffisamment de temps, le portefeuille risqué aura une valeur supérieure à celle qu’on peut attendre du portefeuille peu risqué, **même si l’on n’a pas de chance** et que le risque se réalise.
 
@@ -130,7 +128,7 @@ Il n’y a aucun intérêt à prendre du risque pour le plaisir. On prend plus d
 
 Cet écart **varie** dans le temps. Parfois, le rendement que l’on peut attendre des actifs risqués n’est pas très supérieur à celui des actifs moins risqués. Dans ce cas, il est raisonnable d’avoir moins d’appétit pour les actifs risqués, surtout si l’on possède déjà le nécessaire pour financer les projets qui nous tiennent à cœur.
 
-![](/assets/blog/capy-irma.jpg)
+![](/assets/blog/4-capy-irma.jpg)
 
 Comme toujours en finance, on n’a pas de boule de cristal. Estimer le rendement futur des investissements n’est pas très fiable. Néanmoins, on peut faire des estimations raisonnables et une estimation imparfaite vaut mieux que pas d’estimation du tout.
 
