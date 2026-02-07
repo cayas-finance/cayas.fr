@@ -21,7 +21,7 @@ excerpt: >
   cohérente avec ses projets de vie.
 tags:
   - Apprentissage
-published: true
+published: false
 featured: false
 seo:
   meta_title: "Le risque invisible : l’inflation"
@@ -67,7 +67,7 @@ Le risque ne peut jamais être éliminé. Il existe toutefois des outils pour mi
 
 Cayas, c’est la **pilule rouge**. À vous de voir si vous l’avalez. 
 
-_J'espère que vous avez entendu parler de_ Matrix_. Version courte : les héros font le choix d’avaler la pilule rouge, ils souffrent, mais à la fin, ils gagnent. Sauf le personnage principal, à qui il arrive des bricoles. Ceux qui se contentent de l’autre pilule, la bleue, se font tous avoir. Parfois sans le savoir._
+_J'espère que vous avez entendu parler de_ Matrix\_. Version courte : les héros font le choix d’avaler la pilule rouge, ils souffrent, mais à la fin, ils gagnent. Sauf le personnage principal, à qui il arrive des bricoles. Ceux qui se contentent de l’autre pilule, la bleue, se font tous avoir. Parfois sans le savoir.\_
 
 _C’est pareil avec vos finances perso._
 
@@ -104,7 +104,7 @@ Commençons par le premier : **l’inflation**.
 
 On oppose souvent épargne et investissement. En réalité, la frontière est floue.
 
-*   L’épargne consiste à **mettre de l’argent de côté** pour financer un projet à un horizon d’une ou deux années, pour gérer les fluctuations de sa consommation courante ou répondre à des imprévus _(la fameuse injonction à garder trois à six mois de dépenses – On fera la peau à cette grossière approximation plus tard, mais sachez qu’elle vous coûte probablement cher en coût d’opportunité)._ Pour cela, on utilise des placements qui présentent très peu de risque de chuter significativement à court terme. On dit que ces placements ont une **faible volatilité.** (_Un placement risqué est dit volatil lorsque son résultat peut fortement varier. Un placement_ volatile_, c’est uniquement lorsqu’on investit dans un élevage de poulets.)_
+*   L’épargne consiste à **mettre de l’argent de côté** pour financer un projet à un horizon d’une ou deux années, pour gérer les fluctuations de sa consommation courante ou répondre à des imprévus _(la fameuse injonction à garder trois à six mois de dépenses – On fera la peau à cette grossière approximation plus tard, mais sachez qu’elle vous coûte probablement cher en coût d’opportunité)._ Pour cela, on utilise des placements qui présentent très peu de risque de chuter significativement à court terme. On dit que ces placements ont une **faible volatilité.** (_Un placement risqué est dit volatil lorsque son résultat peut fortement varier. Un placement_ volatile\_, c’est uniquement lorsqu’on investit dans un élevage de poulets.)\_
     
 *   L’investissement consiste à **acquérir des actifs risqués** qui ont de bonnes chances d’augmenter en valeur, tels que des parts d’entreprises (les actions), ou à prêter notre argent contre des intérêts, par exemple en achetant des obligations. En revanche, ces actifs peuvent aussi perdre beaucoup de valeur, parfois sur plusieurs décennies.
     
