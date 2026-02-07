@@ -51,9 +51,7 @@ Par exemple, imaginons que j’aie trouvé la maison de mes rêves. Elle coûte 
 
 Parfait ? Dommage, mais non : dans l’intervalle, la valeur de la maison de mes rêves a augmenté et vaut aujourd’hui 300 000 €. Il me manque maintenant 100 000 € pour atteindre mon objectif là où quelques années auparavant, il ne me manquait que 80 000 €.
 
-Mon épargne a fructifié, mais mon **objectif** s’est éloigné.
-
-![](/assets/blog/4-maison.png)
+Mon épargne a fructifié, mais mon **objectif** s’est éloigné.![](/assets/blog/4-maison.png)
 
 # Construire une stratégie financière alignée avec ses objectifs de vie
 
