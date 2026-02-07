@@ -102,6 +102,8 @@ Un **indice** est un nombre qui suit la valorisation totale d’un groupe d’en
 
 ![](/assets/blog/6-plongeon-SP500.png)
 
+<p style="text-align: center">Plongeon olympique pour le S&amp;P 500</p>
+
 # Crises financières successives
 
 Un krach en cache parfois un autre. En 2007, alors que les actions peinent encore à se remettre du choc précédent, voilà que débarque le second effet Kiss Cool.
@@ -112,7 +114,7 @@ Rebelote : le S&P 500 dévisse, cette fois avec encore plus de dégâts, car d
 
 ![](/assets/blog/6-krach-krach.png)
 
-# Investir en actions sur le long terme : patience et nerfs solides
+<p style="text-align: center">Krach Krach</p>
 
 Il a fallu pas loin de **quinze ans** pour que l’indice boursier américain revienne à son niveau de départ en termes réels. _(C’est-à-dire ajustés de l’inflation et en regardant en euros et non en dollars. Eh oui, investir en devises étrangères comporte aussi des risques !)_
 
@@ -135,6 +137,8 @@ Imaginons deux personnes qui ont pris leur retraite en **août 2000** avec 100 
 Benoît a investi à 100 % sur le S&P 500. Laura a 50 % en actions et le reste sur des livrets. Regardons l’évolution de leur magot :
 
 ![](/assets/blog/6-chute.png)
+
+<p style="text-align: center">Jusqu'ici tout va bien. Jusqu'ici...</p>
 
 À votre avis, qui a eu le plus de nuits blanches pendant cette décennie ?
 
