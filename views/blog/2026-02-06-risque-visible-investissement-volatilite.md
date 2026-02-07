@@ -70,13 +70,13 @@ _L’impact de cette annonce sera-t-il durable sur la valeur des actions Nvidia�
 
 Pour **réduire ces risques** propres à chaque entreprise, mieux vaut investir dans un large éventail d’entreprises. Mais cela reste un investissement risqué, car certains événements impactent toutes les entreprises sans exception.
 
-![](/assets/blog/6-entreprises.png)
+![entreprises](/assets/blog/6-entreprises.png)
 
 # Volatilité des marchés actions : quand la Bourse décroche
 
 Commençons par casser l’ambiance. Parlons d’une période qui a traumatisé de nombreux investisseurs et mis un coup dans l’aile à beaucoup de retraités outre-Atlantique.
 
-![](/assets/blog/6-bienvenue.png)
+![Bienvenue](/assets/blog/6-bienvenue.png)
 
 Bienvenue dans la (grosse) décennie perdue : août 2000 - février 2015. _(Ça n’a pas l’air comme ça, mais je suis un joyeux boute-en-train. La preuve : j’aurais pu vous parler de la crise de 1929, qui est probablement l’une des causes de la Seconde Guerre mondiale.)_
 
@@ -100,7 +100,7 @@ Un **indice** est un nombre qui suit la valorisation totale d’un groupe d’en
 
 À partir d’août 2000, cet indice a entamé une chute marquée. Cela a duré jusqu’en mars 2003, où la baisse a atteint **50 %** de son niveau initial. _(Je ne vous montre pas l’indice Nasdaq, très chargé en valeurs technologiques. Il a dévissé de – 80 %.)_
 
-![](/assets/blog/6-plongeon-SP500.png)
+![Plongeon olympique pour le S&P 500](/assets/blog/6-plongeon-SP500.png)
 
 <p style="text-align: center">Plongeon olympique pour le S&amp;P 500</p>
 
@@ -112,7 +112,7 @@ Le marché des **crédits immobiliers**, transformés en produits d’investisse
 
 Rebelote : le S&P 500 dévisse, cette fois avec encore plus de dégâts, car de très grandes entreprises font faillite. C’est le début d’une des plus grosses **récessions** de l’histoire.
 
-![](/assets/blog/6-krach-krach.png)
+![Krach Krach](/assets/blog/6-krach-krach.png)
 
 <p style="text-align: center">Krach Krach</p>
 
@@ -136,7 +136,7 @@ Imaginons deux personnes qui ont pris leur retraite en **août 2000** avec 100 
 
 Benoît a investi à 100 % sur le S&P 500. Laura a 50 % en actions et le reste sur des livrets. Regardons l’évolution de leur magot :
 
-![](/assets/blog/6-chute.png)
+![Jusqu'ici tout va bien. Jusqu'ici...](/assets/blog/6-chute.png)
 
 <p style="text-align: center">Jusqu'ici tout va bien. Jusqu'ici...</p>
 
