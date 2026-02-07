@@ -108,7 +108,7 @@ On représente ensuite le portefeuille risqué avec trois courbes correspondant 
 
 [![Patience et longueur de temps...](/assets/blog/4-patience-et-longueur-de-temps.png)](app.cayas.fr)
 
-Patience et longueur de temps...
+<p style="text-align: center">Patience et longueur de temps...</p>
 
 Si l’on a besoin de son argent dans deux ou trois ans, le portefeuille risqué n’est pas une bonne idée. Mais si l’on a suffisamment de temps, le portefeuille risqué aura une valeur supérieure à celle qu’on peut attendre du portefeuille peu risqué, **même si l’on n’a pas de chance** et que le risque se réalise.
 
