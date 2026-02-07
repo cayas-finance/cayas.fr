@@ -17,7 +17,7 @@ excerpt: Investir en actions peut offrir des rendements élevés sur le long
   vie, afin d’investir avec discipline et sérénité.
 tags:
   - Apprentissage
-published: true
+published: false
 featured: false
 seo:
   meta_title: "Le risque visible : la volatilité"
