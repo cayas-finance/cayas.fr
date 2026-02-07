@@ -66,7 +66,7 @@ Connaître les risques, c'est pouvoir s'y préparer pour mieux les encaisser. L�
 
 Le premier risque, c’est de s’inventer cuisinier lorsqu’on ne l’est pas. On peut gérer directement ses investissements et faire sa petite tambouille : 10 cL d’actions Machin Corp, 3 kg de Bidule SA, un zeste de Truc Inc.
 
-![](/assets/blog/3-capy-cook.jpg)
+![Capy cuistot](/assets/blog/3-capy-cook.jpg)
 
 Soyons clairs tout de suite : on ne vous dira jamais d’acheter l’action Machin plutôt que l’action Bidule. Pourquoi ?
 
@@ -183,7 +183,7 @@ La complexité de certains produits peut flatter votre ego et donner le sentimen
 
 Il reste à parler du capybara dans la baignoire _(parce qu'un capybara adulte remplit aussi bien votre baignoire qu’un éléphant votre salon)_ : prédire le futur est terriblement difficile.
 
-![](/assets/blog/3-capy-baignoire.jpg)
+![Capy bain](/assets/blog/3-capy-baignoire.jpg)
 
 Lorsqu’on vous parle de rendement d’un placement, on vous parle souvent de **rendement passé**. Savoir que vous seriez riche si vous aviez investi il y a dix ans vous fait une belle jambe : les rendements passés ne rempliront pas votre gamelle dans le futur.
 
