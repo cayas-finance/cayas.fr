@@ -21,7 +21,7 @@ excerpt: >
   cohérente avec ses projets de vie.
 tags:
   - Apprentissage
-published: false
+published: true
 featured: false
 seo:
   meta_title: "Le risque invisible : l’inflation"
