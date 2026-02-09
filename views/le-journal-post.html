@@ -5,43 +5,53 @@ pagination:
   alias: post
 permalink: "/le-journal/{{ post.data.slug }}/"
 layout: layout.html
+eleventyComputed:
+  title: "{{ post.data.title }}"
+  description: "{{ post.data.seo.meta_description }}"
 ---
 
-{% include 'header.html' %}
-
 <article>
-
-  <div class="blog-overflow">
-
-  </div><!-- /.blog-overflow -->
+  <div class="blog-overflow"></div>
+  <!-- /.blog-overflow -->
 
   {% if post.data.featured_image %}
   <div class="blog-hero theme--dark" aria-labelledby="title-blog-hero">
-
     <div class="wrapper wrapper--wide">
-      <img src="{{ post.data.featured_image }}" class="blog-hero__img" alt="" loading="eager">
-    </div><!-- .wrapper -->
-
-  </div><!-- /.blog-hero -->
+      <img
+        src="{{ post.data.featured_image }}"
+        class="blog-hero__img"
+        alt=""
+        loading="eager"
+      />
+    </div>
+    <!-- .wrapper -->
+  </div>
+  <!-- /.blog-hero -->
   {% endif %}
 
-  <hr class="hr--naked">
+  <hr class="hr--naked" />
 
   <div class="wrapper">
-
     {% if post.data.tags.length > 0 %}
     <ul class="list-inline">
       {% for tag in post.data.tags %}
       <li>
-        <a href="/le-journal/sujet/{{ tag.slug }}/" class="theme--{{ tag.slug }}">
-          <span class="smaller-font status-alt"><span>{{ tag.name }}</span></span>
+        <a
+          href="/le-journal/sujet/{{ tag.slug }}/"
+          class="theme--{{ tag.slug }}"
+        >
+          <span class="smaller-font status-alt"
+            ><span>{{ tag.name }}</span></span
+          >
         </a>
       </li>
       {% endfor %}
     </ul>
     {% endif %}
 
-    <h1 class="blog-article-title title--1 title--1--smaller">{{ post.data.title }}</h1>
+    <h1 class="blog-article-title title--1 title--1--smaller">
+      {{ post.data.title }}
+    </h1>
 
     <div class="small-font color-gray">
       <time datetime="{{ post.data.date | date: 'YYYY-MM-DD' }}">
@@ -52,28 +62,28 @@ layout: layout.html
       {% endif %}
     </div>
 
-    <hr class="hr--naked">
+    <hr class="hr--naked" />
 
     <div class="editorial">
-
       {% if post.data.excerpt %}
       <p>{{ post.data.excerpt }}</p>
-      {% endif %}
-
-      {{ post.content | markdown }}
+      {% endif %} {{ post.content | markdown }}
     </div>
 
-    <hr class="hr--large">
+    <hr class="hr--large" />
 
     <p>
       <a href="/le-journal/" class="link--picto">
-        <svg class="svg-icon" aria-hidden="true"><use xlink:href="{{ '/assets/sprites.svg#ui_arrow-3--left' | url }}"></use></svg>
+        <svg class="svg-icon" aria-hidden="true">
+          <use
+            xlink:href="{{ '/assets/sprites.svg#ui_arrow-3--left' | url }}"
+          ></use>
+        </svg>
         <span>Retour au journal</span>
       </a>
     </p>
-
-  </div><!-- /.wrapper -->
-
+  </div>
+  <!-- /.wrapper -->
 </article>
 
 {% include 'footer.html' %}
