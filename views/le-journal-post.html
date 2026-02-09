@@ -5,6 +5,9 @@ pagination:
   alias: post
 permalink: "/le-journal/{{ post.data.slug }}/"
 layout: layout.html
+eleventyComputed:
+  title: "{% if post.data.seo.meta_title %}{{ post.data.seo.meta_title }}{% else %}{{ post.data.title }}{% endif %}"
+  description: "{% if post.data.seo.meta_description %}{{ post.data.seo.meta_description }}{% else %}{{ post.data.excerpt }}{% endif %}"
 ---
 
 {% include 'header.html' %}
