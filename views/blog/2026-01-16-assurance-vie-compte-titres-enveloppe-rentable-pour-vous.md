@@ -214,6 +214,4 @@ L'assurance-vie ne redevient intéressante que dans des situations très spécif
 
 En dehors de ces cas, la réalité est mathématique : le vrai moteur de votre richesse n'est pas la carotte fiscale, c'est l'absence de frais.
 
-Utilisez le **simulateur Cayas** pour faire les calculs correspondants à votre propre situation, et reprenez le contrôle de votre épargne, pour ne plus payer un avantage qui n'en est pas un :
-
-[![](/assets/blog/av-cto-banniere-match.png)](https://app.cayas.fr/tools/cto-vs-av)
+Utilisez le **simulateur Cayas** pour faire les calculs correspondants à votre propre situation, et reprenez le contrôle de votre épargne, pour ne plus payer un avantage qui n'en est pas un :[![](/assets/blog/av-cto-banniere-match.png)](https://app.cayas.fr/tools/cto-vs-av)
