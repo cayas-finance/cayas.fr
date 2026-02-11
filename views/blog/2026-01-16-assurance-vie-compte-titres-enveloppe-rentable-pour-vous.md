@@ -38,6 +38,7 @@ seo:
     Découvrez dans quels cas l’assurance-vie reste pertinente et pourquoi, pour
     la majorité des Français, l’absence de frais est le véritable moteur de la
     performance.
+featured_image: /assets/blog/capy-boxe.png
 ---
 En épargne, les idées reçues coûtent cher.
 
