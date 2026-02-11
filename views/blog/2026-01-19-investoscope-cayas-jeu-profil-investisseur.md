@@ -26,6 +26,7 @@ seo:
     vous aider à comprendre votre profil d’investisseur, à partir de vos
     réflexes psychologiques, de vos valeurs et de vos comportements face au
     risque.
+featured_image: /assets/blog/investoscope.svg
 ---
 [🎮 Démarrer le quiz Investoscope](https://app.cayas.fr/investoscope/intro)
 
@@ -81,6 +82,6 @@ Chez Cayas, on vous apprend à faire ça, en commençant par les bases, accessib
 
 C’est Futur Vous qui vous remerciera.
 
-[📍 Démarrer gratuitement le parcours Cayas](http://app.cayas.fr)  
+[📍 Démarrer gratuitement le parcours Cayas](http://app.cayas.fr)
 
 [![](/assets/blog/vs_blog-link-01.jpg)](app.cayas.fr)
