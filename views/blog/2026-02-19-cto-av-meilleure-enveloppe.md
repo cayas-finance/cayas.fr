@@ -39,10 +39,10 @@ seo:
 ---
 Aujourd’hui, l’assurance-vie est recommandée par pur réflexe à des épargnants de 30 ans, sans jamais questionner la pertinence réelle du support.  
 Pour arrêter de répéter les mêmes explications, j’ai compilé ici une démonstration chiffrée prouvant que le compte-titres (CTO) est, dans l’immense majorité des cas, une solution bien moins chargée en frais, et à rendement/risque équivalent souvent bien meilleure que l’assurance-vie (AV).  
-Il vise aussi à apporter la rigueur qui manque cruellement à certaines ressources populaires sur la succession, en particulier de la part de vendeurs d’AV ou de CGP.  
+Il vise aussi à apporter la rigueur qui manque cruellement à certaines ressources populaires sur la succession, en particulier de la part de vendeurs d’assurance-vie ou de CGP.  
 Ce post permet aussi de rentrer un peu plus dans le détail de cette vidéo et ajoute d’autres cas chiffrés à l’exemple évoqué : [https://www.youtube.com/watch?v=LMozzlvY8n8&t=1008s](https://www.youtube.com/watch?v=LMozzlvY8n8&t=1008s)
 
-Dans ce document, nous analyserons comparativement le CTO et l’AV à travers une série de simulations couvrant :
+Dans ce document, nous analyserons comparativement le compte-titres et l’assurance-vie à travers une série de simulations couvrant :
 
 *   Comparaison simple pour des investisseurs avec différentes aversions au risque : rendements de 3 % (prudent), 5 % (équilibré) et 8 % (dynamique).
     
@@ -55,7 +55,7 @@ Dans ce document, nous analyserons comparativement le CTO et l’AV à travers u
 *   Robustesse aux arbitrages, dont illustration sur une allocation diversifiée.
     
 
-Les différents titres permettront de se repérer dans ces quelques cas. Enfin, dernier disclaimer, Il se pourrait que des erreurs se soient glissées ici ou là, n’hésitez pas à refaire/vérifier certains calculs, faisons travailler l’intelligence collective.
+Les différents titres permettront de se repérer.
 
 # **Mécanismes fiscaux**
 
