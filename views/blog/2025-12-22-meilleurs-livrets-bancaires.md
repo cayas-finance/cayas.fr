@@ -9,7 +9,7 @@ excerpt: Dans la galaxie des finances personnelles, certains réflexes sont si
   démarrer sa vie financière et pouvoir ensuite investir sereinement. On
   commence par la base.
 published: true
-featured: true
+featured: false
 seo:
   meta_title: Quels sont les meilleurs livrets bancaires ?
   meta_description: Dans la galaxie des finances personnelles, certains réflexes
