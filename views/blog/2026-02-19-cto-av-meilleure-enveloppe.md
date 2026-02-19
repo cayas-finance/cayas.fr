@@ -83,7 +83,7 @@ La formule utilisée est la suivante :
 
 # **Profil prudent (3 %)**
 
-![](/assets/blog/cto-av-2-heatmap_tipping_point_3pct.png)
+![](/assets/blog/cto-av-profil3-quelle-est-la-meilleure-enveloppe-v0-w5fal20xexbg1.webp)
 
 Sur un horizon de 10 à 50 ans, l’assurance-vie souffre de la comparaison face au compte-titres, même lorsque l’abattement successoral est déjà consommé par un patrimoine préexistant (ici 300 000 €). L’avantage ou le désavantage est exprimé en pourcentage du patrimoine net final transmis. La ligne noire indique le point d’équilibre : à gauche (vert), l’assurance-vie l’emporte, à droite (rouge), le CTO devient supérieur. Pour un investissement inférieur à 500 000 €, le CTO prend l’avantage vers 20 ou 25 ans de détention, et 30 ans pour un patrimoine plus important.
 
@@ -93,7 +93,7 @@ Dans le cas du CTO et du barème général, les taux varient de 20 % à 45 %, ma
 
 # **Profil équilibré (5 %)**
 
-![](/assets/blog/cto-av-3-heatmap_tipping_point_5pct.png)
+![](/assets/blog/cto-av-profil5-quelle-est-la-meilleure-enveloppe-v0-yzfy78sxexbg1.webp)
 
 Le constat ici est similaire. L’assurance-vie perd son avantage encore plus rapidement, car le rendement plus important augmente mécaniquement l’avantage du CTO et de la purge des plus-values lors de la transmission, tandis que ce rendement pénalise encore l’assurance-vie dont les frais sont proportionnels au capital.
 
@@ -102,7 +102,7 @@ Cependant, quoi qu’il arrive, après 25 ans de détention, l’assurance-vie e
 
 # **Profil dynamique (8 %)**
 
-![](/assets/blog/cto-av-4-heatmap_tipping_point.png)
+![](/assets/blog/cto-av-profil8-quelle-est-la-meilleure-enveloppe-v0-60026aiyexbg1.webp)
 
 Dans ce scénario à fort rendement, le CTO est pratiquement imbattable. La purge des plus-values latentes au décès neutralise une telle pression fiscale par rapport aux prélèvements sociaux de l’AV que le match est clos avant même 10 ans de détention, sauf pour les patrimoines très élevés dont le taux marginal reste intéressant, dans le cas du barème de l’assurance-vie par rapport au barème général.
 
@@ -137,7 +137,7 @@ L’assurance-vie bénéficie d’un abattement annuel de 4 600 € sur la part 
 
 # **Transmission entre frère et soeur**
 
-![](/assets/blog/cto-av-8-heatmap_siblings_5pct.png)
+![](/assets/blog/cto-av-freresoeur-quelle-est-la-meilleure-enveloppe-v0-7t8pada0fxbg1.webp)
 
 La transmission entre frère et sœur constitue une exception notable du fait de la fiscalité punitive de droit commun (35 % puis 45 %). L’assurance-vie offre un avantage bien plus large pour les capitaux modestes ou les durées raisonnables. Cependant, le compte-titres finit par l’emporter à long terme sous l’effet des frais : le point de bascule se situe autour de 25 ans pour les patrimoines importants (plus d’un million d’euros) mais recule au-delà de 50 ans pour les capitaux plus modestes (100 000 €).
 
@@ -172,7 +172,7 @@ La carte illustre cette supériorité quasi-totale de l’assurance-vie. Plus le
 
 La supériorité du CTO repose en grande partie sur la purge des plus-values au décès. Nous avons vu qu’une vente forcée est très négative pour cette enveloppe. Ici, nous allons étudier jusqu’à quel niveau de rotation (proportion du capital vendu/acheté par an) l’avantage du CTO persiste.
 
-![](/assets/blog/cto-av-10-turnover.png)
+![](/assets/blog/cto-av-turnover-quelle-est-la-meilleure-enveloppe-v0-eju3shz1fxbg1.webp)
 
 Ce graphique compare la probabilité de réussite du CTO face à l’AV selon le taux de rotation annuel (axe Y) et le rendement espéré (axe X) dans deux contextes successoraux. Le taux de rotation (ou turnover) correspond à la part du portefeuille qui est liquidée et rachetée chaque année. Cela peut représenter :
 
@@ -189,7 +189,7 @@ Dans le cas où l’investisseur possède déjà un patrimoine de 300 000 € (h
 
 Pour illustrer cette robustesse, nous avons simulé une stratégie diversifiée composée de 80 % de NTSG (fonds multi-actifs, 90% actions et 60% obligations), 10 % de Managed futures et 10 % d’or.
 
-![](/assets/blog/cto-av-11-complex_portfolio_results.png)
+![](/assets/blog/cto-av-portefeuillecomplexe-quelle-est-la-meilleure-enveloppe-v0-xxvpohs2fxbg1.webp)
 
 Bien que cette stratégie nécessite un rééquilibrage annuel entre les trois actifs (générant un turnover moyen de 2,44 %), le CTO l’emporte dans 84,4 % des cas à 30 ans. Le coût fiscal des arbitrages en CTO est largement compensé par l’économie des 0,5 % de frais de gestion de l’assurance-vie et par la purge totale des plus-values lors de la succession.
 
