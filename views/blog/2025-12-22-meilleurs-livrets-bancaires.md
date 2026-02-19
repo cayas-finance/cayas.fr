@@ -31,7 +31,7 @@ C’est là que tombent vos revenus, de là que partent vos dépenses et de là 
 
 Avoir un compte bancaire à votre nom, c’est aussi avoir la main sur votre **indépendance**, pour aujourd’hui et pour demain.
 
-## Quelle banque choisir en 2025 ?
+## Quelle banque choisir en 2026 ?
 
 Pour ouvrir votre compte, vous avez le choix entre plusieurs types de banques :
 
@@ -48,7 +48,7 @@ Les banques en ligne en France n’ont pas à rougir devant les banques traditio
 
 ## Faut-il payer pour son compte courant ou sa carte bancaire ?
 
-Soyons très clairs : en 2025, un compte bancaire et une carte bancaire doivent être **gratuits**. Oui, même les cartes Visa Premier et Mastercard Gold.
+Soyons très clairs : en 2026, un compte bancaire et une carte bancaire doivent être **gratuits**. Oui, même les cartes Visa Premier et Mastercard Gold.
 
 Ne vous inquiétez pas pour votre banque, elle a trouvé les moyens de subvenir à ses besoins :
 
@@ -158,7 +158,7 @@ Pour ouvrir un LEP, vos revenus ne doivent pas dépasser un certain **plafond**.
 
 Le chiffre qui sera regardé, c’est votre **revenu fiscal de référence** de l’année dernière (N-1) ou de l’année d’avant (N-2). La banque vous demandera votre avis d’imposition, ou vérifiera que vous êtes éligible directement auprès de l’administration fiscale.
 
-Par exemple, en 2025, ces deux personnes peuvent ouvrir un LEP :
+Par exemple, en 2026, ces deux personnes peuvent ouvrir un LEP :
 
 *   Jonathan habite seul. Son revenu fiscal de référence de l’année dernière ou d’il y a deux ans est **inférieur à 22 823 euros**.
     
