@@ -5,20 +5,14 @@ date: 2026-02-19
 author: Guillaume Flament, Responsable scientifique de Cayas
 excerpt: >-
   Cet article compare en profondeur le compte-titres (CTO) et l’assurance-vie
-  (AV) à la lumière de la fiscalité 2026, afin de déterminer quelle enveloppe
-  est la plus performante pour investir sur le long terme. À travers des
-  simulations détaillées (rendements de 3 %, 5 % et 8 %), des cas pratiques de
-  rente, de transmission successorale en ligne directe et indirecte,
-  d’arbitrages d’ETF, de rotation de portefeuille et d’allocation diversifiée,
-  l’analyse montre que le compte-titres sans frais annuels surperforme
-  l’assurance-vie dans la majorité des cas dès 25 à 30 ans d’horizon, grâce à
-  l’absence de frais de gestion et à la purge des plus-values au décès.
+  (AV) à la lumière de la fiscalité 2026. À travers des simulations détaillées
+  et des cas pratiques, l’analyse montre que le compte-titres sans frais annuels
+  surperforme l’assurance-vie dans la majorité des cas, grâce à l’absence de
+  frais de gestion et à la purge des plus-values au décès.
 
-  Si l’assurance-vie conserve un intérêt pour des transmissions spécifiques ou
-  des arbitrages fréquents, les frais récurrents finissent souvent par annuler
-  son avantage fiscal. Conclusion : pour un investisseur jeune ou long terme
-  cherchant à optimiser rendement, fiscalité et transmission, le CTO apparaît
-  comme la solution par défaut la plus efficiente.
+  Pour un investisseur jeune ou long terme cherchant à optimiser rendement,
+  fiscalité et transmission, le CTO apparaît comme la solution par défaut la
+  plus efficiente.
 tags:
   - L’avis Cayas
 published: false
@@ -84,7 +78,6 @@ Pour uniformiser les résultats et permettre une comparaison équitable, les fig
 
 La formule utilisée est la suivante :
 
-  
 <img src="https://canada1.discourse-cdn.com/flex012/uploads/cayas/original/2X/6/6cc9ec6892d787f66e4eaca177766c892b0e680d.png" alt="image" style="border-style: none; vertical-align: middle; max-width: 100%; height: auto; display: inline-block; aspect-ratio: 690 / 51;" width="690" height="51">
 
 # **Profil prudent (3 %)**
