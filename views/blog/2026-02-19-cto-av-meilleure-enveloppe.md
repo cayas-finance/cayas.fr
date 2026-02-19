@@ -126,12 +126,12 @@ Ici, l’assurance-vie montre une résilience plus forte pour les décès avant 
 
 Pour se verser 3 000 € nets dans la poche, l’épargnant doit vendre, dans l’une ou l’autre des enveloppes, une quantité de capital supérieure afin de couvrir l’impôt. Ce calcul dépend du ratio de plus-value (noté R) présent dans le portefeuille au moment du retrait.
 
-| **Mécanique** | **Compte-titres (Flat Tax 31.2 %)** | **Assurance-vie (après 8 ans)** |
+| **Mécanique** | **Compte-titres (Flat tax 31,4 %)** | **Assurance-vie (après 8 ans)** |
 | --- | --- | --- |
 | Formule de retrait brut | 3000/(1 −0.312 ×𝑅) | 3000/(1 −0.172 ×𝑅) |
 | Exemple (rendement de 100 %) | 𝑅 =0,5 | 𝑅 =0,5 |
 | Retrait brut nécessaire | 3 555 € | 3 282 € |
-| Impôt payé | 555 € (Flat Tax) | 282 € (prélèvements sociaux) |
+| Impôt payé | 555 € (Flat tax) | 282 € (prélèvements sociaux) |
 
 L’assurance-vie bénéficie d’un abattement annuel de 4 600 € sur la part de gains lors des retraits. Pour une rente de 3 000 €, la totalité de la plus-value est absorbée par cet abattement, ce qui ramène l’impôt sur le revenu à 0 %. Seuls les prélèvements sociaux de 17,2 % s’appliquent sur la base des gains, expliquant pourquoi le taux global reste de 17,2 % au lieu de 24,7 %. Ce dernier taux ne s’appliquerait que sur la fraction des gains excédant l’abattement annuel de 4 600 €.
 
