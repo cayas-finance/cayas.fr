@@ -1,5 +1,5 @@
 ---
-title: CTO vs AV, quelle est la meilleure enveloppe ?
+title: "Assurance-vie ou compte-titres : quelle est la meilleure enveloppe ?"
 slug: cto-av-meilleure-enveloppe
 date: 2026-02-19
 author: Guillaume Flament, Responsable scientifique de Cayas
