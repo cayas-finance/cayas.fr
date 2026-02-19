@@ -16,7 +16,7 @@ excerpt: >-
 tags:
   - L’avis Cayas
 published: true
-featured: false
+featured: true
 seo:
   meta_title: CTO vs AV, quelle est la meilleure enveloppe ?
   meta_description: >-
