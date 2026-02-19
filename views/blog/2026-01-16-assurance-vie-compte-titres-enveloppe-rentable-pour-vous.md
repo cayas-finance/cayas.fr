@@ -1,6 +1,6 @@
 ---
-title: "Assurance-vie ou compte-titres : quelle enveloppe est la plus rentable
-  pour vous ?"
+title: "Assurance-vie ou compte-titres : comparaison chiffrée grâce à notre
+  simulateur"
 slug: assurance-vie-compte-titres-enveloppe-rentable-pour-vous
 date: 2026-01-16
 author: L’équipe Cayas
