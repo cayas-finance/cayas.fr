@@ -1,6 +1,7 @@
 ---
-title: "Assurance-vie ou compte-titres : comment choisir ?"
-slug: cto-av-meilleure-enveloppe
+title: "Assurance-vie ou compte-titres : quel est le plus rentable sur le long
+  terme ?"
+slug: assurance-vie-compte-titres-rentable-long-terme
 date: 2026-02-19
 author: Guillaume Flament, Responsable scientifique de Cayas
 excerpt: >-
