@@ -1,7 +1,7 @@
 ---
 title: "Assurance-vie ou compte-titres : comparaison chiffrée grâce à notre
   simulateur"
-slug: assurance-vie-compte-titres-enveloppe-rentable-pour-vous
+slug: assurance-vie-compte-titres-comparaison-simulateur
 date: 2026-01-16
 author: L’équipe Cayas
 excerpt: >-
