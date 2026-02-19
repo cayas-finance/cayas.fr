@@ -1,5 +1,5 @@
 ---
-title: Quels sont les meilleurs livrets bancaires ?
+title: Quels sont les meilleurs livrets d'épargne ?
 slug: meilleurs-livrets-bancaires
 date: 2025-12-22
 author: L’équipe Cayas
