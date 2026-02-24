@@ -213,3 +213,9 @@ Finalement, les résultats de cette simulation sont particulièrement conservate
 # **Conclusion**
 
 Un compte-titres sans frais est la solution par défaut la plus performante pour la majorité des épargnants sur le long terme, même si des questions de rééquilibrage entrent en jeu. L’assurance-vie est un outil d’optimisation spécifique pour les transmissions en ligne indirecte et/ou sur des durées courtes. Rappelons par ailleurs que le cadre fiscal utilisé dans ce post ne concerne que les versements effectués avant 70 ans. Dans tous les cas, une détention supérieure à 30 ans favorise presque toujours le compte-titres. Ainsi, si vous avez moins de 60 ans, même le meilleur contrat d’assurance-vie sera mécaniquement perdant pour vous.
+
+\_\_\_
+
+À partir de **votre** **projet** et de **vos** **contraintes**, le simulateur de Cayas compare les trajectoires d’un même investissement en assurance-vie ou en compte-titres, jusqu’à la retraite, puis la succession, et identifie celle qui maximise votre avantage :
+
+![](/assets/blog/av-cto-banniere-match.png)
