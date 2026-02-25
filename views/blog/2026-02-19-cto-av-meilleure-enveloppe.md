@@ -221,3 +221,7 @@ Un compte-titres sans frais est la solution par défaut la plus performante pour
 Eh oui, en matière d'épargne, les idées reçues coûtent cher. Alors on pose les calculs pour vous. Vous verrez, c'est étonnamment efficace.
 
 À partir de **votre** **projet** et de **vos** **contraintes**, le simulateur de Cayas compare les trajectoires d’un même investissement en assurance-vie ou en compte-titres, jusqu’à la retraite, puis la succession, et identifie celle qui maximise votre avantage.
+
+\_\_
+
+Et pour ceux qui aiment aller regarder sous le capot, voici en accès libre le code ayant généré ces comparaisons : [https://github.com/cayas-finance/cto\_vs\_av](https://github.com/cayas-finance/cto_vs_av)
