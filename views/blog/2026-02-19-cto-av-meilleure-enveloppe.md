@@ -56,8 +56,6 @@ Dans ce document, nous analyserons comparativement le compte-titres et l’assur
 *   Robustesse aux arbitrages, dont illustration sur une allocation diversifiée.
     
 
-Les différents titres permettront de se repérer.
-
 # **Mécanismes fiscaux**
 
 Les comparaisons proposées ici reposent sur le cadre fiscal de 2026, c’est-à-dire avec une flat tax à 31,4 % (12,8 % impôt sur le revenu + 18,6 % prélèvements sociaux), 17,2 % de prélèvements sociaux en AV et un abattement forfaitaire en cas de retrait d’une assurance-vie après une certaine période de détention. Si la fiscalité venait à changer, ces simulations deviendraient caduques, ou du moins imprécises.
@@ -225,3 +223,5 @@ Eh oui, en matière d'épargne, les idées reçues coûtent cher. Alors on pose 
 \_\_
 
 Et pour ceux qui aiment aller regarder sous le capot, voici en accès libre le code source du simulateur : [https://github.com/cayas-finance/cto\_vs\_av](https://github.com/cayas-finance/cto_vs_av)
+
+![:flèche_droite:](https://a.slack-edge.com/production-standard-emoji-assets/14.0/apple-medium/27a1-fe0f@2x.png) Réagir et discuter sur le [forum Cayas](https://forum.cayas.fr/t/cto-vs-av-quelle-est-la-meilleure-enveloppe/1124).
