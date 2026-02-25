@@ -224,4 +224,4 @@ Eh oui, en matière d'épargne, les idées reçues coûtent cher. Alors on pose 
 
 \_\_
 
-Et pour ceux qui aiment aller regarder sous le capot, voici en accès libre le code source ayant généré ces comparaisons : [https://github.com/cayas-finance/cto\_vs\_av](https://github.com/cayas-finance/cto_vs_av)
+Et pour ceux qui aiment aller regarder sous le capot, voici en accès libre le code source du simulateur : [https://github.com/cayas-finance/cto\_vs\_av](https://github.com/cayas-finance/cto_vs_av)
