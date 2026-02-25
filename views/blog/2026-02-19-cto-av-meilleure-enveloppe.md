@@ -224,4 +224,4 @@ Eh oui, en matière d'épargne, les idées reçues coûtent cher. Alors on pose 
 
 Et pour ceux qui aiment aller regarder sous le capot, voici en accès libre le code source du simulateur : [https://github.com/cayas-finance/cto\_vs\_av](https://github.com/cayas-finance/cto_vs_av)
 
-![:flèche_droite:](https://a.slack-edge.com/production-standard-emoji-assets/14.0/apple-medium/27a1-fe0f@2x.png) Réagir et discuter sur le [forum Cayas](https://forum.cayas.fr/t/cto-vs-av-quelle-est-la-meilleure-enveloppe/1124).
+**➡️** Réagir et discuter sur le [forum Cayas](https://forum.cayas.fr/t/cto-vs-av-quelle-est-la-meilleure-enveloppe/1124).
